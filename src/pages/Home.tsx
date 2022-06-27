@@ -13,17 +13,25 @@ export default function Home() {
 	});
 	return (
 		<Box>
-			<Box paddingBottom={[5, 10]} mr="20px" paddingRight={[0, 10]}>
+			<Box
+				paddingBottom={[5, 10]}
+				mr="20px"
+				paddingRight={[0, 0, 0, 10, 10, 10]}
+			>
 				<Hero />
 			</Box>
-			<Box paddingBottom={[5, 10]} mr="20px" paddingRight={[0, 10]}>
+			<Box
+				paddingBottom={[5, 10]}
+				mr="20px"
+				paddingRight={[0, 0, 0, 10, 10, 10]}
+			>
 				<Make />
 			</Box>
 			<Box
 				paddingTop={5}
 				paddingBottom={[5, 10]}
 				mr="20px"
-				paddingRight={[0, 10]}
+				paddingRight={[0, 0, 0, 10, 10, 10]}
 			>
 				<Cases />
 			</Box>
@@ -38,7 +46,11 @@ export default function Home() {
 			<Box paddingTop={5} paddingBottom={[5, 10]}>
 				<Team />
 			</Box>
-			<Box paddingBottom={[5, 10]} mr="20px" paddingRight={[0, 10]}>
+			<Box
+				paddingBottom={[5, 10]}
+				mr="20px"
+				paddingRight={[0, 0, 0, 10, 10, 10]}
+			>
 				<Contacts />
 			</Box>
 		</Box>

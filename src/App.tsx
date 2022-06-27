@@ -19,9 +19,13 @@ function App() {
 						paddingTop: "6rem",
 					}}
 					zIndex={99}
-					className="content"
+					ml="20px"
 				>
-					<Container maxW={["full", "full", "full", "full", "full", "6xl"]}>
+					<Container
+						maxW={["full", "full", "full", "full", "full", "7xl"]}
+						paddingInlineStart={[0, 0, 0, "1rem", "1rem", "1rem"]}
+						paddingInlineEnd={[0, 0, 0, "1rem", "1rem", "1rem"]}
+					>
 						<Routes>
 							<Route path="/" element={<Home />} />
 						</Routes>

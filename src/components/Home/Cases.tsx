@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { BrowserView, MobileView } from "react-device-detect";
 import LazyImage from "../LazyImage";
-import { Link as RLink } from "react-router-dom";
+import { Link as RLink, useNavigate } from "react-router-dom";
 import bequick from "../../images/cases/desktop/bequick.png";
 import hotline from "../../images/cases/desktop/hotline.png";
 import ndafreseasrch from "../../images/cases/desktop/ndafreseasrch.png";
@@ -22,96 +22,32 @@ import mpn from "../../images/cases/mobile/pn.png";
 import mspbedu from "../../images/cases/mobile/spbedu.png";
 
 export default function Cases() {
+	let navigate: any = useNavigate();
 	const Case = (props: any) => (
 		<Box>
 			<BrowserView>
-				<Box
-					bgColor="white"
-					minH="300px"
-					borderRadius="50px"
-					border="1px solid #FFFFFF"
-				>
-					{(!props.to && (
-						<Box>
-							<LazyImage draggable={false} src={props.image} w="1200px" />
-						</Box>
-					)) || (
-						<Link as={RLink} to={props.to}>
-							<LazyImage draggable={false} src={props.image} w="1200px" />
-						</Link>
-					)}
-					<Box m="30px" mt="25px">
-						{(!props.add && (
-							<Heading
-								color="#201F1E"
-								fontWeight="480"
-								fontSize="30px"
-								lineHeight="39px"
-							>
-								{props.name}
-							</Heading>
-						)) || (
-							<Heading
-								color="#201F1E"
-								fontWeight="480"
-								fontSize="25px"
-								lineHeight="24px"
-							>
-								{props.name}{" "}
-								<Link
-									color="#201F1E80"
-									_hover={{ cursor: "text", textDecoration: "none" }}
-								>
-									— {props.add}
-								</Link>
-							</Heading>
-						)}
-						<Text
-							paddingTop={3}
-							color="rgba(32, 31, 30, 0.8)"
-							fontWeight="400"
-							fontSize="17px"
-							lineHeight="21px"
-						>
-							{props.desc}
-						</Text>
-					</Box>
-				</Box>
-			</BrowserView>
-			<MobileView>
-				<Box>
-					{(!props.to && (
-						<Box>
-							<LazyImage
-								draggable={false}
-								src={props.mimage}
-								w="350px"
-								h="200px"
-							/>
-						</Box>
-					)) || (
-						<Link as={RLink} to={props.to}>
-							<LazyImage
-								draggable={false}
-								src={props.mimage}
-								w="350px"
-								h="200px"
-							/>
-						</Link>
-					)}
+				{(!props.to && (
 					<Box
-						minH="147px"
 						bgColor="white"
-						borderRadius="20px"
+						minH="300px"
+						borderRadius="50px"
 						border="1px solid #FFFFFF"
 					>
-						<Box m="20px" mt="25px">
+						<Box>
+							<LazyImage
+								borderTopRadius="50px"
+								draggable={false}
+								src={props.image}
+								w="1200px"
+							/>
+						</Box>
+						<Box m="30px" mt="25px">
 							{(!props.add && (
 								<Heading
 									color="#201F1E"
 									fontWeight="480"
-									fontSize="26px"
-									lineHeight="30px"
+									fontSize="30px"
+									lineHeight="39px"
 								>
 									{props.name}
 								</Heading>
@@ -119,8 +55,8 @@ export default function Cases() {
 								<Heading
 									color="#201F1E"
 									fontWeight="480"
-									fontSize="26px"
-									lineHeight="30px"
+									fontSize="25px"
+									lineHeight="24px"
 								>
 									{props.name}{" "}
 									<Link
@@ -132,17 +68,190 @@ export default function Cases() {
 								</Heading>
 							)}
 							<Text
-								paddingTop={5}
+								paddingTop={3}
 								color="rgba(32, 31, 30, 0.8)"
 								fontWeight="400"
-								fontSize="16px"
-								lineHeight="120%"
+								fontSize="17px"
+								lineHeight="21px"
 							>
 								{props.desc}
 							</Text>
 						</Box>
 					</Box>
-				</Box>
+				)) || (
+					<Box
+						bgColor="white"
+						minH="300px"
+						borderRadius="50px"
+						border="1px solid #FFFFFF"
+						onClick={() => {
+							navigate(props.to);
+						}}
+						cursor="pointer"
+					>
+						<Box>
+							<LazyImage
+								borderTopRadius="50px"
+								draggable={false}
+								src={props.image}
+								w="1200px"
+							/>
+						</Box>
+						<Box m="30px" mt="25px">
+							{(!props.add && (
+								<Heading
+									color="#201F1E"
+									fontWeight="480"
+									fontSize="30px"
+									lineHeight="39px"
+								>
+									{props.name}
+								</Heading>
+							)) || (
+								<Heading
+									color="#201F1E"
+									fontWeight="480"
+									fontSize="25px"
+									lineHeight="24px"
+								>
+									{props.name}{" "}
+									<Link
+										color="#201F1E80"
+										_hover={{ cursor: "text", textDecoration: "none" }}
+									>
+										— {props.add}
+									</Link>
+								</Heading>
+							)}
+							<Text
+								paddingTop={3}
+								color="rgba(32, 31, 30, 0.8)"
+								fontWeight="400"
+								fontSize="17px"
+								lineHeight="21px"
+							>
+								{props.desc}
+							</Text>
+						</Box>
+					</Box>
+				)}
+			</BrowserView>
+			<MobileView>
+				{(!props.to && (
+					<Box>
+						<Box>
+							<LazyImage
+								draggable={false}
+								src={props.mimage}
+								w="350px"
+								h="200px"
+							/>
+						</Box>
+
+						<Box
+							minH="147px"
+							bgColor="white"
+							borderRadius="20px"
+							border="1px solid #FFFFFF"
+						>
+							<Box m="20px" mt="25px">
+								{(!props.add && (
+									<Heading
+										color="#201F1E"
+										fontWeight="480"
+										fontSize="26px"
+										lineHeight="30px"
+									>
+										{props.name}
+									</Heading>
+								)) || (
+									<Heading
+										color="#201F1E"
+										fontWeight="480"
+										fontSize="26px"
+										lineHeight="30px"
+									>
+										{props.name}{" "}
+										<Link
+											color="#201F1E80"
+											_hover={{ cursor: "text", textDecoration: "none" }}
+										>
+											— {props.add}
+										</Link>
+									</Heading>
+								)}
+								<Text
+									paddingTop={5}
+									color="rgba(32, 31, 30, 0.8)"
+									fontWeight="400"
+									fontSize="16px"
+									lineHeight="120%"
+								>
+									{props.desc}
+								</Text>
+							</Box>
+						</Box>
+					</Box>
+				)) || (
+					<Box
+						onClick={() => {
+							navigate(props.to);
+						}}
+					>
+						<Box>
+							<LazyImage
+								draggable={false}
+								src={props.mimage}
+								w="350px"
+								h="200px"
+							/>
+						</Box>
+
+						<Box
+							minH="147px"
+							bgColor="white"
+							borderRadius="20px"
+							border="1px solid #FFFFFF"
+						>
+							<Box m="20px" mt="25px">
+								{(!props.add && (
+									<Heading
+										color="#201F1E"
+										fontWeight="480"
+										fontSize="26px"
+										lineHeight="30px"
+									>
+										{props.name}
+									</Heading>
+								)) || (
+									<Heading
+										color="#201F1E"
+										fontWeight="480"
+										fontSize="26px"
+										lineHeight="30px"
+									>
+										{props.name}{" "}
+										<Link
+											color="#201F1E80"
+											_hover={{ cursor: "text", textDecoration: "none" }}
+										>
+											— {props.add}
+										</Link>
+									</Heading>
+								)}
+								<Text
+									paddingTop={5}
+									color="rgba(32, 31, 30, 0.8)"
+									fontWeight="400"
+									fontSize="16px"
+									lineHeight="120%"
+								>
+									{props.desc}
+								</Text>
+							</Box>
+						</Box>
+					</Box>
+				)}
 			</MobileView>
 		</Box>
 	);
