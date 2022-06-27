@@ -8,7 +8,6 @@ import {
 	Icon,
 } from "@chakra-ui/react";
 import { ReactComponent as Arrow } from "../../images/arrow.svg";
-import { BrowserView, MobileView } from "react-device-detect";
 
 export default function Hero() {
 	return (
