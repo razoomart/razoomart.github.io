@@ -7,13 +7,6 @@ import {
 	Button,
 	Link,
 	Icon,
-	Modal,
-	ModalOverlay,
-	ModalContent,
-	ModalHeader,
-	ModalFooter,
-	ModalBody,
-	ModalCloseButton,
 } from "@chakra-ui/react";
 import { ReactComponent as Arrow } from "../../images/arrow.svg";
 import { Link as RLink } from "react-router-dom";
@@ -59,7 +52,7 @@ export default function Contacts() {
 							<Box paddingLeft={[5, 10]} paddingRight={[5, 10]} w="100%">
 								<Stack w="100%" direction="row" justifyContent="space-between">
 									<Text
-										fontSize={["28px", "40px"]}
+										fontSize={["25px", "40px"]}
 										fontWeight="480"
 										lineHeight="90%"
 									>
@@ -96,7 +89,7 @@ export default function Contacts() {
 							<Box paddingLeft={[5, 10]} paddingRight={[5, 10]} w="100%">
 								<Stack w="100%" direction="row" justifyContent="space-between">
 									<Text
-										fontSize={["28px", "40px"]}
+										fontSize={["25px", "40px"]}
 										fontWeight="480"
 										lineHeight="90%"
 									>
@@ -133,7 +126,7 @@ export default function Contacts() {
 							<Box paddingLeft={[5, 10]} paddingRight={[5, 10]} w="100%">
 								<Stack w="100%" direction="row" justifyContent="space-between">
 									<Text
-										fontSize={["28px", "40px"]}
+										fontSize={["25px", "40px"]}
 										fontWeight="480"
 										lineHeight="90%"
 									>

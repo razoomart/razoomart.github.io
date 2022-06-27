@@ -1,12 +1,4 @@
-import {
-	Box,
-	Stack,
-	Text,
-	Button,
-	Heading,
-	Center,
-	Link,
-} from "@chakra-ui/react";
+import { Box, Stack, Text, Center, Link } from "@chakra-ui/react";
 import LazyImage from "../LazyImage";
 import logo from "../../images/logo.svg";
 import { Link as RLink } from "react-router-dom";

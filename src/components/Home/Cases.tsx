@@ -30,12 +30,13 @@ export default function Cases() {
 					<Box
 						bgColor="white"
 						minH="300px"
-						borderRadius="50px"
+						borderRadius="25px"
 						border="1px solid #FFFFFF"
 					>
 						<Box>
 							<LazyImage
-								borderTopRadius="50px"
+								borderTopRadius="25px"
+								borderBottomRadius="25px"
 								draggable={false}
 								src={props.image}
 								w="1200px"
@@ -82,7 +83,7 @@ export default function Cases() {
 					<Box
 						bgColor="white"
 						minH="300px"
-						borderRadius="50px"
+						borderRadius="25px"
 						border="1px solid #FFFFFF"
 						onClick={() => {
 							navigate(props.to);
@@ -91,7 +92,8 @@ export default function Cases() {
 					>
 						<Box>
 							<LazyImage
-								borderTopRadius="50px"
+								borderTopRadius="25px"
+								borderBottomRadius="25px"
 								draggable={false}
 								src={props.image}
 								w="1200px"
@@ -143,7 +145,7 @@ export default function Cases() {
 							<LazyImage
 								draggable={false}
 								src={props.mimage}
-								w="350px"
+								w="330px"
 								h="200px"
 							/>
 						</Box>
@@ -202,7 +204,7 @@ export default function Cases() {
 							<LazyImage
 								draggable={false}
 								src={props.mimage}
-								w="350px"
+								w="330px"
 								h="200px"
 							/>
 						</Box>

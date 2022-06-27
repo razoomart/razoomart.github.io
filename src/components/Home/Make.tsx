@@ -7,20 +7,25 @@ import {
 	Stack,
 } from "@chakra-ui/react";
 
+interface CardInterface {
+	color: string;
+	name: string;
+}
+
 export default function Make() {
-	const Card = (props: any) => (
+	const Card = (props: CardInterface) => (
 		<Box
 			bgColor={props.color}
 			borderRadius="61.6658px"
 			border={`1px solid ${props.color}`}
 			minW="120px"
-			h="60px"
+			h={["50px", "60px"]}
 		>
 			<Box m="10px">
 				<Center>
 					<Text
 						color="rgba(27, 27, 29, 0.8)"
-						fontSize="24px"
+						fontSize={["20px", "24px"]}
 						fontWeight="480"
 						lineHeight="150%"
 					>
