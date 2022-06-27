@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.07afa143.css",
+    "main.js": "/static/js/main.72f062f5.js",
+    "static/js/787.c6a4c6ec.chunk.js": "/static/js/787.c6a4c6ec.chunk.js",
+    "static/media/pn.png": "/static/media/pn.a986228502250d050b00.png",
+    "static/media/hotline.png": "/static/media/hotline.208bae4dd078079a5376.png",
+    "static/media/spbedu.png": "/static/media/spbedu.e6fb7fb9a7e0b3b2c44d.png",
+    "static/media/Ilana.png": "/static/media/Ilana.cd416044c0bcffa6a45b.png",
+    "static/media/Vladimir.png": "/static/media/Vladimir.5882467ea2bda52c1aef.png",
+    "static/media/Albina.png": "/static/media/Albina.3c888bf5a8d9f6c7cd68.png",
+    "static/media/Bogdan.png": "/static/media/Bogdan.999a84d808b750921e3a.png",
+    "static/media/Yanika.png": "/static/media/Yanika.8561985086bf42626396.png",
+    "static/media/Artem.png": "/static/media/Artem.465168375f62571a5b9f.png",
+    "static/media/heading.otf": "/static/media/heading.b85d841dacb040b84951.otf",
+    "static/media/Ilya.png": "/static/media/Ilya.d05fcc3ee4230e7df4c0.png",
+    "static/media/text.otf": "/static/media/text.d1f5e6e16dd4f75c3950.otf",
+    "static/media/ndafreseasrch.png": "/static/media/ndafreseasrch.919a840409097ac32020.png",
+    "static/media/bequick.png": "/static/media/bequick.8fa4e0ab988fe05dc533.png",
+    "static/media/logo.svg": "/static/media/logo.9b5eedf9f39110f4044b8065fe06611b.svg",
+    "static/media/3.svg": "/static/media/3.593ce95e28fadfdbdd1c05ef4c6138b7.svg",
+    "static/media/2.svg": "/static/media/2.a52d178170c93a5696d21c2ee6fb750e.svg",
+    "static/media/telegram.svg": "/static/media/telegram.969899912a007ecb838336debe7f9e3f.svg",
+    "static/media/behance.svg": "/static/media/behance.e1b1a268c2140214f4c62ed5ea2aaea4.svg",
+    "index.html": "/index.html",
+    "static/media/plus.svg": "/static/media/plus.191ef826c267a885b74c228e5de54e11.svg",
+    "static/media/4.svg": "/static/media/4.6041f35bb77d9cdd9ee0839e6f837db8.svg",
+    "static/media/1.svg": "/static/media/1.669b65f0802fce599371168b662410cb.svg",
+    "static/media/arrow.svg": "/static/media/arrow.9ae1115c5c7119cca1af9a3f078ccf63.svg",
+    "main.07afa143.css.map": "/static/css/main.07afa143.css.map",
+    "main.72f062f5.js.map": "/static/js/main.72f062f5.js.map",
+    "787.c6a4c6ec.chunk.js.map": "/static/js/787.c6a4c6ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07afa143.css",
+    "static/js/main.72f062f5.js"
+  ]
+}
