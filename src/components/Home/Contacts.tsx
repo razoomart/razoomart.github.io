@@ -28,13 +28,13 @@ export default function Contacts() {
 					Контакты
 				</Heading>
 				<Box>
-					<Stack direction="column" spacing="20px">
+					<Stack direction="column" spacing={["10px", "20px"]}>
 						<Button
 							bgColor="white"
 							border="2.5px solid #FFFFFF"
-							borderRadius="30px"
+							borderRadius={["20px", "30px"]}
 							w={["100%", "600px"]}
-							h="100px"
+							h={["70px", "100px"]}
 							color="#201F1E"
 							_hover={{
 								bgColor: "#5DADFA",
@@ -67,9 +67,9 @@ export default function Contacts() {
 						<Button
 							bgColor="white"
 							border="2.5px solid #FFFFFF"
-							borderRadius="30px"
+							borderRadius={["20px", "30px"]}
 							w={["100%", "600px"]}
-							h="100px"
+							h={["70px", "100px"]}
 							color="#201F1E"
 							_hover={{
 								bgColor: "#5DADFA",
@@ -104,9 +104,9 @@ export default function Contacts() {
 						<Button
 							bgColor="white"
 							border="2.5px solid #FFFFFF"
-							borderRadius="30px"
+							borderRadius={["20px", "30px"]}
 							w={["100%", "600px"]}
-							h="100px"
+							h={["70px", "100px"]}
 							color="#201F1E"
 							_hover={{
 								bgColor: "#5DADFA",

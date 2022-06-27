@@ -36,7 +36,7 @@ export default function Home() {
 				<Cases />
 			</Box>
 			<Box
-				paddingTop={5}
+				paddingTop={[10, 5]}
 				paddingBottom={[5, 10]}
 				mr="20px"
 				paddingRight={[0, 10]}
@@ -47,7 +47,7 @@ export default function Home() {
 				<Team />
 			</Box>
 			<Box
-				paddingBottom={[5, 10]}
+				paddingBottom={[40, 10]}
 				mr="20px"
 				paddingRight={[0, 0, 0, 10, 10, 10]}
 			>

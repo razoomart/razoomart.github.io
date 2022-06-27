@@ -303,9 +303,9 @@ export default function Cases() {
 					<Button
 						bgColor="#F6F6F6"
 						w="100%"
-						border="2px solid #000000"
+						border={["1px solid #000000", "2px solid #000000"]}
 						borderRadius="999px"
-						minH="110px"
+						minH={["80px", "110px"]}
 						color="black"
 						_hover={{
 							color: "white",
@@ -320,7 +320,11 @@ export default function Cases() {
 						as={RLink}
 						to="/cases"
 					>
-						<Text fontSize="30px" lineHeight="40px" fontWeight="400">
+						<Text
+							fontSize={["20px", "30px"]}
+							lineHeight={["30px", "40px"]}
+							fontWeight="400"
+						>
 							смотреть все кейсы
 						</Text>
 					</Button>

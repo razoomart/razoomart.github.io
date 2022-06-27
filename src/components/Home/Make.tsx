@@ -40,9 +40,13 @@ export default function Make() {
 			<Stack
 				direction={["column", "row"]}
 				justifyContent="space-between"
-				spacing="20px"
+				spacing="5px"
 			>
-				<Heading fontWeight="480" fontSize="80px" lineHeight="107px">
+				<Heading
+					fontWeight="480"
+					fontSize={["45px", "80px"]}
+					lineHeight="107px"
+				>
 					Делаем
 				</Heading>
 

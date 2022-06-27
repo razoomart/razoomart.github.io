@@ -75,7 +75,12 @@ export default function Footer() {
 							</Box>
 						</Button>
 					</Stack>
-					<Stack direction="column" spacing="10px">
+					<Stack
+						paddingTop={[5, 0]}
+						justifyContent="space-between"
+						direction={["row", "column"]}
+						spacing={"10px"}
+					>
 						<Text fontSize="20px" fontWeight="480" lineHeight="27px">
 							version 2.0
 						</Text>
