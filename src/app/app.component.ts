@@ -6,17 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  public headerSrc = 'assets/icons/razoomart-logo.svg';
+  public headerSrc = 'assets/icons/logo.svg';
 
   public headerSrcList: string[] = [
-    'assets/icons/razoomart-logo3.svg',
-    'assets/icons/razoomart-logo4.svg',
-    'assets/icons/razoomart-logo5.svg',
-    'assets/icons/razoomart-logo6.svg',
+    'assets/icons/logo.svg',
+    'assets/icons/logo_antihype.svg',
+    'assets/icons/logo_dobro.svg',
+    'assets/icons/logo_drzhk.svg',
+    'assets/icons/logo_korean.svg',
+    'assets/icons/logo_maxfont.svg',
+    'assets/icons/logo_minecraft.svg',
+    'assets/icons/logo_ru.svg',
+    'assets/icons/logo_uwu.svg',
   ];
 
   getNewHeader(): void {
-    this.headerSrc =
+    let newHeader =
       this.headerSrcList[Math.floor(Math.random() * this.headerSrcList.length)];
+    if (this.headerSrc !== newHeader) {
+      this.headerSrc = newHeader;
+    } else return this.getNewHeader();
   }
 }
