@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { headerSrcList } from '@components/header/header.constants';
 import { IconList } from '@constants/icons.constants';
 import { AnchorPath } from '@enums/anchor.enums';
 
@@ -12,20 +13,11 @@ export class HeaderComponent {
   public icon = IconList;
 
   public headerSrc = IconList.logo.link;
-  public headerSrcList: string[] = [
-    IconList.logoAntiHype.link,
-    IconList.logoDobro.link,
-    IconList.logoDrzhk.link,
-    IconList.logoKorean.link,
-    IconList.logoMaxfont.link,
-    IconList.logoMinecraft.link,
-    IconList.logoRu.link,
-    IconList.logoUwu.link,
-  ];
+  public headerList = headerSrcList;
 
   getNewHeader(): void {
     let newHeader =
-      this.headerSrcList[Math.floor(Math.random() * this.headerSrcList.length)];
+      this.headerList[Math.floor(Math.random() * this.headerList.length)];
     if (this.headerSrc !== newHeader) {
       this.headerSrc = newHeader;
     } else return this.getNewHeader();
