@@ -1,0 +1,71 @@
+@font-face {
+  font-family: Intl;
+  src: url("/assets/fonts/Intl-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NewYorkItalic;
+  src: url("/assets/fonts/NewYorkItalic.ttf") format("truetype");
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.5952380952380952vw;
+
+  #header {
+    position: fixed;
+    width: 100%;
+    padding: 0.2976190476190476vw 3.5vw 0 3.5vw;
+
+    background: linear-gradient(
+        0deg,
+        transparent 0,
+        transparent 30%,
+        #00000030
+    );
+    z-index: 1;
+  }
+
+  #first-block {
+    width: 100%;
+    height: 41.666666666666664vw;
+  }
+
+  #short-about {
+    width: 100%;
+    height: 19.047619047619047vw;
+    margin-top: 0.5952380952380952vw;
+  }
+
+  #about {
+    height: 41.666666666666664vw;
+    margin-top: 0.5952380952380952vw;
+  }
+
+  #some-projects {
+    width: 100%;
+    height: 81.9047619047619vw;
+    margin-top: 5.9523809523809526vw;
+  }
+
+  #how-we-working {
+    width: 100%;
+    height: 82.95238095238095vw;
+    margin-top: 5.357142857142857vw;
+  }
+
+  #lets-work {
+    position: absolute;
+    width: 98.8vw;
+    height: 37.857142857142854vw;
+    margin-top: 5.9523809523809526vw;
+  }
+
+  #footer {
+    width: 100%;
+    height: 7.576190476190474vw;
+    margin-top: 46.19047619047559vw;
+    padding: 0 0.8928571428571429vw 1.7857142857142858vw 0.8928571428571429vw;
+  }
+}
