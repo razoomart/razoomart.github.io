@@ -1,0 +1,321 @@
+.some-projects {
+  width: 100%;
+  height: 100%;
+
+  .title {
+    padding: 0 0 0 2.857142857142857vw;
+
+    p {
+      color: #ffffff80;
+      font-size: 5.0523809523809526vw;
+    }
+
+    span {
+      color: #ffffff;
+    }
+  }
+
+  .project-list {
+    height: 72.97619047619048vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2.9761904761904763vw;
+    gap: 0.5952380952380952vw;
+
+    .project {
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+      height: 36.19047619047619vw;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      background-color: #fff;
+      padding: 1.7857142857142858vw;
+      border-radius: 2.380952380952381vw;
+
+      &-title {
+        width: 50%;
+        display: flex;
+        align-self: flex-start;
+
+        p {
+          color: #fff;
+          font-size: 2.6785714285714284vw;
+          font-family: Intl, sans-serif;
+          margin: 0;
+          line-height: 1;
+
+          .line {
+            font-size: 2.6785714285714284vw;
+          }
+
+          span {
+            color: rgba(32, 31, 30, 0.6);
+            font-size: 2.5vw;
+          }
+        }
+      }
+
+      &-case-btn {
+        .wrapper:hover {
+          background-color: white;
+          transition: 0.3s;
+
+          a {
+            color: #000;
+          }
+        }
+      }
+
+      &-description {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        padding-top: 1.7857142857142858vw;
+
+        p {
+          color: rgba(32, 31, 30, 0.8);
+          font-size: 1.4880952380952381vw;
+        }
+      }
+
+      &-case-btn {
+        display: flex;
+        width: 50%;
+
+        align-self: baseline;
+        align-content: center;
+        justify-content: flex-end;
+
+        .wrapper {
+          width: 12.142857142857142vw;
+          height: 2.9761904761904763vw;
+
+          border: 0.11904761904761904vw solid white;
+          border-radius: 59.464285714285715vw;
+          transition: 0.3s;
+
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-size: 1vw;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      &-preview {
+        display: flex;
+        justify-content: flex-start;
+        align-self: center;
+        width: 50%;
+        height: 80%;
+        margin-bottom: 4.257142857142857vw;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.01);
+        transition: 0.1s;
+        cursor: pointer;
+      }
+    }
+
+    .hotline {
+      background-color: #ddff20;
+
+      .project-title p {
+        color: rgba(32, 31, 30, 1);
+      }
+
+      .project-case-btn {
+        .wrapper {
+          border-color: #201f1e;
+
+          a {
+            color: #000;
+          }
+        }
+
+        .wrapper:hover {
+          background-color: #201f1e;
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .bequick {
+      background-color: #201f1e;
+
+      .project-title {
+        width: 60%;
+
+        p span {
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+
+      .project-case-btn {
+        width: 40%;
+
+        .wrapper {
+          a {
+            color: white;
+          }
+        }
+
+        .wrapper:hover {
+          a {
+            color: #000;
+          }
+        }
+      }
+
+      .project-description {
+        height: 80%;
+        width: 50%;
+
+        p {
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+    }
+
+    .pn {
+      background-color: #fcfcfc;
+
+      .project-title p {
+        color: rgba(32, 31, 30, 1);
+      }
+    }
+
+    .either {
+      height: 23.69047619047619vw;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background-color: #333333;
+
+      .project-title {
+        width: 100%;
+
+        p span {
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+
+      .project-case-btn {
+        width: 30%;
+
+        wrapper {
+          width: 11.369047619047619vw;
+          height: 3.3333333333333335vw;
+        }
+
+        padding-top: 11.904761904761905vw;
+      }
+
+      .project-description {
+        width: 70%;
+        padding-top: 15.24vw;
+
+        height: 3.5714285714285716vw;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        p {
+          width: 100%;
+          font-size: 1.4880952380952381vw;
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+
+      .project-preview {
+        display: none;
+      }
+    }
+
+    .development-stage {
+      .project-case-btn {
+        .wrapper {
+          border: none;
+
+          a {
+            color: #000;
+            font-style: italic;
+            text-transform: uppercase;
+            font-size: 1.1904761904761905vw;
+            cursor: default;
+          }
+
+          &:hover {
+            background-color: transparent;
+
+            transform: scale(1);
+            cursor: default;
+          }
+        }
+      }
+    }
+
+    .all-cases-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: flex-end;
+      width: 48.7vw;
+      height: 11.89992380952381vw;
+      border: 0.2976190476190476vw solid #ffffff;
+      background-color: #201f1e;
+      border-radius: 59.464285714285715vw;
+      transition: 0.2s;
+
+      p {
+        display: flex;
+        height: 100%;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 4.166666666666667vw;
+
+        span {
+          display: flex;
+          width: 6.761904761904762vw;
+          height: 100%;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 4.761904761904762vw;
+            height: 2.6785714285714284vw;
+          }
+        }
+      }
+
+      &:hover {
+        transform: scale(1.03);
+        transition: 0.2s;
+      }
+
+      &:active {
+        transform: scale(0.99);
+      }
+    }
+  }
+}
