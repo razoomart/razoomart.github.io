@@ -1,5 +1,5 @@
-enum Link {
+enum MediaLink {
   TELEGRAM = 'https://t.me/razoom_art',
 }
 
-export { Link };
+export { MediaLink };

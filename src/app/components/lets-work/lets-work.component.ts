@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ImageList } from '@constants/images.constants';
-import { Link } from '@enums/link.enums';
+import { MediaLink } from '@enums/link.enums';
 
 @Component({
   selector: 'app-lets-work',
@@ -8,6 +8,6 @@ import { Link } from '@enums/link.enums';
   styleUrls: ['./lets-work.component.scss'],
 })
 export class LetsWorkComponent {
-  public link = Link;
+  public mediaLink = MediaLink;
   public images = ImageList;
 }
