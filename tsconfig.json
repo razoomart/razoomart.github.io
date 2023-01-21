@@ -5,21 +5,11 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "paths": {
-      "@components/*": [
-        "src/app/components/*"
-      ],
-      "@pages/*": [
-        "src/app/pages/*"
-      ],
-      "@enums/*": [
-        "src/app/enums/*"
-      ],
-      "@interfaces/*": [
-        "src/app/interfaces/*"
-      ],
-      "@constants/*": [
-        "src/app/constants/*"
-      ]
+      "@shared/*": ["src/app/shared/*"],
+      "@pages/*": ["src/app/pages/*"],
+      "@enums/*": ["src/app/enums/*"],
+      "@interfaces/*": ["src/app/interfaces/*"],
+      "@constants/*": ["src/app/constants/*"]
     },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -36,10 +26,7 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
+    "lib": ["ES2022", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

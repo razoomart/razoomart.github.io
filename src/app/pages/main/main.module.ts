@@ -1,5 +1,7 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+
+import { RouterLink } from '@angular/router';
+import { SharedModule } from '@shared/shared.module';
 
 import { AboutTeamComponent } from './about-team/about-team.component';
 import { CasesListComponent } from './cases-list/cases-list.component';
@@ -15,7 +17,7 @@ import { ShortAboutComponent } from './short-about/short-about.component';
     DesignTeamComponent,
     ShortAboutComponent,
   ],
-  imports: [CommonModule],
+  imports: [SharedModule, RouterLink],
   exports: [
     AboutTeamComponent,
     CasesListComponent,
