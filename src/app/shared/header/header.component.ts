@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { headerSrcList } from '@components/header/header.constants';
+
 import { IconList } from '@constants/icons.constants';
-import { AnchorPath } from '@enums/anchor.enums';
+
+import { headerSrcList } from './header.constants';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,10 @@ import { AnchorPath } from '@enums/anchor.enums';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  public anchorPath = AnchorPath;
+  scrollDown(): void {
+    window.scroll(0, 99999);
+  }
+
   public icon = IconList;
 
   public headerSrc = IconList.logo.link;
