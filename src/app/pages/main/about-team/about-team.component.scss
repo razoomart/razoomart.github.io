@@ -13,13 +13,13 @@
       height: 100%;
 
       .text {
-        padding: 2.380952380952381vw;
+        padding: 1.5625vw 2.0833333333333335vw;
         color: #201f1e;
 
         p {
           margin: 0;
           font-family: Intl, sans-serif;
-          font-size: 3.2vw;
+          font-size: 3.125vw;
           line-height: 1;
         }
       }
@@ -27,12 +27,11 @@
       .memoji-list {
         position: absolute;
         left: 0;
-        top: 79.76190476190476vw;
+        top: 75.76190476190476vw;
 
         .memoji {
           img {
-            width: 12.797619047619047vw;
-            height: 15.178571428571429vw;
+            height: 11vw;
             transition: 0.2s;
 
             &:hover {
@@ -44,31 +43,36 @@
 
         .ilana-memoji {
           position: absolute;
-          left: 32vw;
-          top: -7.9523809523809526vw;
+          left: 35vw;
+          top: -8vw;
           animation: memojiAnim1 8s infinite;
+
+          img {
+            width: 11.197916666666666vw;
+            height: 13.28125vw;
+          }
         }
 
         .ilyaK-memoji {
           position: absolute;
-          left: 20vw;
-          top: 4.04761904762vw;
+          left: 23vw;
+          top: 0.8vw;
           animation: memojiAnim1 12s infinite;
 
           img {
-            width: 13vw;
-            height: 16vw;
+            width: 11.770833333333334vw;
+            height: 14.84375vw;
           }
         }
 
         .danya-memoji {
           position: absolute;
-          left: 35vw;
+          left: 35.6vw;
           top: 7.04761904762vw;
           animation: memojiAnim1 14s infinite;
 
           img {
-            height: 14vw;
+            height: 12.3vw;
           }
         }
       }
@@ -81,17 +85,17 @@
 
     .block-right {
       width: 100%;
-      height: 29.761904761904763vw;
+      height: 26.041666666666668vw;
 
       .text {
-        padding: 1.7857142857142858vw 2.380952380952381vw;
+        padding: 1.5625vw 2.0833333333333335vw;
         color: #201f1e;
 
         p {
           text-align: end;
           margin: 0;
           font-family: Intl, sans-serif;
-          font-size: 3.2vw;
+          font-size: 3.125vw;
           line-height: 1;
         }
       }
@@ -99,7 +103,7 @@
 
     .about-button {
       margin-top: 0.5952380952380952vw;
-      height: 11.30952380952381vw;
+      height: 9.895833333333334vw;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -110,7 +114,7 @@
       text-decoration: none;
       color: #fff;
 
-      border: 0.2976190476190476vw solid #ffffff;
+      border: 0.2604166666666667vw solid #ffffff;
       transition: 0.2s;
 
       .text {
@@ -120,7 +124,7 @@
         background-color: transparent;
         border: none;
         color: #ffffff;
-        font-size: 4.166666666666667vw;
+        font-size: 3.6458333333333335vw;
         font-family: Intl, sans-serif;
 
         span {
