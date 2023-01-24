@@ -14,6 +14,7 @@ enum IconType {
   logoUwu = 'logoUwu',
   razoomartLogo = 'razoomartLogo',
   sparkles = 'sparkles',
+  equalSign = 'equalSign',
 }
 
 const IconList: { [key in IconType]: IconInfo } = {
@@ -68,6 +69,10 @@ const IconList: { [key in IconType]: IconInfo } = {
   [IconType.sparkles]: {
     link: 'assets/icons/sparkles.png',
     description: 'sparkles icon',
+  },
+  [IconType.equalSign]: {
+    link: 'assets/icons/equal-sign.svg',
+    description: 'equal sign icon',
   },
 };
 
