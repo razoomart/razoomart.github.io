@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="title"><p>Конвертер в VW</p></div>
+  <div class="content">
+    <div class="converter">
+      <div class="vw-px">
+        <div class="vw">
+          <label [for]="vwInput">vw</label>
+          <input
+            #vwInput
+            (keyup)="convertVwToPx(vwInput.value)"
+            (change)="convertVwToPx(vwInput.value)"
+            class="input user-input"
+            type="number"
+            [ngModel]="vwValue"
+            placeholder="vw value"
+          />
+        </div>
+        <div class="image">
+          <img
+            [src]="icons.equalSign.link"
+            [alt]="icons.equalSign.description"
+            draggable="false"
+          />
+        </div>
+        <div class="px">
+          <input
+            #pxInput
+            (keyup)="convertPxToVw(pxInput.value)"
+            (change)="convertPxToVw(pxInput.value)"
+            class="input result-input"
+            type="number"
+            [ngModel]="pxValue"
+            placeholder="px value"
+          />
+          <label [for]="pxInput">px</label>
+        </div>
+      </div>
+      <div class="width">
+        <label [for]="widthInput">Ширина макета</label>
+        <input
+          #widthInput
+          (change)="changeCustomWidth(widthInput.value)"
+          class="input width-input"
+          type="number"
+          [ngModel]="widthValue"
+          placeholder="width value"
+        />
+      </div>
+    </div>
+  </div>
+</div>
