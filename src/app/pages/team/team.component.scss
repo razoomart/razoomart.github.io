@@ -10,7 +10,9 @@
 
   .block {
     border-radius: 3.1578947368421053vw;
-    padding: 2.6041666666666665vw 3.125vw 3.125vw 3.125vw;
+    padding: 2.6041666666666665vw 2vw 3.125vw 2vw;
+    padding-left: 2.6vw;
+    padding-right: 2vw;
     margin-top: 0.5208333333333334vw;
 
     .title {
@@ -172,8 +174,7 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 1.0416666666666667vw;
-
+      gap: 1.0416666666666667vw; 
       margin-top: 2.6041666666666665vw;
 
       .card {
