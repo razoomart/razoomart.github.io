@@ -1,4 +1,243 @@
 .content {
   width: 100%;
   height: 100%;
+  padding: 0 0.5952380952380952vw;
+
+  #top-space {
+    height: 4.5vw;
+    background-color: transparent;
+  }
+
+  .block {
+    border-radius: 3.1578947368421053vw;
+    padding: 2.6041666666666665vw 3.125vw 3.125vw 3.125vw;
+    margin-top: 0.5208333333333334vw;
+
+    .title {
+      p {
+        color: #201f1e;
+        font-size: 5.208333333333333vw;
+      }
+    }
+  }
+
+  .item {
+    border-radius: 2.0833333333333335vw;
+    background-color: #201f1e;
+  }
+
+  .first-block {
+    background-color: #5d6eff;
+    width: 100%;
+    height: 24.53125vw;
+
+    padding: 2.380952380952381vw 0 2.9761904761904763vw 3.5714285714285716vw;
+
+    .title {
+      width: 100%;
+      height: 100%;
+
+      p {
+        color: #ffffff;
+        font-size: 4.166666666666667vw;
+
+        img {
+          width: 4.166666666666667vw;
+          height: 4.166666666666667vw;
+        }
+      }
+    }
+  }
+
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5vw;
+    margin-top: 0.5208333333333334vw;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      width: 32.5vw;
+      height: 21.354166666666668vw;
+      padding: 1.3020833333333333vw 1.5625vw 1.5625vw 1.3020833333333333vw;
+
+      .title {
+        display: flex;
+        width: 100%;
+        height: auto;
+        max-height: 4.6875vw;
+        justify-content: flex-end;
+        text-align: right;
+
+        p {
+          font-size: 2.34375vw;
+        }
+      }
+
+      .description {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        align-self: flex-end;
+        text-align: end;
+
+        p {
+          color: #ffffff60;
+          font-size: 1.3020833333333333vw;
+        }
+      }
+
+      .preview {
+        width: 14.6875vw;
+        height: 10.625vw;
+
+        position: absolute;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .our-principles {
+    width: 100%;
+    height: 31.25vw;
+
+    border-radius: 3.125vw;
+    background-color: #f3da80;
+
+    .content {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      gap: 1.5625vw;
+
+      .principle {
+        margin-top: 3.6458333333333335vw;
+        width: 29.6875vw;
+        height: 12.5vw;
+        background-color: #ffffff;
+        padding: 1.6666666666666667vw;
+
+        .title {
+          text-align: end;
+
+          p {
+            font-size: 2.34375vw;
+          }
+        }
+
+        .description {
+          height: auto;
+          text-align: end;
+          margin-top: 2vw;
+
+          p {
+            font-size: 1.3020833333333333vw;
+            color: rgba(32, 31, 30, 0.6);
+          }
+        }
+      }
+
+      .item-1 {
+        animation: itemAnim 10s infinite;
+        transform: rotate(-1deg);
+      }
+
+      .item-2 {
+        margin-top: 5vw;
+        animation: itemAnim2 8s infinite;
+        transform: rotate(1deg);
+      }
+
+      .item-3 {
+        margin-top: 4vw;
+        animation: itemAnim 12s infinite;
+        transform: rotate(-1deg);
+      }
+    }
+  }
+
+  .team {
+    background-color: #b2dd57;
+    height: 64.0625vw;
+
+    .content {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1.0416666666666667vw;
+
+      margin-top: 2.6041666666666665vw;
+
+      .card {
+        width: 17.708333333333332vw;
+        height: 24.739583333333332vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 1.5625vw;
+        background-color: #ffffff;
+        padding: 0 1.0416666666666667vw 1.3020833333333333vw 1.0416666666666667vw;
+
+        .avatar {
+          width: 14.0625vw;
+          height: 14.0625vw;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .name {
+          margin-top: 0.78125vw;
+
+          p {
+            font-size: 2.0833333333333335vw;
+            color: #201f1e;
+          }
+        }
+
+        .role {
+          p {
+            font-size: 1.5625vw;
+            color: rgba(32, 31, 30, 0.6);
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes itemAnim {
+  0% {
+    transform: translateY(0) rotate(-1deg);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(0.17857142857142858vw) rotate(-1deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+}
+
+@keyframes itemAnim2 {
+  0% {
+    transform: translateY(0) rotate(1deg);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(-0.17857142857142858vw) rotate(1deg);
+  }
+  100% {
+    transform: translateY(0) rotate(1deg);
+  }
 }
