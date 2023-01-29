@@ -142,8 +142,15 @@
       }
 
       &:hover {
-        transform: scale(1.03);
+        background-color: #fef747;
+        box-shadow: 0 0 2.9761904761904763vw #fef747;
+        transform: scale(1.012);
         transition: 0.2s;
+        border: none;
+
+        p {
+          color: #000;
+        }
       }
 
       &:active {
