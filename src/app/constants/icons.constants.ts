@@ -106,47 +106,47 @@ const IconList: { [key in IconType]: IconInfo } = {
     description: 'equal sign icon',
   },
   [IconType.afterEffects]: {
-    link: 'assets/icons/technologies/afterEffects.png',
+    link: 'assets/icons/technologies/afterEffects.webp',
     description: 'after effects logo icon',
   },
   [IconType.blender]: {
-    link: 'assets/icons/technologies/blender.png',
+    link: 'assets/icons/technologies/blender.webp',
     description: 'blender logo icon',
   },
   [IconType.figma]: {
-    link: 'assets/icons/technologies/figma.png',
+    link: 'assets/icons/technologies/figma.webp',
     description: 'figma logo icon',
   },
   [IconType.kotlin]: {
-    link: 'assets/icons/technologies/kotlin.png',
+    link: 'assets/icons/technologies/kotlin.webp',
     description: 'kotlin logo icon',
   },
   [IconType.notion]: {
-    link: 'assets/icons/technologies/notion.png',
+    link: 'assets/icons/technologies/notion.webp',
     description: 'notion logo icon',
   },
   [IconType.photoshop]: {
-    link: 'assets/icons/technologies/photoshop.png',
+    link: 'assets/icons/technologies/photoshop.webp',
     description: 'photoshop logo icon',
   },
   [IconType.readymag]: {
-    link: 'assets/icons/technologies/readymag.png',
+    link: 'assets/icons/technologies/readymag.webp',
     description: 'readymag logo icon',
   },
   [IconType.swift]: {
-    link: 'assets/icons/technologies/swift.png',
+    link: 'assets/icons/technologies/swift.webp',
     description: 'swift logo icon',
   },
   [IconType.telegram]: {
-    link: 'assets/icons/technologies/telegram.png',
+    link: 'assets/icons/technologies/telegram.webp',
     description: 'telegram logo icon',
   },
   [IconType.webflow]: {
-    link: 'assets/icons/technologies/webflow.png',
+    link: 'assets/icons/technologies/webflow.webp',
     description: 'webflow logo icon',
   },
   [IconType.vscode]: {
-    link: 'assets/icons/technologies/vscode.png',
+    link: 'assets/icons/technologies/vscode.webp',
     description: 'vscode logo icon',
   },
 };
