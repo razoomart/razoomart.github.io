@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
-import { IconList } from '@constants/icons.constants';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-team',
   templateUrl: './team.component.html',
   styleUrls: ['./team.component.scss'],
 })
-export class TeamComponent {
-  public icons = IconList;
+export class TeamComponent implements OnInit {
+  ngOnInit(): void {
+    window.scroll(0, 0);
+  }
 }

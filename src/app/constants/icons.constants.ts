@@ -12,6 +12,10 @@ enum IconType {
   logoMinecraft = 'logoMinecraft',
   logoRu = 'logoRu',
   logoUwu = 'logoUwu',
+  logoLove = 'logoLove',
+  logoAustralian = 'logoAustralian',
+  logoAmbid = 'logoAmbid',
+  logoRzmrt = 'logoRzmrt',
   razoomartLogo = 'razoomartLogo',
   sparkles = 'sparkles',
   equalSign = 'equalSign',
@@ -71,6 +75,22 @@ const IconList: { [key in IconType]: IconInfo } = {
   },
   [IconType.logoUwu]: {
     link: 'assets/icons/logo_uwu.svg',
+    description: 'logo icon',
+  },
+  [IconType.logoLove]: {
+    link: 'assets/icons/logo_love.svg',
+    description: 'logo icon',
+  },
+  [IconType.logoAustralian]: {
+    link: 'assets/icons/logo_australian.svg',
+    description: 'logo icon',
+  },
+  [IconType.logoAmbid]: {
+    link: 'assets/icons/logo_ambid.svg',
+    description: 'logo icon',
+  },
+  [IconType.logoRzmrt]: {
+    link: 'assets/icons/logo_rzmrt.svg',
     description: 'logo icon',
   },
   [IconType.razoomartLogo]: {

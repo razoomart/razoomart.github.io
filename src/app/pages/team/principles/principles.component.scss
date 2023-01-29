@@ -1,0 +1,98 @@
+.item {
+  border-radius: 2.0833333333333335vw;
+  background-color: #201f1e;
+}
+
+.our-principles {
+  width: 100%;
+  height: 100%;
+  padding: 2.6041666666666665vw 2vw 3.125vw 2vw;
+
+  border-radius: 3.125vw;
+  background-color: #f3da80;
+
+  .title {
+    p {
+      color: #201f1e;
+      font-size: 5.208333333333333vw;
+    }
+  }
+
+  .content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5625vw;
+
+    .principle {
+      margin-top: 3.6458333333333335vw;
+      width: 29.6875vw;
+      height: 12.5vw;
+      background-color: #ffffff;
+      padding: 1.6666666666666667vw;
+
+      .title {
+        text-align: end;
+
+        p {
+          font-size: 2.34375vw;
+        }
+      }
+
+      .description {
+        height: auto;
+        text-align: end;
+        margin-top: 2vw;
+
+        p {
+          font-size: 1.3020833333333333vw;
+          color: rgba(32, 31, 30, 0.6);
+        }
+      }
+    }
+
+    .item-1 {
+      animation: itemAnim 10s infinite;
+      transform: rotate(-1deg);
+    }
+
+    .item-2 {
+      margin-top: 5vw;
+      animation: itemAnim2 8s infinite;
+      transform: rotate(1deg);
+    }
+
+    .item-3 {
+      margin-top: 4vw;
+      animation: itemAnim 12s infinite;
+      transform: rotate(-1deg);
+    }
+  }
+}
+
+@keyframes itemAnim {
+  0% {
+    transform: translateY(0) rotate(-1deg);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(0.17857142857142858vw) rotate(-1deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+}
+
+@keyframes itemAnim2 {
+  0% {
+    transform: translateY(0) rotate(1deg);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(-0.17857142857142858vw) rotate(1deg);
+  }
+  100% {
+    transform: translateY(0) rotate(1deg);
+  }
+}

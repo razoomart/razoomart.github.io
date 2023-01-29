@@ -1,0 +1,194 @@
+.item {
+  border-radius: 2.0833333333333335vw;
+  background-color: #201f1e;
+}
+
+.stack {
+  .title {
+    padding: 0 0 0 3.6458333333333335vw;
+
+    p {
+      color: #ffffff60;
+      font-size: 5.208333333333333vw;
+    }
+  }
+
+  .content {
+    margin-top: 2.6041666666666665vw;
+
+    .tech-list {
+      display: flex;
+
+      width: 100%;
+      margin-top: 1.5625vw;
+
+      .list-title {
+        display: flex;
+        align-items: center;
+        width: 31.875vw;
+
+        p {
+          font-size: 2.6041666666666665vw;
+          font-weight: 400;
+          color: #ffffff;
+        }
+      }
+
+      .technologies {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 65.83333333333333vw;
+        gap: 0.5208333333333334vw;
+      }
+
+      .technologies-many {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 0.4599vw;
+
+        .item-11 {
+          margin-top: 0.5208333333333334vw;
+        }
+      }
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        width: 32.65625vw;
+        height: 12.5vw;
+
+        padding: 1.5625vw;
+
+        .tech-logo {
+          position: absolute;
+          width: 9.375vw;
+          height: 9.375vw;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .tech-title,
+        .tech-description {
+          p {
+            text-align: end;
+            color: #ffffff;
+          }
+        }
+
+        .tech-title {
+          height: 2.34375vw;
+
+          p {
+            font-size: 2.34375vw;
+          }
+        }
+
+        .tech-description {
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          height: 4.6875vw;
+          margin-top: 2.34375vw;
+
+          p {
+            font-size: 1.3020833333333333vw;
+            text-align: end;
+            color: #ffffff60;
+          }
+        }
+      }
+
+      .item-1 {
+        .tech-logo img {
+          filter: drop-shadow(
+              0 0.20833333333333334vw 3.125vw rgba(151, 165, 228, 0.2)
+          );
+        }
+      }
+
+      .item-2 {
+        .tech-logo img {
+          filter: drop-shadow(
+              0 0.20833333333333334vw 3.125vw rgba(151, 165, 228, 0.2)
+          );
+        }
+      }
+
+      .item-3 {
+        .tech-logo img {
+          filter: drop-shadow(
+              0 0.20833333333333334vw 3.125vw rgba(255, 255, 255, 0.15)
+          );
+        }
+      }
+
+      .item-4 {
+        .tech-logo img {
+          filter: drop-shadow(
+              0 0.20833333333333334vw 3.125vw rgba(0, 163, 255, 0.2)
+          );
+        }
+      }
+
+      .item-5 {
+        .tech-logo img {
+          filter: drop-shadow(
+              0 0.20833333333333334vw 3.125vw rgba(151, 165, 228, 0.2)
+          );
+        }
+      }
+
+      .item-6 {
+        .tech-logo img {
+          filter: drop-shadow(
+              0 0.20833333333333334vw 3.125vw rgba(231, 118, 85, 0.2)
+          );
+        }
+      }
+
+      .item-7 {
+        .tech-logo img {
+          filter: drop-shadow(
+              0 0.20833333333333334vw 3.125vw rgba(231, 118, 85, 0.2)
+          );
+        }
+      }
+
+      .item-8 {
+        .tech-logo img {
+          filter: drop-shadow(
+              0 0.20833333333333334vw 3.125vw rgba(151, 165, 228, 0.2)
+          );
+        }
+      }
+
+      .item-9 {
+        .tech-logo img {
+          filter: drop-shadow(
+              0 0.20833333333333334vw 3.125vw rgba(230, 116, 83, 0.3)
+          );
+        }
+      }
+
+      .item-10 {
+        .tech-logo img {
+          filter: drop-shadow(
+              0 0.20833333333333334vw 3.125vw rgba(255, 255, 255, 0.15)
+          );
+        }
+      }
+
+      .item-11 {
+        .tech-logo img {
+          filter: drop-shadow(
+              0 0.20833333333333334vw 3.125vw rgba(255, 255, 255, 0.3)
+          );
+        }
+      }
+    }
+  }
+}
