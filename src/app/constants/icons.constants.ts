@@ -12,9 +12,24 @@ enum IconType {
   logoMinecraft = 'logoMinecraft',
   logoRu = 'logoRu',
   logoUwu = 'logoUwu',
+  logoLove = 'logoLove',
+  logoAustralian = 'logoAustralian',
+  logoAmbid = 'logoAmbid',
+  logoRzmrt = 'logoRzmrt',
   razoomartLogo = 'razoomartLogo',
   sparkles = 'sparkles',
   equalSign = 'equalSign',
+  afterEffects = 'afterEffects',
+  blender = 'blender',
+  figma = 'figma',
+  kotlin = 'kotlin',
+  notion = 'notion',
+  photoshop = 'photoshop',
+  readymag = 'readymag',
+  swift = 'swift',
+  telegram = 'telegram',
+  webflow = 'webflow',
+  vscode = 'vscode',
 }
 
 const IconList: { [key in IconType]: IconInfo } = {
@@ -62,6 +77,22 @@ const IconList: { [key in IconType]: IconInfo } = {
     link: 'assets/icons/logo_uwu.svg',
     description: 'logo icon',
   },
+  [IconType.logoLove]: {
+    link: 'assets/icons/logo_love.svg',
+    description: 'logo icon',
+  },
+  [IconType.logoAustralian]: {
+    link: 'assets/icons/logo_australian.svg',
+    description: 'logo icon',
+  },
+  [IconType.logoAmbid]: {
+    link: 'assets/icons/logo_ambid.svg',
+    description: 'logo icon',
+  },
+  [IconType.logoRzmrt]: {
+    link: 'assets/icons/logo_rzmrt.svg',
+    description: 'logo icon',
+  },
   [IconType.razoomartLogo]: {
     link: 'assets/icons/razoomart_logo.jpg',
     description: 'razoomart icon',
@@ -73,6 +104,50 @@ const IconList: { [key in IconType]: IconInfo } = {
   [IconType.equalSign]: {
     link: 'assets/icons/equal-sign.svg',
     description: 'equal sign icon',
+  },
+  [IconType.afterEffects]: {
+    link: 'assets/icons/technologies/afterEffects.png',
+    description: 'after effects logo icon',
+  },
+  [IconType.blender]: {
+    link: 'assets/icons/technologies/blender.png',
+    description: 'blender logo icon',
+  },
+  [IconType.figma]: {
+    link: 'assets/icons/technologies/figma.png',
+    description: 'figma logo icon',
+  },
+  [IconType.kotlin]: {
+    link: 'assets/icons/technologies/kotlin.png',
+    description: 'kotlin logo icon',
+  },
+  [IconType.notion]: {
+    link: 'assets/icons/technologies/notion.png',
+    description: 'notion logo icon',
+  },
+  [IconType.photoshop]: {
+    link: 'assets/icons/technologies/photoshop.png',
+    description: 'photoshop logo icon',
+  },
+  [IconType.readymag]: {
+    link: 'assets/icons/technologies/readymag.png',
+    description: 'readymag logo icon',
+  },
+  [IconType.swift]: {
+    link: 'assets/icons/technologies/swift.png',
+    description: 'swift logo icon',
+  },
+  [IconType.telegram]: {
+    link: 'assets/icons/technologies/telegram.png',
+    description: 'telegram logo icon',
+  },
+  [IconType.webflow]: {
+    link: 'assets/icons/technologies/webflow.png',
+    description: 'webflow logo icon',
+  },
+  [IconType.vscode]: {
+    link: 'assets/icons/technologies/vscode.png',
+    description: 'vscode logo icon',
   },
 };
 

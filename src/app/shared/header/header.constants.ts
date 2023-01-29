@@ -9,6 +9,10 @@ const headerSrcList: string[] = [
   IconList.logoMinecraft.link,
   IconList.logoRu.link,
   IconList.logoUwu.link,
+  IconList.logoLove.link,
+  IconList.logoAustralian.link,
+  IconList.logoAmbid.link,
+  IconList.logoRzmrt.link,
 ];
 
 export { headerSrcList };
