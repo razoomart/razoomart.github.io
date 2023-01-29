@@ -3,7 +3,7 @@
   height: 100%;
 
   .title {
-    padding: 0 0 0 2.857142857142857vw;
+    padding: 0 0 0 3.6458333333333335vw;
 
     p {
       color: #ffffff80;
@@ -16,29 +16,23 @@
   }
 
   .project-list {
-    height: 63.88vw;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-start;
     margin-top: 2.0833333333333335vw;
     gap: 0.5208333333333334vw;
 
     .project {
       display: flex;
-      flex-direction: row;
-      width: 49.21875vw;
+      width: 98.95833333333333vw;
       height: 31.666666666666668vw;
       justify-content: space-between;
       flex-wrap: wrap;
       background-color: #fff;
-      padding: 1.5625vw;
-      border-radius: 2vw;
+      padding: 1.5625vw 1vw 1vw 1.5625vw;
+      border-radius: 2.34375vw;
 
       &-title {
         width: 50%;
-        display: flex;
-        align-self: flex-start;
 
         p {
           color: #fff;
@@ -70,9 +64,6 @@
       }
 
       &-description {
-        display: flex;
-        width: 50%;
-        height: 100%;
         padding-top: 1.5625vw;
 
         p {
@@ -117,7 +108,6 @@
         align-self: center;
         width: 50%;
         height: 80%;
-        margin-bottom: 4.257142857142857vw;
 
         img {
           width: 100%;
@@ -161,11 +151,9 @@
     }
 
     .bequick {
-      background-color: #201f1e;
+      background-color: #181818;
 
       .project-title {
-        width: 60%;
-
         p span {
           color: rgba(255, 255, 255, 0.6);
         }
@@ -203,52 +191,17 @@
       .project-title p {
         color: rgba(32, 31, 30, 1);
       }
-    }
-
-    .either {
-      height: 20.729166666666668vw;
-      flex-direction: row;
-      flex-wrap: wrap;
-      background-color: #333333;
-
-      .project-title {
-        width: 100%;
-
-        p span {
-          color: rgba(255, 255, 255, 0.6);
-        }
-      }
-
-      .project-case-btn {
-        width: 30%;
-
-        wrapper {
-          width: 11.369047619047619vw;
-          height: 3.3333333333333335vw;
-        }
-
-        padding-top: 10vw;
-      }
-
-      .project-description {
-        width: 70%;
-        padding-top: 13vw;
-
-        height: 3.5714285714285716vw;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-
-        p {
-          width: 100%;
-          font-size: 1.4880952380952381vw;
-          color: rgba(255, 255, 255, 0.6);
-        }
-      }
 
       .project-preview {
-        display: none;
+        align-self: flex-end;
+        width: 27vw;
+        height: 23.4375vw;
       }
+    }
+
+    .pn,
+    .bequick {
+      width: 49.1445vw;
     }
 
     .development-stage {
@@ -280,15 +233,15 @@
     }
 
     .all-cases-btn {
+      flex-grow: 1;
       display: flex;
       justify-content: center;
       align-items: center;
       align-self: flex-end;
-      width: 48.7vw;
       height: 10.42vw;
-      border: 0.2604166666666667vw solid #ffffff;
+      border: none;
       background-color: #201f1e;
-      border-radius: 59.464285714285715vw;
+      border-radius: 2.6041666666666665vw;
       transition: 0.2s;
 
       p {
@@ -315,8 +268,14 @@
       }
 
       &:hover {
-        transform: scale(1.03);
+        background-color: #fef747;
+        box-shadow: 0 0 2.9761904761904763vw #fef747;
+        transform: scale(1.012);
         transition: 0.2s;
+
+        p {
+          color: #000;
+        }
       }
 
       &:active {

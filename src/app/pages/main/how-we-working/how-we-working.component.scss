@@ -10,7 +10,6 @@
 
   .list {
     width: 100%;
-    height: 73vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -59,7 +58,7 @@
           img {
             position: absolute;
             width: 16.354166666666668vw;
-            height:  2.5vw;
+            height: 2.5vw;
             left: 55.523809523809526vw;
             filter: drop-shadow(
                 0 0.23809523809523808vw 0.23809523809523808vw rgba(0, 0, 0, 0.2)
@@ -81,7 +80,6 @@
       color: #000;
     }
 
-    .subscription,
     .special-conditions {
       width: 100%;
 
@@ -89,42 +87,6 @@
         p {
           font-size: 4.166666666666667vw;
           line-height: 1.08;
-        }
-      }
-    }
-
-    .subscription {
-      background-color: #6a7aff;
-      height: 21.80952380952381vw;
-
-      .block-wrapper {
-        display: flex;
-        justify-content: space-between;
-
-        .block-price {
-          display: flex;
-          width: 40.595238095238095vw;
-          height: 4.761904761904762vw;
-          background-color: #fff;
-          border-radius: 59.464285714285715vw;
-          justify-content: center;
-          align-items: center;
-
-          p {
-            color: #201f1e;
-            font-size: 2.380952380952381vw;
-          }
-        }
-
-        .block-info {
-          display: flex;
-          justify-content: flex-end;
-          align-items: flex-end;
-
-          p {
-            margin: 0;
-            font-size: 2.380952380952381vw;
-          }
         }
       }
     }
