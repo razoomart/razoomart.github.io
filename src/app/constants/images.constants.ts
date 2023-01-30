@@ -7,7 +7,6 @@ enum ImageType {
   ilana2 = 'ilana2',
   ilyaK = 'ilyaK',
   ilyaU = 'ilyaU',
-  hotlineCasePreview = 'hotlineCasePreview',
   pnCasePreview = 'pnCasePreview',
   strikethroughText = 'strikethroughText',
 }
@@ -36,10 +35,6 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
   [ImageType.ilyaU]: {
     link: 'assets/images/IlyaU.png',
     description: 'memoji image',
-  },
-  [ImageType.hotlineCasePreview]: {
-    link: 'assets/images/hotline-case-preview.png',
-    description: 'hotline case preview image',
   },
   [ImageType.pnCasePreview]: {
     link: 'assets/images/PN-case-preview.png',

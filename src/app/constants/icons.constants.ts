@@ -42,55 +42,55 @@ const IconList: { [key in IconType]: IconInfo } = {
     description: 'arrow to right icon',
   },
   [IconType.logo]: {
-    link: 'assets/icons/logo.svg',
+    link: 'assets/icons/headers/logo.svg',
     description: 'logo icon',
   },
   [IconType.logoAntiHype]: {
-    link: 'assets/icons/logo_antihype.svg',
+    link: 'assets/icons/headers/logo_antihype.svg',
     description: 'logo icon',
   },
   [IconType.logoDobro]: {
-    link: 'assets/icons/logo_dobro.svg',
+    link: 'assets/icons/headers/logo_dobro.svg',
     description: 'logo icon',
   },
   [IconType.logoDrzhk]: {
-    link: 'assets/icons/logo_drzhk.svg',
+    link: 'assets/icons/headers/logo_drzhk.svg',
     description: 'logo icon',
   },
   [IconType.logoKorean]: {
-    link: 'assets/icons/logo_korean.svg',
+    link: 'assets/icons/headers/logo_korean.svg',
     description: 'logo icon',
   },
   [IconType.logoMaxfont]: {
-    link: 'assets/icons/logo_maxfont.svg',
+    link: 'assets/icons/headers/logo_maxfont.svg',
     description: 'logo icon',
   },
   [IconType.logoMinecraft]: {
-    link: 'assets/icons/logo_minecraft.svg',
+    link: 'assets/icons/headers/logo_minecraft.svg',
     description: 'logo icon',
   },
   [IconType.logoRu]: {
-    link: 'assets/icons/logo_ru.svg',
+    link: 'assets/icons/headers/logo_ru.svg',
     description: 'logo icon',
   },
   [IconType.logoUwu]: {
-    link: 'assets/icons/logo_uwu.svg',
+    link: 'assets/icons/headers/logo_uwu.svg',
     description: 'logo icon',
   },
   [IconType.logoLove]: {
-    link: 'assets/icons/logo_love.svg',
+    link: 'assets/icons/headers/logo_love.svg',
     description: 'logo icon',
   },
   [IconType.logoAustralian]: {
-    link: 'assets/icons/logo_australian.svg',
+    link: 'assets/icons/headers/logo_australian.svg',
     description: 'logo icon',
   },
   [IconType.logoAmbid]: {
-    link: 'assets/icons/logo_ambid.svg',
+    link: 'assets/icons/headers/logo_ambid.svg',
     description: 'logo icon',
   },
   [IconType.logoRzmrt]: {
-    link: 'assets/icons/logo_rzmrt.svg',
+    link: 'assets/icons/headers/logo_rzmrt.svg',
     description: 'logo icon',
   },
   [IconType.razoomartLogo]: {
