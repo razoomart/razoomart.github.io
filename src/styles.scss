@@ -1,6 +1,11 @@
 @font-face {
-  font-family: grotesque;
-  src: url("/assets/fonts/grotesque.otf") format("opentype");
+  font-family: Intl;
+  src: url("/assets/fonts/Intl-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Intl-Book;
+  src: url("/assets/fonts/Intl-Book.woff2") format("woff2");
 }
 
 @font-face {
