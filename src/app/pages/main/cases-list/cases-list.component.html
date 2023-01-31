@@ -51,8 +51,8 @@
       </div>
       <div class="project-preview">
         <img
-          [src]="images.pnCasePreview.link"
-          [alt]="images.pnCasePreview.description"
+          [src]="images.casePreviewPn.link"
+          [alt]="images.casePreviewPn.description"
           draggable="false"
         />
       </div>
@@ -83,6 +83,7 @@
     <a
       (mouseover)="isCasesBtnHovered = true"
       (mouseleave)="isCasesBtnHovered = false"
+      routerLink="/cases"
       class="item all-cases-btn"
     >
       <p>

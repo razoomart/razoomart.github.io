@@ -30,6 +30,12 @@ enum IconType {
   telegram = 'telegram',
   webflow = 'webflow',
   vscode = 'vscode',
+  bequick = 'bequick',
+  either = 'either',
+  hotline = 'hotline',
+  pn = 'pn',
+  silent = 'silent',
+  spbedu = 'spbedu',
 }
 
 const IconList: { [key in IconType]: IconInfo } = {
@@ -148,6 +154,30 @@ const IconList: { [key in IconType]: IconInfo } = {
   [IconType.vscode]: {
     link: 'assets/icons/technologies/vscode.webp',
     description: 'vscode logo icon',
+  },
+  [IconType.bequick]: {
+    link: 'assets/icons/projects/icon-bequick.png',
+    description: 'project logo icon',
+  },
+  [IconType.either]: {
+    link: 'assets/icons/projects/icon-either.png',
+    description: 'project logo icon',
+  },
+  [IconType.hotline]: {
+    link: 'assets/icons/projects/icon-hotline.png',
+    description: 'project logo icon',
+  },
+  [IconType.pn]: {
+    link: 'assets/icons/projects/icon-pn.png',
+    description: 'project logo icon',
+  },
+  [IconType.silent]: {
+    link: 'assets/icons/projects/icon-silent.png',
+    description: 'project logo icon',
+  },
+  [IconType.spbedu]: {
+    link: 'assets/icons/projects/icon-spbedu.png',
+    description: 'project logo icon',
   },
 };
 

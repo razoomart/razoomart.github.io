@@ -1,12 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-team',
   templateUrl: './team.component.html',
   styleUrls: ['./team.component.scss'],
 })
-export class TeamComponent implements OnInit {
-  ngOnInit(): void {
-    window.scroll(0, 0);
-  }
-}
+export class TeamComponent {}

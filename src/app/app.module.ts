@@ -7,6 +7,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { CasesModule } from '@pages/cases/cases.module';
 import { MainComponent } from '@pages/main/main.component';
 
 import { MainModule } from '@pages/main/main.module';
@@ -24,6 +25,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     MainModule,
     TeamModule,
+    CasesModule,
     SharedModule,
     AppRoutingModule,
     FormsModule,
