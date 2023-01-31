@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
+
 import { IconList } from '@constants/icons.constants';
 import { ImageList } from '@constants/images.constants';
 import { AnchorPath } from '@enums/anchor.enums';
+
+import { ScrollToElementService } from '@services/scroll-to-element.service';
 
 @Component({
   selector: 'app-design-team',
@@ -12,4 +15,10 @@ export class DesignTeamComponent {
   public icons = IconList;
   public images = ImageList;
   public anchorPath = AnchorPath;
+
+  constructor(private scrollToEl: ScrollToElementService) {}
+
+  public scroll(el: string): void {
+    this.scrollToEl.scrollToElement(el);
+  }
 }

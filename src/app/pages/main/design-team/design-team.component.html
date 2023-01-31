@@ -37,7 +37,9 @@
       </div>
     </div>
     <div class="price-button">
-      <a [href]="anchorPath.PRICE"><p>от 860 ₽/час</p></a>
+      <a (click)="scroll(anchorPath.PRICE)">
+        <p>от 860 ₽/час</p>
+      </a>
     </div>
   </div>
 </div>
