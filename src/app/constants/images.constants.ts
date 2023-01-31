@@ -46,11 +46,11 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
     description: 'strikethrough text effect',
   },
   [ImageType.casePreviewEither]: {
-    link: 'assets/images/projects/case-preview-either.png',
+    link: 'assets/images/projects/case-preview-either.webp',
     description: 'either project preview image',
   },
   [ImageType.casePreviewHotline]: {
-    link: 'assets/images/projects/case-preview-hotline.png',
+    link: 'assets/images/projects/case-preview-hotline.webp',
     description: 'hotline project preview image',
   },
   [ImageType.casePreviewPn]: {
@@ -58,15 +58,15 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
     description: 'pn project preview image',
   },
   [ImageType.casePreviewPn2]: {
-    link: 'assets/images/projects/case-preview-pn.png',
+    link: 'assets/images/projects/case-preview-pn.webp',
     description: 'pn project preview image',
   },
   [ImageType.casePreviewSilent]: {
-    link: 'assets/images/projects/case-preview-silent.png',
+    link: 'assets/images/projects/case-preview-silent.webp',
     description: 'silent project preview image',
   },
   [ImageType.casePreviewSpbedu]: {
-    link: 'assets/images/projects/case-preview-spbedu.png',
+    link: 'assets/images/projects/case-preview-spbedu.webp',
     description: 'spbedu project preview image',
   },
 };
