@@ -8,7 +8,6 @@ import { ImageList } from '@constants/images.constants';
   styleUrls: ['./about-team.component.scss'],
 })
 export class AboutTeamComponent {
-  public isAboutTeamBtnHovered = false;
   public icons = IconList;
   public images = ImageList;
 }

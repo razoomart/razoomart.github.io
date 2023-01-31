@@ -49,22 +49,13 @@
         </p>
       </div>
     </div>
-    <a
-      (mouseover)="isAboutTeamBtnHovered = true"
-      (mouseleave)="isAboutTeamBtnHovered = false"
-      class="about-button"
-      routerLink="/team"
-    >
+    <a class="about-button" routerLink="/team">
       <p class="text">
         О команде
         <span>
           <img
-            [src]="
-              !isAboutTeamBtnHovered
-                ? icons.arrowRightWhite.link
-                : icons.arrowRightBlack.link
-            "
-            [alt]="icons.arrowRightWhite.description"
+            [src]="icons.arrowRight.link"
+            [alt]="icons.arrowRight.description"
             draggable="false"
           />
         </span>

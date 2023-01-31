@@ -13,7 +13,7 @@ import { headerSrcList } from './header.constants';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  public icon = IconList;
+  public icons = IconList;
 
   public headerSrc = IconList.logo.link;
   public headerList = headerSrcList;

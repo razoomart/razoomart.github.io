@@ -80,22 +80,13 @@
       <div class="project-preview"></div>
     </div>
 
-    <a
-      (mouseover)="isCasesBtnHovered = true"
-      (mouseleave)="isCasesBtnHovered = false"
-      routerLink="/cases"
-      class="item all-cases-btn"
-    >
+    <a routerLink="/cases" class="item all-cases-btn">
       <p>
         Все кейсы
         <span>
           <img
-            [src]="
-              !isCasesBtnHovered
-                ? icons.arrowRightWhite.link
-                : icons.arrowRightBlack.link
-            "
-            [alt]="icons.arrowRightWhite.description"
+            [src]="icons.arrowRight.link"
+            [alt]="icons.arrowRight.description"
             draggable="false"
           />
         </span>
