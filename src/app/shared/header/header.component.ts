@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 
 import { IconList } from '@constants/icons.constants';
+import { AnchorPath } from '@enums/anchor.enums';
+
+import { ScrollToElementService } from '@services/scroll-to-element.service';
 
 import { headerSrcList } from './header.constants';
 
@@ -10,14 +13,17 @@ import { headerSrcList } from './header.constants';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  scrollDown(): void {
-    window.scroll(0, 99999);
-  }
-
   public icon = IconList;
 
   public headerSrc = IconList.logo.link;
   public headerList = headerSrcList;
+  public anchorPath = AnchorPath;
+
+  constructor(private scrollToEl: ScrollToElementService) {}
+
+  scroll(el: string): void {
+    this.scrollToEl.scrollToElement(el);
+  }
 
   getNewHeader(): void {
     let newHeader =
