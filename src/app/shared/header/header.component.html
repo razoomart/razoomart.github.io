@@ -3,9 +3,25 @@
     <a routerLink="/" draggable="false">Главная</a>
   </div>
   <div (mouseover)="getNewHeader()" class="element logo">
-    <img [src]="headerSrc" [alt]="icon.logo.description" draggable="false" />
+    <img [src]="headerSrc" [alt]="icons.logo.description" draggable="false" />
   </div>
   <div class="element write-to-us">
     <a (click)="scroll(anchorPath.LETS_WORK)" draggable="false">Написать</a>
   </div>
+</div>
+
+<div class="images-preload">
+  <img [src]="icons.logo.link" />
+  <img [src]="icons.logoAntiHype.link" />
+  <img [src]="icons.logoDobro.link" />
+  <img [src]="icons.logoDrzhk.link" />
+  <img [src]="icons.logoKorean.link" />
+  <img [src]="icons.logoMaxfont.link" />
+  <img [src]="icons.logoMinecraft.link" />
+  <img [src]="icons.logoRu.link" />
+  <img [src]="icons.logoUwu.link" />
+  <img [src]="icons.logoLove.link" />
+  <img [src]="icons.logoAustralian.link" />
+  <img [src]="icons.logoAmbid.link" />
+  <img [src]="icons.logoRzmrt.link" />
 </div>

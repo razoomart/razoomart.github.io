@@ -147,6 +147,10 @@
 
         p {
           color: #000;
+
+          img {
+            filter: invert(1);
+          }
         }
       }
 

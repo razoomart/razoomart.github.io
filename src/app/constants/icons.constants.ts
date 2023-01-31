@@ -1,8 +1,7 @@
 import { IconInfo } from '@interfaces/iconInfo.interfaces';
 
 enum IconType {
-  arrowRightBlack = 'arrowRightBlack',
-  arrowRightWhite = 'arrowRightWhite',
+  arrowRight = 'arrowRight',
   logo = 'logo',
   logoAntiHype = 'logoAntiHype',
   logoDobro = 'logoDobro',
@@ -39,12 +38,8 @@ enum IconType {
 }
 
 const IconList: { [key in IconType]: IconInfo } = {
-  [IconType.arrowRightBlack]: {
-    link: 'assets/icons/arrow-right-black.svg',
-    description: 'arrow to right icon',
-  },
-  [IconType.arrowRightWhite]: {
-    link: 'assets/icons/arrow-right-white.svg',
+  [IconType.arrowRight]: {
+    link: 'assets/icons/arrow-right.svg',
     description: 'arrow to right icon',
   },
   [IconType.logo]: {
