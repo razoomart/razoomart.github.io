@@ -8,7 +8,6 @@ import { ImageList } from '@constants/images.constants';
   styleUrls: ['./cases-list.component.scss'],
 })
 export class CasesListComponent {
-  public isCasesBtnHovered = false;
   public icons = IconList;
   public images = ImageList;
 }
