@@ -63,11 +63,13 @@
     </div>
   </div>
   <div class="project-preview">
-    <img
-      [src]="images.casePreviewHotline.link"
-      [alt]="images.casePreviewHotline.description"
-      draggable="false"
-    />
+    <a href="https://hotline.sh" target="_blank">
+      <img
+        [src]="images.casePreviewHotline.link"
+        [alt]="images.casePreviewHotline.description"
+        draggable="false"
+      />
+    </a>
   </div>
   <div class="project-description">
     <div class="description-text art-director">
@@ -105,8 +107,12 @@
       </div>
     </div>
     <div class="description-buttons">
-      <a class="open-link" href="" target="_blank"><p>открыть сайт</p></a>
-      <a class="open-case" href="" target="_blank"><p>читать кейс</p></a>
+      <a class="open-link" href="https://hotline.sh" target="_blank">
+        <p>открыть сайт</p>
+      </a>
+      <a class="open-case" [routerLink]="links.CASE_HOTLINE">
+        <p>читать кейс</p>
+      </a>
     </div>
   </div>
 </div>
@@ -131,8 +137,8 @@
     </div>
     <div class="description">
       <p>
-        Нарисовали сайт по брендбуку для музыкального лейбла <br />
-        и дали рекомендации по доработке личного кабинета. <br />
+        Нарисовали сайт по брендбуку для музыкального лейбла и дали рекомендации
+        по доработке личного кабинета. <br />
         К сожалению, финальный результат отличается от нашего дизайна, так как
         сайт собирался заказчиком.
       </p>
@@ -142,11 +148,13 @@
     </div>
   </div>
   <div class="project-preview">
-    <img
-      [src]="images.casePreviewEither.link"
-      [alt]="images.casePreviewEither.description"
-      draggable="false"
-    />
+    <a href="https://either.digital" target="_blank">
+      <img
+        [src]="images.casePreviewEither.link"
+        [alt]="images.casePreviewEither.description"
+        draggable="false"
+      />
+    </a>
   </div>
   <div class="project-description">
     <div class="description-text art-director">
@@ -166,7 +174,9 @@
       </div>
     </div>
     <div class="description-buttons">
-      <a class="open-link" href="" target="_blank"><p>открыть сайт</p></a>
+      <a class="open-link" href="https://either.digital" target="_blank">
+        <p>открыть сайт</p>
+      </a>
     </div>
   </div>
 </div>
@@ -193,9 +203,8 @@
       <p>
         За несколько дней по программе Спидран нарисовали концепцию лендинга.
         <br />
-        Финальный результат отличается от нашего дизайна, так <br />
-        как сайт собирался и изменялся заказчиком уже без <br />
-        нашего участия.
+        Финальный результат отличается от нашего дизайна, так как сайт собирался
+        и изменялся заказчиком уже без нашего участия.
       </p>
     </div>
     <div class="creation-date">
@@ -249,11 +258,9 @@
     </div>
     <div class="description">
       <p>
-        За несколько дней по программе Спидран нарисовали концепцию лендинга.
-        <br />
-        Финальный результат отличается от нашего дизайна, так <br />
-        как сайт собирался и изменялся заказчиком уже без <br />
-        нашего участия.
+        Придумали название, нарисовали логотип, разработали <br />
+        айдентику, набросали гайдлайны коммуникаций, <br />
+        брендировали машинки, собрали из всего этого брендбук
       </p>
     </div>
     <div class="creation-date">
@@ -288,7 +295,7 @@
       </div>
     </div>
     <div class="description-buttons">
-      <a class="open-case" href="" target="_blank">
+      <a class="open-case" [routerLink]="links.CASE_BEQUICK">
         <p>смотреть кейс</p>
       </a>
     </div>
