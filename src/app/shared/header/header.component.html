@@ -7,7 +7,13 @@
       <a draggable="false">{{ isMenuOpened ? "Закрыть" : "Карта сайта" }}</a>
     </div>
     <div (mouseover)="getNewHeader()" class="element logo">
-      <img [src]="headerSrc" [alt]="icons.logo.description" draggable="false" />
+      <a routerLink="/">
+        <img
+          [src]="headerSrc"
+          [alt]="icons.logo.description"
+          draggable="false"
+        />
+      </a>
     </div>
     <div class="element write-to-us">
       <a (click)="scroll(anchorPath.LETS_WORK)" draggable="false">Написать</a>
