@@ -135,10 +135,12 @@
   .fullscreen-menu:has(.element:hover) .element:hover {
     a {
       p {
+        margin-left: 1.0416666666666667vw;
         color: #ffffff;
       }
 
       span {
+        margin-right: -1.0416666666666667vw;
         opacity: 1;
 
         p {
