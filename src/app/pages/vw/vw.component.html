@@ -36,7 +36,8 @@
         </div>
       </div>
       <div class="width">
-        <label [for]="widthInput">Ширина макета</label>
+        <div class="input-title"><p>Ширина макета</p></div>
+        <label [for]="widthInput">px</label>
         <input
           #widthInput
           (change)="changeCustomWidth(widthInput.value)"
