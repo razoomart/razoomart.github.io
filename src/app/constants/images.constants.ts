@@ -2,11 +2,17 @@ import { ImageInfo } from '@interfaces/imageInfo.interfaces';
 
 enum ImageType {
   albina = 'albina',
+  artem = 'artem',
   danya = 'danya',
+  danya2 = 'danya2',
   ilana = 'ilana',
   ilana2 = 'ilana2',
   ilyaK = 'ilyaK',
   ilyaU = 'ilyaU',
+  maksim = 'maksim',
+  ivan = 'ivan',
+  bogdan = 'bogdan',
+  vova = 'vova',
   strikethroughText = 'strikethroughText',
   casePreviewEither = 'casePreviewEither',
   casePreviewHotline = 'casePreviewHotline',
@@ -18,27 +24,51 @@ enum ImageType {
 
 const ImageList: { [key in ImageType]: ImageInfo } = {
   [ImageType.albina]: {
-    link: 'assets/images/Albina.png',
+    link: 'assets/images/memojis/albina.webp',
+    description: 'memoji image',
+  },
+  [ImageType.artem]: {
+    link: 'assets/images/memojis/artem.webp',
     description: 'memoji image',
   },
   [ImageType.danya]: {
-    link: 'assets/images/Danya.png',
+    link: 'assets/images/memojis/danya.webp',
+    description: 'memoji image',
+  },
+  [ImageType.danya2]: {
+    link: 'assets/images/memojis/danya2.webp',
     description: 'memoji image',
   },
   [ImageType.ilana]: {
-    link: 'assets/images/Ilana.png',
+    link: 'assets/images/memojis/ilana.webp',
     description: 'memoji image',
   },
   [ImageType.ilana2]: {
-    link: 'assets/images/Ilana2.png',
+    link: 'assets/images/Ilana2.webp',
     description: 'memoji image',
   },
   [ImageType.ilyaK]: {
-    link: 'assets/images/IlyaK.png',
+    link: 'assets/images/memojis/ilyaK.webp',
     description: 'memoji image',
   },
   [ImageType.ilyaU]: {
-    link: 'assets/images/IlyaU.png',
+    link: 'assets/images/memojis/ilyaU.webp',
+    description: 'memoji image',
+  },
+  [ImageType.maksim]: {
+    link: 'assets/images/memojis/maksim.webp',
+    description: 'memoji image',
+  },
+  [ImageType.ivan]: {
+    link: 'assets/images/memojis/ivan.webp',
+    description: 'memoji image',
+  },
+  [ImageType.bogdan]: {
+    link: 'assets/images/memojis/bogdan.webp',
+    description: 'memoji image',
+  },
+  [ImageType.vova]: {
+    link: 'assets/images/memojis/vova.webp',
     description: 'memoji image',
   },
   [ImageType.strikethroughText]: {
@@ -54,11 +84,11 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
     description: 'hotline project preview image',
   },
   [ImageType.casePreviewPn]: {
-    link: 'assets/images/PN-case-preview.png',
+    link: 'assets/images/projects/case-preview-pn.webp',
     description: 'pn project preview image',
   },
   [ImageType.casePreviewPn2]: {
-    link: 'assets/images/projects/case-preview-pn.webp',
+    link: 'assets/images/projects/case-preview-pn2.webp',
     description: 'pn project preview image',
   },
   [ImageType.casePreviewSilent]: {
