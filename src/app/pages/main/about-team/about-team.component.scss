@@ -42,36 +42,47 @@
 
         .ilana-memoji {
           position: absolute;
-          left: 35vw;
+          left: 33vw;
           top: -8vw;
           animation: memojiAnim1 8s infinite;
 
           img {
-            width: 11.197916666666666vw;
-            height: 13.28125vw;
+            transform: rotate(6deg);
+            width: 14vw;
+            height: 14vw;
+
+            &:hover {
+              transform: rotate(2deg) scale(1.1);
+            }
           }
         }
 
-        .ilyaK-memoji {
+        .ilyaU-memoji {
           position: absolute;
-          left: 23vw;
+          left: 22vw;
           top: 0.8vw;
           animation: memojiAnim1 12s infinite;
 
           img {
-            width: 11.770833333333334vw;
-            height: 14.84375vw;
+            transform: rotate(-6deg);
+            width: 15vw;
+            height: 15vw;
           }
         }
 
         .danya-memoji {
           position: absolute;
           left: 35.6vw;
-          top: 7.04761904762vw;
+          top: 6vw;
           animation: memojiAnim1 14s infinite;
 
           img {
+            transform: scale(1.2) rotate(8deg);
             height: 12.3vw;
+
+            &:hover {
+              transform: scale(1.3) rotate(4deg);
+            }
           }
         }
       }
