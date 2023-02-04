@@ -6,7 +6,11 @@
     <div class="element main" (click)="isMenuOpened = !isMenuOpened">
       <a draggable="false">{{ isMenuOpened ? "Закрыть" : "Карта сайта" }}</a>
     </div>
-    <div (mouseover)="getNewHeader()" class="element logo">
+    <div
+      (mouseover)="getNewHeader()"
+      (click)="scrollTop()"
+      class="element logo"
+    >
       <a routerLink="/">
         <img
           [src]="headerSrc"

@@ -33,6 +33,11 @@ export class HeaderComponent implements OnInit {
     });
   }
 
+  scrollTop(): void {
+    if (this.currentUrl !== '/') return;
+    scroll(0, 0);
+  }
+
   scroll(el: string): void {
     this.scrollToEl.scrollToElement(el);
   }
@@ -40,8 +45,7 @@ export class HeaderComponent implements OnInit {
   getNewHeader(): void {
     let newHeader =
       this.headerList[Math.floor(Math.random() * this.headerList.length)];
-    if (this.headerSrc !== newHeader) {
-      this.headerSrc = newHeader;
-    } else return this.getNewHeader();
+    if (this.headerSrc !== newHeader) this.headerSrc = newHeader;
+    else return this.getNewHeader();
   }
 }
