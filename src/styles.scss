@@ -39,6 +39,15 @@ body {
   font-family: $main-font-family;
   color: #ffffff;
   scroll-behavior: smooth;
+
+}
+
+::selection {
+  background: #000000;
+}
+
+img::selection {
+  background: none;
 }
 
 #header {

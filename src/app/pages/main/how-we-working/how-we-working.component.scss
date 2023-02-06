@@ -113,7 +113,7 @@
             align-items: center;
             width: 11.904761904761905vw;
             height: 3.3333333333333335vw;
-            border: 0.11904761904761904vw solid rgba(0, 0, 0, 0.6);
+            border: 0.11904761904761904vw solid #201f1e;
             border-radius: 59.464285714285715vw;
 
             transition: 0.3s;
@@ -133,6 +133,17 @@
             &:hover {
               transform: scale(1.1);
               transition: 0.2s;
+              background-color: #201f1e;
+
+              a {
+                p {
+                  color: #ffffff;
+                }
+
+                img {
+                  filter: invert(0);
+                }
+              }
             }
 
             &:active {
