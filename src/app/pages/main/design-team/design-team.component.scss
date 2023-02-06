@@ -79,6 +79,7 @@
         box-shadow: 0 0 2.9761904761904763vw #fef747;
         transform: rotate(-3deg) scale(1.2);
         transition: 0.2s;
+        cursor: pointer;
       }
     }
 
@@ -94,7 +95,7 @@
     }
 
     .albina-memoji {
-      left: 81.89880952380952vw;
+      left: 82.5vw;
       top: 7.619047619047619vw;
       transition: 0.2s;
 
@@ -113,16 +114,18 @@
     }
 
     .ilyaU-memoji {
-      left: 69.33333333333333vw;
+      left: 69.8vw;
       top: 14.583333333333334vw;
       transition: 0.2s;
+
+      transform: rotate(-4deg);
 
       img {
         animation: memojiAnim2 10s infinite;
       }
 
       &:hover {
-        transform: rotate(2deg) scale(1.1);
+        transform: rotate(-2deg) scale(1.1);
         transition: 0.5s;
 
         a {
