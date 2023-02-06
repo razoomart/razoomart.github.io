@@ -1,0 +1,67 @@
+.content {
+  width: 100%;
+  height: 100%;
+  padding: 0 3.125vw 3.125vw 3.125vw;
+  display: flex;
+  flex-direction: column;
+
+  #top-space {
+    height: 4.5vw;
+    background-color: transparent;
+  }
+
+  .title {
+    h1 {
+      font-weight: 400;
+      font-size: 4.166666666666667vw;
+    }
+  }
+
+  .description {
+    margin-top: 1.0416666666666667vw;
+
+    p {
+      font-size: 1.5625vw;
+    }
+  }
+
+  .model {
+    width: 100%;
+    height: 26.041666666666668vw;
+    margin-top: 2.0833333333333335vw;
+  }
+
+  .home-button {
+    display: flex;
+    width: 15.520833333333334vw;
+    margin-top: 2.0833333333333335vw;
+
+    .btn {
+      width: 100%;
+      height: 3.75vw;
+      border-radius: 52.03125vw;
+      border: 0.10416666666666667vw solid #ffffff60;
+      transition: 0.2s;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.3541666666666667vw;
+      }
+
+      &:hover {
+        background-color: #ffffff;
+        transition: 0.2s;
+
+        a {
+          color: #000000;
+        }
+      }
+    }
+  }
+}
