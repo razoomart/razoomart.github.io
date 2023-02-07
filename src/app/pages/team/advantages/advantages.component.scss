@@ -15,7 +15,7 @@
     flex-direction: column;
     width: 32.5vw;
     height: 21.354166666666668vw;
-    padding: 1.3020833333333333vw 1.5625vw 1.5625vw 1.3020833333333333vw;
+    padding: 1vw 1.5625vw 1.5625vw 1.3020833333333333vw;
 
     .title {
       display: flex;
@@ -27,6 +27,7 @@
 
       p {
         font-size: 2.34375vw;
+        line-height: 1.1;
       }
     }
 

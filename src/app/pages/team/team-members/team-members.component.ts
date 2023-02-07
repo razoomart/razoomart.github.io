@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IconList } from '@constants/icons.constants';
 import { ImageList } from '@constants/images.constants';
 
 @Component({
@@ -8,4 +9,5 @@ import { ImageList } from '@constants/images.constants';
 })
 export class TeamMembersComponent {
   public images = ImageList;
+  public icons = IconList;
 }
