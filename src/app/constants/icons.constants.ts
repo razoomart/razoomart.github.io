@@ -2,6 +2,7 @@ import { IconInfo } from '@interfaces/iconInfo.interfaces';
 
 enum IconType {
   arrowRight = 'arrowRight',
+  arrowTop = 'arrowTop',
   logo = 'logo',
   logoAntiHype = 'logoAntiHype',
   logoDobro = 'logoDobro',
@@ -41,6 +42,10 @@ const IconList: { [key in IconType]: IconInfo } = {
   [IconType.arrowRight]: {
     link: 'assets/icons/arrow-right.svg',
     description: 'arrow to right icon',
+  },
+  [IconType.arrowTop]: {
+    link: 'assets/icons/arrow-top.svg',
+    description: 'arrow to top icon',
   },
   [IconType.logo]: {
     link: 'assets/icons/headers/logo.svg',
