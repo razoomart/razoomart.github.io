@@ -92,7 +92,7 @@
           justify-content: flex-end;
           align-items: flex-end;
           height: 4.6875vw;
-          margin-top: 3.125vw;
+          margin-top: 5vw;
 
           p {
             font-size: 1.3020833333333333vw;
@@ -187,6 +187,12 @@
           filter: drop-shadow(
               0 0.20833333333333334vw 3.125vw rgba(255, 255, 255, 0.3)
           );
+        }
+      }
+
+      .item-3, .item-4, .item-11 {
+        .tech-description {
+          margin-top: 3.5vw;
         }
       }
     }
