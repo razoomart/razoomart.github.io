@@ -57,12 +57,13 @@
         width: 32.65625vw;
         height: 12.5vw;
 
-        padding: 1.5625vw;
+        padding: 0.78125vw 1.5625vw 1.5625vw 1.5625vw;
 
         .tech-logo {
           position: absolute;
           width: 9.375vw;
           height: 9.375vw;
+          margin-top: 0.78125vw;
 
           img {
             width: 100%;
@@ -91,7 +92,7 @@
           justify-content: flex-end;
           align-items: flex-end;
           height: 4.6875vw;
-          margin-top: 2.34375vw;
+          margin-top: 3.125vw;
 
           p {
             font-size: 1.3020833333333333vw;
