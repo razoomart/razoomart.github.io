@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-
 import { NavigationEnd, Router } from '@angular/router';
+
 import { IconList } from '@constants/icons.constants';
 import { AnchorPath } from '@enums/anchor.enums';
+import { MediaLink } from '@enums/link.enums';
 
 import { ScrollToElementService } from '@services/scroll-to-element.service';
 
@@ -14,17 +15,30 @@ import { headerSrcList } from './header.constants';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  get clickAction(): void | Promise<boolean> {
+    return this.router.url !== this.links.PAGE_NOT_FOUND
+      ? this.scroll(this.anchorPath.LETS_WORK)
+      : this.router.navigate(['/']);
+  }
+
+  get buttonTitle(): string {
+    return this.router.url !== this.links.PAGE_NOT_FOUND
+      ? 'Написать'
+      : 'Главная';
+  }
+
   public isMenuOpened = false;
   public currentUrl = '/';
   public icons = IconList;
 
   public headerSrc = IconList.logo.link;
   public headerList = headerSrcList;
+  public links = MediaLink;
   public anchorPath = AnchorPath;
 
   constructor(
     private router: Router,
-    private scrollToEl: ScrollToElementService
+    private scrollService: ScrollToElementService
   ) {}
 
   ngOnInit() {
@@ -35,11 +49,11 @@ export class HeaderComponent implements OnInit {
 
   scrollTop(): void {
     if (this.currentUrl !== '/') return;
-    scroll(0, 0);
+    this.scroll(this.anchorPath.FIRST_BLOCK);
   }
 
   scroll(el: string): void {
-    this.scrollToEl.scrollToElement(el);
+    this.scrollService.scrollToElement(el);
   }
 
   getNewHeader(): void {

@@ -11,7 +11,7 @@
       (click)="scrollTop()"
       class="element logo"
     >
-      <a routerLink="/">
+      <a [routerLink]="links.PAGE_MAIN">
         <img
           [src]="headerSrc"
           [alt]="icons.logo.description"
@@ -20,7 +20,7 @@
       </a>
     </div>
     <div class="element write-to-us">
-      <a (click)="scroll(anchorPath.LETS_WORK)" draggable="false">Написать</a>
+      <a (click)="(clickAction)" draggable="false">{{ buttonTitle }}</a>
     </div>
   </div>
   <div
@@ -28,12 +28,16 @@
     class="fullscreen-menu"
   >
     <div class="element main">
-      <a (click)="isMenuOpened = false" routerLink="/" draggable="false">
+      <a
+        (click)="isMenuOpened = false"
+        [routerLink]="links.PAGE_MAIN"
+        draggable="false"
+      >
         <p>Главная</p>
         <span>
-          <p *ngIf="currentUrl === '/'">(вы здесь)</p>
+          <p *ngIf="currentUrl === links.PAGE_MAIN">(вы здесь)</p>
           <img
-            *ngIf="currentUrl !== '/'"
+            *ngIf="currentUrl !== links.PAGE_MAIN"
             [src]="icons.arrowRight.link"
             [alt]="icons.arrowRight.description"
             draggable="false"
@@ -42,12 +46,16 @@
       </a>
     </div>
     <div class="element about-team">
-      <a (click)="isMenuOpened = false" routerLink="/team" draggable="false">
+      <a
+        (click)="isMenuOpened = false"
+        [routerLink]="links.PAGE_TEAM"
+        draggable="false"
+      >
         <p>О команде</p>
         <span>
-          <p *ngIf="currentUrl === '/team'">(вы здесь)</p>
+          <p *ngIf="currentUrl === links.PAGE_TEAM">(вы здесь)</p>
           <img
-            *ngIf="currentUrl !== '/team'"
+            *ngIf="currentUrl !== links.PAGE_TEAM"
             [src]="icons.arrowRight.link"
             [alt]="icons.arrowRight.description"
             draggable="false"
@@ -56,12 +64,16 @@
       </a>
     </div>
     <div class="element portfolio">
-      <a (click)="isMenuOpened = false" routerLink="/cases" draggable="false">
+      <a
+        (click)="isMenuOpened = false"
+        [routerLink]="links.PAGE_CASES"
+        draggable="false"
+      >
         <p>Портфолио</p>
         <span>
-          <p *ngIf="currentUrl === '/cases'">(вы здесь)</p>
+          <p *ngIf="currentUrl === links.PAGE_CASES">(вы здесь)</p>
           <img
-            *ngIf="currentUrl !== '/cases'"
+            *ngIf="currentUrl !== links.PAGE_CASES"
             [src]="icons.arrowRight.link"
             [alt]="icons.arrowRight.description"
             draggable="false"
@@ -72,7 +84,7 @@
     <div class="element speedrun">
       <a
         (click)="isMenuOpened = false"
-        routerLink="/speedrun"
+        [routerLink]="links.PAGE_SPEEDRUN"
         draggable="false"
       >
         <p>Спидран по сайту</p>
