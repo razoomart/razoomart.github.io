@@ -47,6 +47,16 @@ export class HeaderComponent implements OnInit {
     });
   }
 
+  openMenu(): void {
+    this.isMenuOpened = true;
+    document.body.classList.add('scroll-disabled');
+  }
+
+  closeMenu(): void {
+    this.isMenuOpened = false;
+    document.body.classList.remove('scroll-disabled');
+  }
+
   scrollTop(): void {
     if (this.currentUrl !== '/') return;
     this.scroll(this.anchorPath.FIRST_BLOCK);
