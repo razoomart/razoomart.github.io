@@ -7,6 +7,7 @@ enum MediaLink {
   CASE_BEQUICK = '/cases/bequick',
   PAGE_SPEEDRUN = '/speedrun',
   PAGE_NOT_FOUND = '/404',
+  PAGE_NONPROFIT = '/nonprofit',
 }
 
 export { MediaLink };
