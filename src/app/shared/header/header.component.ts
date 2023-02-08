@@ -47,14 +47,14 @@ export class HeaderComponent implements OnInit {
     });
   }
 
-  openMenu(): void {
-    this.isMenuOpened = true;
-    document.body.classList.add('scroll-disabled');
-  }
-
-  closeMenu(): void {
-    this.isMenuOpened = false;
-    document.body.classList.remove('scroll-disabled');
+  menuToggle(): void {
+    if (this.isMenuOpened) {
+      this.isMenuOpened = false;
+      document.body.classList.remove('scroll-disabled');
+    } else {
+      this.isMenuOpened = true;
+      document.body.classList.add('scroll-disabled');
+    }
   }
 
   scrollTop(): void {

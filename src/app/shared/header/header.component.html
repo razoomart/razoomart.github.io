@@ -3,10 +3,7 @@
   [ngStyle]="isMenuOpened ? { backgroundColor: '#000000' } : {}"
 >
   <div class="always-show">
-    <div
-      class="element main"
-      (click)="isMenuOpened ? this.closeMenu() : this.openMenu()"
-    >
+    <div class="element main" (click)="menuToggle()">
       <a draggable="false">{{ isMenuOpened ? "Закрыть" : "Карта сайта" }}</a>
     </div>
     <div
@@ -31,7 +28,11 @@
     class="fullscreen-menu"
   >
     <div class="element main">
-      <a (click)="closeMenu()" [routerLink]="links.PAGE_MAIN" draggable="false">
+      <a
+        (click)="menuToggle()"
+        [routerLink]="links.PAGE_MAIN"
+        draggable="false"
+      >
         <p>Главная</p>
         <span>
           <p *ngIf="currentUrl === links.PAGE_MAIN">(вы здесь)</p>
@@ -45,7 +46,11 @@
       </a>
     </div>
     <div class="element about-team">
-      <a (click)="closeMenu()" [routerLink]="links.PAGE_TEAM" draggable="false">
+      <a
+        (click)="menuToggle()"
+        [routerLink]="links.PAGE_TEAM"
+        draggable="false"
+      >
         <p>О команде</p>
         <span>
           <p *ngIf="currentUrl === links.PAGE_TEAM">(вы здесь)</p>
@@ -60,7 +65,7 @@
     </div>
     <div class="element portfolio">
       <a
-        (click)="closeMenu()"
+        (click)="menuToggle()"
         [routerLink]="links.PAGE_CASES"
         draggable="false"
       >
@@ -78,7 +83,7 @@
     </div>
     <div class="element speedrun">
       <a
-        (click)="closeMenu()"
+        (click)="menuToggle()"
         [routerLink]="links.PAGE_SPEEDRUN"
         draggable="false"
       >
