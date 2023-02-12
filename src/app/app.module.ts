@@ -7,6 +7,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { NgtCanvas } from '@angular-three/core';
+import { NgtColorAttributeModule } from '@angular-three/core/attributes';
+import { NgtPointLightModule } from '@angular-three/core/lights';
+import { NgtPrimitiveModule } from '@angular-three/core/primitive';
+
 import { CasesModule } from '@pages/cases/cases.module';
 import { MainComponent } from '@pages/main/main.component';
 
@@ -37,6 +42,10 @@ import { AppComponent } from './app.component';
     SharedModule,
     AppRoutingModule,
     FormsModule,
+    NgtCanvas,
+    NgtColorAttributeModule,
+    NgtPointLightModule,
+    NgtPrimitiveModule,
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent],
