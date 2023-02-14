@@ -10,13 +10,14 @@
     flex-wrap: wrap;
 
     width: 46.770833333333336vw;
-    padding: 1.5625vw 1.0416666666666667vw 1.0416666666666667vw 1.0416666666666667vw;
+    padding: 1.5625vw 1.0416666666666667vw 1.0416666666666667vw
+      1.0416666666666667vw;
 
     background-color: #201f1e;
 
     .icon {
-      width: 3.5vw;
-      height: 3.5vw;
+      width: 2.8vw;
+      height: 2.8vw;
 
       border-radius: 0.9186354166666665vw;
 
@@ -33,7 +34,7 @@
 
     .title {
       display: flex;
-      align-items: center;
+      align-items: start;
       width: 22.395833333333332vw;
       height: 4.0625vw;
       margin-left: 1.0416666666666667vw;
