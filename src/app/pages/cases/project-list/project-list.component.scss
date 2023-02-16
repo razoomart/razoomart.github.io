@@ -64,7 +64,10 @@
         font-size: 1.25vw;
 
         span {
-          color: #92ff00;
+          a {
+            color: #92ff00;
+            text-decoration: none;
+          }
         }
       }
     }
