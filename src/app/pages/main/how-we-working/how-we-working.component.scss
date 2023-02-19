@@ -42,7 +42,6 @@
     .dedicated-team,
     .designers-outstaffing {
       width: 49vw;
-      height: 19.270833333333332vw;
       background-color: #fff;
 
       .block-title {
@@ -61,7 +60,7 @@
             height: 2.5vw;
             left: 55.523809523809526vw;
             filter: drop-shadow(
-                0 0.23809523809523808vw 0.23809523809523808vw rgba(0, 0, 0, 0.2)
+              0 0.23809523809523808vw 0.23809523809523808vw rgba(0, 0, 0, 0.2)
             );
           }
 
@@ -69,6 +68,7 @@
         }
 
         p .new-price {
+          margin-left: 0.5vw;
           color: #f44730;
         }
       }

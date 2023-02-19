@@ -36,6 +36,7 @@ enum IconType {
   pn = 'pn',
   silent = 'silent',
   spbedu = 'spbedu',
+  mono = 'mono',
 }
 
 const IconList: { [key in IconType]: IconInfo } = {
@@ -177,6 +178,10 @@ const IconList: { [key in IconType]: IconInfo } = {
   },
   [IconType.spbedu]: {
     link: 'assets/icons/projects/icon-spbedu.png',
+    description: 'project logo icon',
+  },
+  [IconType.mono]: {
+    link: 'assets/icons/projects/icon-mono.svg',
     description: 'project logo icon',
   },
 };
