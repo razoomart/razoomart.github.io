@@ -9,7 +9,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    width: 46.770833333333336vw;
+    width: 54.0625vw;
     padding: 1.5625vw 1.0416666666666667vw 1.0416666666666667vw
       1.0416666666666667vw;
 
@@ -34,7 +34,7 @@
 
     .title {
       display: flex;
-      align-items: start;
+      align-items: flex-start;
       width: 22.395833333333332vw;
       height: 4.0625vw;
       margin-left: 1.0416666666666667vw;
@@ -130,7 +130,7 @@
     }
 
     .description-buttons {
-      margin-left: 2.9166666666666665vw;
+      margin-left: auto;
 
       a {
         align-self: flex-start;
