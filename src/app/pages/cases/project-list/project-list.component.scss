@@ -10,16 +10,15 @@
     flex-wrap: wrap;
 
     width: 54.0625vw;
-    padding: 1.5625vw 1.0416666666666667vw 1.0416666666666667vw
-      1.0416666666666667vw;
+    padding: 1.5625vw 1.0416666666666667vw 1.0416666666666667vw 1.0416666666666667vw;
 
     background-color: #201f1e;
 
     .icon {
-      width: 2.8vw;
-      height: 2.8vw;
+      width: 4.166666666666667vw;
+      height: 4.166666666666667vw;
 
-      border-radius: 0.7vw;
+      border-radius: 0.9114583333333334vw;
 
       img {
         width: 100%;
@@ -30,6 +29,7 @@
     p {
       color: #ffffff;
       font-size: 1.5625vw;
+      line-height: 2vw;
     }
 
     .title {
@@ -58,6 +58,7 @@
 
     .creation-date {
       align-self: flex-end;
+      width: auto;
 
       p {
         color: #ffffff60;
@@ -74,10 +75,17 @@
   }
 
   &-preview {
-    width: 40.625vw;
+    width: 40.7291666667vw;
+
+    a {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
 
     img {
-      width: 100%;
+      margin-left: 0.10416666666666667vw;
+      width: 40.625vw;
       height: 100%;
       border-radius: 1.5625vw;
     }
@@ -152,6 +160,7 @@
         &:hover {
           background-color: #ffffff;
           transition: 0.2s;
+          transform: scale(1.1);
 
           p {
             color: #000000;
@@ -187,13 +196,13 @@
   }
 }
 
+.project-pn .project-info .creation-date {
+  width: 50%;
+}
+
 .project-either,
-.project-bequick {
-  .project-description {
-    .description-buttons {
-      margin-left: auto;
-    }
-  }
+.project-bequick .project-description .description-buttons {
+  margin-left: auto;
 }
 
 .project-bequick {
