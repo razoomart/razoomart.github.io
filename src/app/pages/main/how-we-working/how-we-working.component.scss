@@ -119,7 +119,11 @@
             transition: 0.3s;
 
             a {
+              width: 100%;
+              height: 100%;
               display: flex;
+              align-items: center;
+              justify-content: center;
               color: rgba(0, 0, 0, 1);
               text-decoration: none;
               font-size: 1.1904761904761905vw;
