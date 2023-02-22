@@ -1,76 +1,66 @@
 .footer {
-  width: 100%;
-  height: 4.635416666666667vw;
-  padding: 0 0.8928571428571429vw 1.7857142857142858vw 0.8928571428571429vw;
-
   display: flex;
+  width: 100%;
+  height: 7.604166666666667vw;
 
-  .left {
-    width: 50%;
+  background-color: #201f1e;
+  border-radius: 2.0833333333333335vw;
+
+  .content {
+    width: 100%;
+    height: 100%;
     display: flex;
+    padding: 1.5625vw;
 
-    .studio-logo {
-      display: flex;
-      align-items: flex-end;
-      width: auto;
-      height: 100%;
-
-      img {
-        width: 4.322916666666667vw;
-        height: 4.322916666666667vw;
-        border-radius: 50%;
-      }
+    a {
+      text-decoration: none;
     }
 
-    .channel {
+    p {
+      font-size: 1.5625vw;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .links {
       display: flex;
-      height: 100%;
-      flex-direction: column;
-      margin-left: 1.5625vw;
-      justify-content: flex-end;
 
-      p {
-        font-size: 1.9791666666666667vw;
-      }
-
-      a {
-        text-decoration: underline;
-        text-decoration-color: rgba(255, 255, 255, 0.6);
-        text-align: start;
-
-        p {
-          color: rgba(255, 255, 255, 0.6);
-        }
-
-        &:visited {
-        }
-      }
-
-      &-link {
+      .link {
         display: flex;
-        align-items: flex-end;
-        width: 100%;
-        height: 100%;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 0.5208333333333334vw;
+
+        a {
+          display: flex;
+
+          img {
+            width: 3.4375vw;
+            height: 3.4375vw;
+            border-radius: 50%;
+          }
+
+          p {
+            margin-left: 0.5208333333333334vw;
+
+            span {
+              color: rgba(255, 255, 255, 1);
+            }
+          }
+        }
+      }
+
+      .behance {
+        margin-left: 5.104166666666667vw;
       }
     }
-  }
 
-  .right {
-    width: 50%;
-    margin-left: 50%;
-    display: flex;
-    flex-direction: column;
-
-    .studio-info {
-      display: flex;
-      width: auto;
-      height: 100%;
-      align-self: flex-end;
-      align-items: flex-end;
+    .text {
+      margin-left: auto;
+      text-align: end;
 
       p {
-        color: rgba(255, 255, 255, 0.6);
-        font-size: 2.0833333333333335vw;
+        line-height: 2.5vw;
       }
     }
   }

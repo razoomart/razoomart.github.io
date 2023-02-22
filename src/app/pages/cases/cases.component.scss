@@ -9,6 +9,7 @@
   .content-wrapper {
     .title {
       margin-left: 3.6458333333333335vw;
+
       p {
         color: #ffffff;
         font-size: 5.208333333333333vw;
@@ -35,16 +36,12 @@
     }
   }
 
-  .lets-work,
-  .footer {
+  .lets-work {
+    margin-top: 4.6875vw;
     padding: 0 0.5952380952380952vw;
   }
 
-  .lets-work {
-    margin-top: 4.6875vw;
-  }
-
-  .footer {
-    margin-top: 41.5vw;
+  #footer {
+    padding: 0 0.5952380952380952vw 0.5952380952380952vw 0.5952380952380952vw;
   }
 }

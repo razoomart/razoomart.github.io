@@ -37,6 +37,7 @@ body {
 
 ::selection {
   background: #000000;
+  color: #ffffff;
 }
 
 img::selection {
@@ -52,7 +53,8 @@ img::selection {
 }
 
 #footer {
-  padding: 0 0.8928571428571429vw 1.7857142857142858vw 0.8928571428571429vw;
+  margin-top: 38.5vw;
+  padding-bottom: 0.5208333333333334vw;
 }
 
 .scroll-disabled {
