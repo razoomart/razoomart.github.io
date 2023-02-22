@@ -57,10 +57,10 @@
           img {
             position: absolute;
             width: 16.354166666666668vw;
-            height: 2.5vw;
+            height: 3.5vw;
             left: 55.523809523809526vw;
             filter: drop-shadow(
-              0 0.23809523809523808vw 0.23809523809523808vw rgba(0, 0, 0, 0.2)
+                0 0.23809523809523808vw 0.23809523809523808vw rgba(0, 0, 0, 0.1)
             );
           }
 
@@ -120,6 +120,10 @@
             transition: 0.3s;
 
             a {
+              width: 100%;
+              height: 100%;
+              justify-content: center;
+              align-items: center;
               display: flex;
               color: rgba(0, 0, 0, 1);
               text-decoration: none;

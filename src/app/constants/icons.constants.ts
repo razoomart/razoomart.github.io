@@ -17,6 +17,7 @@ enum IconType {
   logoAmbid = 'logoAmbid',
   logoRzmrt = 'logoRzmrt',
   razoomartLogo = 'razoomartLogo',
+  behanceLogo = 'behanceLogo',
   sparkles = 'sparkles',
   equalSign = 'equalSign',
   afterEffects = 'afterEffects',
@@ -103,6 +104,10 @@ const IconList: { [key in IconType]: IconInfo } = {
   [IconType.razoomartLogo]: {
     link: 'assets/icons/razoomart_logo.jpg',
     description: 'razoomart icon',
+  },
+  [IconType.behanceLogo]: {
+    link: 'assets/icons/behance_logo.png',
+    description: 'behance icon',
   },
   [IconType.sparkles]: {
     link: 'assets/icons/sparkles.png',
