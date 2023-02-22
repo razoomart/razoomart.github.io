@@ -26,9 +26,21 @@
   }
 
   .model {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 26.041666666666668vw;
+    height: 26.166666666666668vw;
     margin-top: 2.0833333333333335vw;
+
+    .wrapper {
+      width: 70vw;
+      height: 100%;
+
+      ngt-canvas {
+        display: block;
+      }
+    }
   }
 
   .home-button {

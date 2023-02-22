@@ -9,7 +9,21 @@
       которой на сайте нет.
     </p>
   </div>
-  <div class="model"></div>
+  <div class="model">
+    <div class="wrapper">
+      <ngt-canvas [camera]="{ position: [14, 6, 35], rotation: [0, 0.022, 0] }">
+        <ngt-point-light
+          [intensity]="1"
+          [position]="[-1, 15, 35]"
+        ></ngt-point-light>
+        <ngt-primitive
+          *ngIf="model404$ | async as model404"
+          [object]="model404.scene"
+        >
+        </ngt-primitive>
+      </ngt-canvas>
+    </div>
+  </div>
   <div class="home-button">
     <div class="btn">
       <a routerLink="/">Вернуться домой</a>
