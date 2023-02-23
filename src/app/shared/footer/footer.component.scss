@@ -32,6 +32,9 @@
 
         margin-top: 0.5208333333333334vw;
 
+        border-radius: 0.65vw;
+        padding: 0 0.78125vw;
+
         a {
           display: flex;
 
@@ -49,6 +52,12 @@
               color: rgba(255, 255, 255, 1);
             }
           }
+        }
+
+        &:hover {
+          background-color: #d4d4d450;
+          color: #ffffff;
+          transition: 0.3s;
         }
       }
 
