@@ -26,11 +26,13 @@
     gap: 1.5625vw;
 
     .principle {
-      margin-top: 3.6458333333333335vw;
+      display: flex;
+      flex-direction: column;
+      margin-top: 2vw;
       width: 29.6875vw;
       height: 12.5vw;
       background-color: #ffffff;
-      padding: 1.6666666666666667vw;
+      padding: 1.6666666666666667vw 1.6666666666666667vw 1.2vw 1.6666666666666667vw;
 
       .title {
         text-align: end;
@@ -43,11 +45,12 @@
       .description {
         height: auto;
         text-align: end;
-        margin-top: 2vw;
+        margin-top: auto;
 
         p {
           font-size: 1.3020833333333333vw;
           color: rgba(32, 31, 30, 0.6);
+          line-height: 1.25;
         }
       }
     }
@@ -55,6 +58,7 @@
     .item-1 {
       animation: itemAnim 10s infinite;
       transform: rotate(-1deg);
+      margin-left: 1.3020833333333333vw;
     }
 
     .item-2 {

@@ -11,7 +11,6 @@
 
   .content {
     width: 100%;
-    height: 100%;
     margin-top: 6.190476190476191vw;
     padding: 0 3.125vw;
     color: #fff;
@@ -25,20 +24,20 @@
 
     .description {
       width: 100%;
+      padding-top: 12.5vw;
 
       .text {
         width: 85.77380952380952vw;
-        height: 11.845238095238095vw;
-        padding-top: 12vw;
         font-size: 2.3vw;
 
         p {
           font-size: 2.3vw;
+          line-height: 1.1;
 
           span {
             img {
-              width: 2.1547619047619047vw;
-              height: 2.1547619047619047vw;
+              width: 1.8vw;
+              height: 1.8vw;
             }
           }
         }
@@ -49,8 +48,8 @@
       position: absolute;
       width: 27.03125vw;
       height: 5.989583333333333vw;
-      left: 70vw;
-      top: 33.25vw;
+      left: 69.5vw;
+      top: 32.75vw;
       display: flex;
       justify-content: center;
       align-items: center;

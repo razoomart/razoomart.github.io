@@ -1,20 +1,45 @@
 <div class="footer">
-  <div class="left">
-    <div class="studio-logo">
-      <img
-        [src]="icons.razoomartLogo.link"
-        [alt]="icons.razoomartLogo.description"
-        draggable="false"
-      />
+  <div class="content">
+    <div class="links">
+      <div class="link telegram">
+        <a [href]="mediaLink.TELEGRAM" target="_blank">
+          <div class="link-image">
+            <img
+              [src]="icons.razoomartLogo.link"
+              [alt]="icons.razoomartLogo.description"
+              draggable="false"
+            />
+          </div>
+          <div class="link-text">
+            <p>
+              <span>Telegram-канал</span>
+              <br />
+              @razoomart
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="link behance">
+        <a [href]="mediaLink.BEHANCE" target="_blank">
+          <img
+            [src]="icons.behanceLogo.link"
+            [alt]="icons.behanceLogo.description"
+            draggable="false"
+          />
+          <p>
+            <span>Беханс</span>
+            <br />
+            @razoomart
+          </p>
+        </a>
+      </div>
     </div>
-    <div class="channel">
-      <p>канал в телеграме</p>
-      <a [href]="mediaLink.TELEGRAM" target="_blank"><p>@razoom_art</p></a>
-    </div>
-  </div>
-  <div class="right">
-    <div class="studio-info">
-      <p>since 2022</p>
+    <div class="text">
+      <a [href]="mediaLink.MAILTO_RAZOOMART">
+        <p>hey@razoomart.ru</p>
+      </a>
+      <br />
+      <span>since 2022</span>
     </div>
   </div>
 </div>

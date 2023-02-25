@@ -2,6 +2,7 @@ import { IconInfo } from '@interfaces/iconInfo.interfaces';
 
 enum IconType {
   arrowRight = 'arrowRight',
+  arrowTop = 'arrowTop',
   logo = 'logo',
   logoAntiHype = 'logoAntiHype',
   logoDobro = 'logoDobro',
@@ -16,6 +17,7 @@ enum IconType {
   logoAmbid = 'logoAmbid',
   logoRzmrt = 'logoRzmrt',
   razoomartLogo = 'razoomartLogo',
+  behanceLogo = 'behanceLogo',
   sparkles = 'sparkles',
   equalSign = 'equalSign',
   afterEffects = 'afterEffects',
@@ -35,12 +37,17 @@ enum IconType {
   pn = 'pn',
   silent = 'silent',
   spbedu = 'spbedu',
+  mono = 'mono',
 }
 
 const IconList: { [key in IconType]: IconInfo } = {
   [IconType.arrowRight]: {
     link: 'assets/icons/arrow-right.svg',
     description: 'arrow to right icon',
+  },
+  [IconType.arrowTop]: {
+    link: 'assets/icons/arrow-top.svg',
+    description: 'arrow to top icon',
   },
   [IconType.logo]: {
     link: 'assets/icons/headers/logo.svg',
@@ -97,6 +104,10 @@ const IconList: { [key in IconType]: IconInfo } = {
   [IconType.razoomartLogo]: {
     link: 'assets/icons/razoomart_logo.jpg',
     description: 'razoomart icon',
+  },
+  [IconType.behanceLogo]: {
+    link: 'assets/icons/behance_logo.png',
+    description: 'behance icon',
   },
   [IconType.sparkles]: {
     link: 'assets/icons/sparkles.png',
@@ -172,6 +183,10 @@ const IconList: { [key in IconType]: IconInfo } = {
   },
   [IconType.spbedu]: {
     link: 'assets/icons/projects/icon-spbedu.png',
+    description: 'project logo icon',
+  },
+  [IconType.mono]: {
+    link: 'assets/icons/projects/icon-mono.svg',
     description: 'project logo icon',
   },
 };

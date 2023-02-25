@@ -42,7 +42,6 @@
     .dedicated-team,
     .designers-outstaffing {
       width: 49vw;
-      height: 19.270833333333332vw;
       background-color: #fff;
 
       .block-title {
@@ -58,10 +57,10 @@
           img {
             position: absolute;
             width: 16.354166666666668vw;
-            height: 2.5vw;
+            height: 3.5vw;
             left: 55.523809523809526vw;
             filter: drop-shadow(
-                0 0.23809523809523808vw 0.23809523809523808vw rgba(0, 0, 0, 0.2)
+                0 0.23809523809523808vw 0.23809523809523808vw rgba(0, 0, 0, 0.1)
             );
           }
 
@@ -69,6 +68,7 @@
         }
 
         p .new-price {
+          margin-left: 0.5vw;
           color: #f44730;
         }
       }
@@ -93,6 +93,7 @@
 
     .special-conditions {
       background-color: #f3da80;
+      padding: 1.5625vw 2.0833333333333335vw 2vw 2.0833333333333335vw;
 
       .block-wrapper {
         display: flex;
@@ -113,13 +114,17 @@
             align-items: center;
             width: 11.904761904761905vw;
             height: 3.3333333333333335vw;
-            border: 0.11904761904761904vw solid rgba(0, 0, 0, 0.6);
+            border: 0.11904761904761904vw solid #201f1e;
             border-radius: 59.464285714285715vw;
 
             transition: 0.3s;
 
             a {
+              width: 100%;
+              height: 100%;
               display: flex;
+              align-items: center;
+              justify-content: center;
               color: rgba(0, 0, 0, 1);
               text-decoration: none;
               font-size: 1.1904761904761905vw;
@@ -133,6 +138,17 @@
             &:hover {
               transform: scale(1.1);
               transition: 0.2s;
+              background-color: #201f1e;
+
+              a {
+                p {
+                  color: #ffffff;
+                }
+
+                img {
+                  filter: invert(0);
+                }
+              }
             }
 
             &:active {

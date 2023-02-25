@@ -59,11 +59,15 @@
           a {
             color: #000;
           }
+
+          &:active {
+            transform: scale(0.96);
+          }
         }
       }
 
       &-description {
-        padding-top: 1.5625vw;
+        padding-top: 0.8vw;
 
         p {
           color: rgba(32, 31, 30, 0.8);
@@ -153,6 +157,8 @@
       background-color: #181818;
 
       .project-title {
+        width: 60%;
+
         p span {
           color: rgba(255, 255, 255, 0.6);
         }

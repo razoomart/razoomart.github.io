@@ -26,6 +26,7 @@
         display: flex;
         align-items: center;
         width: 31.875vw;
+        padding-left: 2.6041666666666665vw;
 
         p {
           font-size: 2.6041666666666665vw;
@@ -57,12 +58,13 @@
         width: 32.65625vw;
         height: 12.5vw;
 
-        padding: 1.5625vw;
+        padding: 0.78125vw 1.5625vw 1.5625vw 1.5625vw;
 
         .tech-logo {
           position: absolute;
           width: 9.375vw;
           height: 9.375vw;
+          margin-top: 0.78125vw;
 
           img {
             width: 100%;
@@ -80,6 +82,7 @@
 
         .tech-title {
           height: 2.34375vw;
+          margin-top: 1vw;
 
           p {
             font-size: 2.34375vw;
@@ -91,12 +94,13 @@
           justify-content: flex-end;
           align-items: flex-end;
           height: 4.6875vw;
-          margin-top: 2.34375vw;
+          margin-top: 4vw;
 
           p {
             font-size: 1.3020833333333333vw;
             text-align: end;
             color: #ffffff60;
+            line-height: 1.25;
           }
         }
       }
@@ -104,7 +108,7 @@
       .item-1 {
         .tech-logo img {
           filter: drop-shadow(
-              0 0.20833333333333334vw 3.125vw rgba(151, 165, 228, 0.2)
+            0 0.20833333333333334vw 3.125vw rgba(151, 165, 228, 0.2)
           );
         }
       }
@@ -112,7 +116,7 @@
       .item-2 {
         .tech-logo img {
           filter: drop-shadow(
-              0 0.20833333333333334vw 3.125vw rgba(151, 165, 228, 0.2)
+            0 0.20833333333333334vw 3.125vw rgba(151, 165, 228, 0.2)
           );
         }
       }
@@ -120,7 +124,7 @@
       .item-3 {
         .tech-logo img {
           filter: drop-shadow(
-              0 0.20833333333333334vw 3.125vw rgba(255, 255, 255, 0.15)
+            0 0.20833333333333334vw 3.125vw rgba(255, 255, 255, 0.15)
           );
         }
       }
@@ -128,7 +132,7 @@
       .item-4 {
         .tech-logo img {
           filter: drop-shadow(
-              0 0.20833333333333334vw 3.125vw rgba(0, 163, 255, 0.2)
+            0 0.20833333333333334vw 3.125vw rgba(0, 163, 255, 0.2)
           );
         }
       }
@@ -136,7 +140,7 @@
       .item-5 {
         .tech-logo img {
           filter: drop-shadow(
-              0 0.20833333333333334vw 3.125vw rgba(151, 165, 228, 0.2)
+            0 0.20833333333333334vw 3.125vw rgba(151, 165, 228, 0.2)
           );
         }
       }
@@ -144,7 +148,7 @@
       .item-6 {
         .tech-logo img {
           filter: drop-shadow(
-              0 0.20833333333333334vw 3.125vw rgba(231, 118, 85, 0.2)
+            0 0.20833333333333334vw 3.125vw rgba(231, 118, 85, 0.2)
           );
         }
       }
@@ -152,7 +156,7 @@
       .item-7 {
         .tech-logo img {
           filter: drop-shadow(
-              0 0.20833333333333334vw 3.125vw rgba(231, 118, 85, 0.2)
+            0 0.20833333333333334vw 3.125vw rgba(231, 118, 85, 0.2)
           );
         }
       }
@@ -160,7 +164,7 @@
       .item-8 {
         .tech-logo img {
           filter: drop-shadow(
-              0 0.20833333333333334vw 3.125vw rgba(151, 165, 228, 0.2)
+            0 0.20833333333333334vw 3.125vw rgba(151, 165, 228, 0.2)
           );
         }
       }
@@ -168,7 +172,7 @@
       .item-9 {
         .tech-logo img {
           filter: drop-shadow(
-              0 0.20833333333333334vw 3.125vw rgba(230, 116, 83, 0.3)
+            0 0.20833333333333334vw 3.125vw rgba(230, 116, 83, 0.3)
           );
         }
       }
@@ -176,7 +180,7 @@
       .item-10 {
         .tech-logo img {
           filter: drop-shadow(
-              0 0.20833333333333334vw 3.125vw rgba(255, 255, 255, 0.15)
+            0 0.20833333333333334vw 3.125vw rgba(255, 255, 255, 0.15)
           );
         }
       }
@@ -184,8 +188,16 @@
       .item-11 {
         .tech-logo img {
           filter: drop-shadow(
-              0 0.20833333333333334vw 3.125vw rgba(255, 255, 255, 0.3)
+            0 0.20833333333333334vw 3.125vw rgba(255, 255, 255, 0.3)
           );
+        }
+      }
+
+      .item-3,
+      .item-4,
+      .item-11 {
+        .tech-description {
+          margin-top: 2.5vw;
         }
       }
     }

@@ -63,7 +63,7 @@
     </div>
   </div>
   <div class="project-preview">
-    <a href="https://hotline.sh" target="_blank">
+    <a [routerLink]="links.CASE_HOTLINE">
       <img
         [src]="images.casePreviewHotline.link"
         [alt]="images.casePreviewHotline.description"
@@ -208,7 +208,10 @@
       </p>
     </div>
     <div class="creation-date">
-      <p>Сделали в декабре 2022 <span>&nbsp;Спидран</span></p>
+      <p>
+        Сделали в декабре 2022
+        <span>&nbsp;<a [routerLink]="links.PAGE_SPEEDRUN">Спидран</a></span>
+      </p>
     </div>
   </div>
   <div class="project-preview">
@@ -364,10 +367,9 @@
     </div>
     <div class="description">
       <p>
-        Концепт будущего приложения для общеобразовательных <br />
-        школ Санкт-Петербурга. Приложение включает в себя <br />
-        электронный дневник, личную карточку ученика, заказ <br />
-        еды в столовой и прочие школьные сервисы. <br />
+        Концепт будущего приложения для общеобразовательных школ
+        Санкт-Петербурга. Приложение включает в себя электронный дневник, личную
+        карточку ученика, заказ еды в столовой и прочие школьные сервисы. <br />
         Сделано по тендеру правительства Санкт-Петербурга.
       </p>
     </div>
@@ -398,54 +400,60 @@
       </div>
     </div>
   </div>
-  <div class="project project-monocrypto no-preview">
-    <div class="project-info">
-      <div class="icon"></div>
-      <div class="title">
-        <p>
-          mono*crypto
-          <span>
-            —
-            <br />
-            финтех
-          </span>
-        </p>
-      </div>
-      <div class="description">
-        <p>
-          Занимались дизайн-поддержкой приложения. <br />
-          К сожалению, сервис закрылся (не по нашей вине)
-        </p>
-      </div>
-      <div class="creation-date">
-        <p>Работали в 2022</p>
-      </div>
+</div>
+<div class="project project-monocrypto no-preview">
+  <div class="project-info">
+    <div class="icon">
+      <img
+        [src]="icons.mono.link"
+        [alt]="icons.mono.description"
+        draggable="false"
+      />
+    </div>
+    <div class="title">
+      <p>
+        mono*crypto
+        <span>
+          —
+          <br />
+          финтех
+        </span>
+      </p>
+    </div>
+    <div class="description">
+      <p>
+        Занимались дизайн-поддержкой приложения. <br />
+        К сожалению, сервис закрылся (не по нашей вине)
+      </p>
+    </div>
+    <div class="creation-date">
+      <p>Работали в 2022</p>
     </div>
   </div>
-  <div class="project project-pn2 no-preview">
-    <div class="project-info">
-      <div class="icon">
-        <img
-          [src]="icons.pn.link"
-          [alt]="icons.pn.description"
-          draggable="false"
-        />
-      </div>
-      <div class="title">
-        <p>
-          Петербургская <br />
-          Недвижимость
-        </p>
-      </div>
-      <div class="description">
-        <p>
-          Иногда помогаем делать внутренние корпоративные <br />
-          презентации и верстаем отчёты
-        </p>
-      </div>
-      <div class="creation-date">
-        <p>Работаем с декабря 2021</p>
-      </div>
+</div>
+<div class="project project-pn2 no-preview">
+  <div class="project-info">
+    <div class="icon">
+      <img
+        [src]="icons.pn.link"
+        [alt]="icons.pn.description"
+        draggable="false"
+      />
+    </div>
+    <div class="title">
+      <p>
+        Петербургская <br />
+        Недвижимость
+      </p>
+    </div>
+    <div class="description">
+      <p>
+        Иногда помогаем делать внутренние корпоративные <br />
+        презентации и верстаем отчёты
+      </p>
+    </div>
+    <div class="creation-date">
+      <p>Работаем с декабря 2021</p>
     </div>
   </div>
 </div>
