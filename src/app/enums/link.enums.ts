@@ -9,7 +9,6 @@ enum MediaLink {
   PAGE_SPEEDRUN = '/speedrun',
   PAGE_NONPROFIT = '/nonprofit',
   PAGE_NOT_FOUND = '/404',
-  PAGE_NONPROFIT = '/nonprofit',
 }
 
 export { MediaLink };
