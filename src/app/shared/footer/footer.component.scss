@@ -84,12 +84,13 @@
         padding: 0 1.3020833333vw;
         transition: 0.2s;
         line-height: 2.5vw;
-        border-radius: 1vw;
+        border-radius: 0.7vw;
 
         &:hover {
           background-color: #d4d4d450;
           color: #ffffff;
           transition: 0.3s;
+          transform: scale(1.05);
         }
 
         &:active {
