@@ -9,16 +9,16 @@
     display: flex;
     flex-wrap: wrap;
 
-    width: 46.770833333333336vw;
+    width: 54.0625vw;
     padding: 1.5625vw 1.0416666666666667vw 1.0416666666666667vw 1.0416666666666667vw;
 
     background-color: #201f1e;
 
     .icon {
-      width: 3.5vw;
-      height: 3.5vw;
+      width: 3.90625vw;
+      height: 3.90625vw;
 
-      border-radius: 0.9186354166666665vw;
+      border-radius: 0.9114583333333334vw;
 
       img {
         width: 100%;
@@ -29,11 +29,12 @@
     p {
       color: #ffffff;
       font-size: 1.5625vw;
+      line-height: 2vw;
     }
 
     .title {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       width: 22.395833333333332vw;
       height: 4.0625vw;
       margin-left: 1.0416666666666667vw;
@@ -57,23 +58,34 @@
 
     .creation-date {
       align-self: flex-end;
+      width: auto;
 
       p {
         color: #ffffff60;
         font-size: 1.25vw;
 
         span {
-          color: #92ff00;
+          a {
+            color: #92ff00;
+            text-decoration: none;
+          }
         }
       }
     }
   }
 
   &-preview {
-    width: 40.625vw;
+    width: 40.7291666667vw;
+
+    a {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
 
     img {
-      width: 100%;
+      margin-left: 0.10416666666666667vw;
+      width: 40.625vw;
       height: 100%;
       border-radius: 1.5625vw;
     }
@@ -126,7 +138,7 @@
     }
 
     .description-buttons {
-      margin-left: 2.9166666666666665vw;
+      margin-left: auto;
 
       a {
         align-self: flex-start;
@@ -148,10 +160,15 @@
         &:hover {
           background-color: #ffffff;
           transition: 0.2s;
+          transform: scale(1.05);
 
           p {
             color: #000000;
           }
+        }
+
+        &:active {
+          transform: scale(0.99);
         }
       }
 
@@ -169,7 +186,7 @@
 
     .description {
       width: 100%;
-      height: auto;
+      height: 50%;
     }
 
     .creation-date {
@@ -183,13 +200,13 @@
   }
 }
 
+.project-pn .project-info .creation-date {
+  width: 50%;
+}
+
 .project-either,
-.project-bequick {
-  .project-description {
-    .description-buttons {
-      margin-left: auto;
-    }
-  }
+.project-bequick .project-description .description-buttons {
+  margin-left: auto;
 }
 
 .project-bequick {

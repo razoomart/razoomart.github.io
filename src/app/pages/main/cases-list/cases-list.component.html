@@ -14,7 +14,7 @@
       </div>
       <div class="project-case-btn">
         <div class="wrapper">
-          <a href=""><p>смотреть кейс</p></a>
+          <a [routerLink]="links.CASE_HOTLINE"><p>смотреть кейс</p></a>
         </div>
       </div>
       <div class="project-description">
@@ -68,7 +68,7 @@
       </div>
       <div class="project-case-btn">
         <div class="wrapper">
-          <a href=""><p>смотреть кейс</p></a>
+          <a [routerLink]="links.CASE_BEQUICK"><p>смотреть кейс</p></a>
         </div>
       </div>
       <div class="project-description">
@@ -79,8 +79,7 @@
       </div>
       <div class="project-preview"></div>
     </div>
-
-    <a routerLink="/cases" class="item all-cases-btn">
+    <a [routerLink]="links.PAGE_CASES" class="item all-cases-btn">
       <p>
         Все кейсы
         <span>
