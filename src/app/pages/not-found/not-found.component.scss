@@ -56,11 +56,16 @@
 
       &:hover {
         background-color: #ffffff;
+        transform: scale(1.1);
         transition: 0.2s;
 
         a {
           color: #000000;
         }
+      }
+
+      &:active {
+        transform: scale(0.99);
       }
     }
   }

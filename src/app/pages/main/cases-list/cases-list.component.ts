@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IconList } from '@constants/icons.constants';
 import { ImageList } from '@constants/images.constants';
+import { MediaLink } from '@enums/link.enums';
 
 @Component({
   selector: 'app-cases-list',
@@ -10,4 +11,5 @@ import { ImageList } from '@constants/images.constants';
 export class CasesListComponent {
   public icons = IconList;
   public images = ImageList;
+  public links = MediaLink;
 }
