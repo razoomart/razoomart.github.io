@@ -2,21 +2,25 @@
   <div class="content">
     <div class="links">
       <div class="link telegram">
-        <a [href]="mediaLink.TELEGRAM">
-          <img
-            [src]="icons.razoomartLogo.link"
-            [alt]="icons.razoomartLogo.description"
-            draggable="false"
-          />
-          <p>
-            <span>Telegram-канал</span>
-            <br />
-            @razoomart
-          </p>
+        <a [href]="mediaLink.TELEGRAM" target="_blank">
+          <div class="link-image">
+            <img
+              [src]="icons.razoomartLogo.link"
+              [alt]="icons.razoomartLogo.description"
+              draggable="false"
+            />
+          </div>
+          <div class="link-text">
+            <p>
+              <span>Telegram-канал</span>
+              <br />
+              @razoomart
+            </p>
+          </div>
         </a>
       </div>
       <div class="link behance">
-        <a [href]="mediaLink.TELEGRAM">
+        <a [href]="mediaLink.BEHANCE" target="_blank">
           <img
             [src]="icons.behanceLogo.link"
             [alt]="icons.behanceLogo.description"

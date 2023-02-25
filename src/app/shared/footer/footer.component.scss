@@ -26,11 +26,14 @@
       display: flex;
 
       .link {
+        height: 4.791666666666667vw;
         display: flex;
-        justify-content: center;
         align-items: center;
 
-        margin-top: 0.5208333333333334vw;
+        border-radius: 1vw;
+        padding: 0.8vw;
+
+        transition: 0.3s;
 
         a {
           display: flex;
@@ -50,10 +53,26 @@
             }
           }
         }
+
+        &:hover {
+          background-color: #d4d4d450;
+          color: #ffffff;
+          transition: 0.3s;
+          transform: scale(1.05);
+        }
+
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+
+      .telegram {
+        width: 17.5vw;
       }
 
       .behance {
-        margin-left: 5.104166666666667vw;
+        width: 14.5vw;
+        margin-left: 2vw;
       }
     }
 
@@ -65,12 +84,16 @@
         padding: 0 1.3020833333vw;
         transition: 0.2s;
         line-height: 2.5vw;
-        border-radius: 0.65vw;
+        border-radius: 1vw;
 
         &:hover {
           background-color: #d4d4d450;
           color: #ffffff;
           transition: 0.3s;
+        }
+
+        &:active {
+          transform: scale(0.95);
         }
       }
 

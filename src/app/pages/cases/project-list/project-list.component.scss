@@ -47,7 +47,7 @@
     }
 
     .description {
-      padding-top: 1.5625vw;
+      padding-top: 0.78125vw;
       width: 43.75vw;
       height: 70%;
 
@@ -168,7 +168,7 @@
         }
 
         &:active {
-          transform: scale(0.99);
+          transform: scale(0.95);
         }
       }
 
@@ -234,7 +234,7 @@
 .project-spbedu {
   .project-info {
     .description {
-      margin-top: 0;
+      height: 80%;
     }
   }
 }
