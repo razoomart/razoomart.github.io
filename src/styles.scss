@@ -60,3 +60,54 @@ img::selection {
 .scroll-disabled {
   overflow: hidden;
 }
+
+.hidden {
+  opacity: 0;
+}
+
+.shown {
+  opacity: 1;
+}
+
+.blockAppear {
+  animation: show 0.5s;
+}
+
+.blockAppearFade {
+  animation: fade 0.5s;
+}
+
+.blockAppearFadeSm {
+  animation: fadeSm 0.5s;
+}
+
+@keyframes show {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+    transform: translateY(30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSm {
+  from {
+    opacity: 0.1;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

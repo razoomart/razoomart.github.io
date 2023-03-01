@@ -3,14 +3,36 @@
     <div class="title">
       <p>Разумная продуктовая <br />дизайн-команда</p>
     </div>
-    <div class="memoji albina-memoji">
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'memojiAppear2',
+          'hidden',
+          850
+        )
+      "
+      class="memoji albina-memoji hidden"
+    >
       <img
         [src]="images.albina.link"
         [alt]="images.albina.description"
         draggable="false"
       />
     </div>
-    <div class="memoji ilyaU-memoji">
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'memojiAppear',
+          'hidden',
+          300
+        )
+      "
+      class="memoji ilyaU-memoji hidden"
+    >
       <img
         [src]="images.ilyaU.link"
         [alt]="images.ilyaU.description"

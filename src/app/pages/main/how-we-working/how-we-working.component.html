@@ -1,7 +1,31 @@
 <div class="how-we-working">
-  <div class="title"><p>Как мы работаем</p></div>
+  <div
+    waIntersectionObserver
+    (waIntersectionObservee)="
+      intersectionService.onIntersection(
+        $event,
+        'blockAppearFade',
+        'hidden',
+        100
+      )
+    "
+    class="title hidden"
+  >
+    <p>Как мы работаем</p>
+  </div>
   <div class="list">
-    <div class="block dedicated-team">
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          200
+        )
+      "
+      class="block dedicated-team hidden"
+    >
       <div class="block-title"><p>Выделенная команда</p></div>
       <div class="block-description">
         <p>
@@ -11,7 +35,18 @@
       </div>
       <div class="block-price"><p>от 35 000₽/спринт</p></div>
     </div>
-    <div class="block designers-outstaffing">
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          400
+        )
+      "
+      class="block designers-outstaffing hidden"
+    >
       <div class="block-title"><p>Аутстаффинг дизайнеров</p></div>
       <div class="block-description">
         <p>Работа отдельных дизайнеров <br />вместе с вашей командой</p>
@@ -22,8 +57,18 @@
           <span class="old-price">
             1200₽/час
             <img
+              waIntersectionObserver
+              (waIntersectionObservee)="
+                intersectionService.onIntersection(
+                  $event,
+                  'blockAppearFadeSm',
+                  'hidden',
+                  50
+                )
+              "
               [src]="images.strikethroughText.link"
               [alt]="images.strikethroughText.description"
+              class="hidden"
               draggable="false"
             />
           </span>
@@ -31,7 +76,18 @@
         </p>
       </div>
     </div>
-    <div class="block special-conditions">
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          150
+        )
+      "
+      class="block special-conditions hidden"
+    >
       <div class="block-title">
         <p>
           Специальные условия для <br />

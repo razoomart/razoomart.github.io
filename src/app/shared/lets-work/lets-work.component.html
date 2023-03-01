@@ -1,4 +1,15 @@
-<div class="lets-work">
+<div
+  waIntersectionObserver
+  (waIntersectionObservee)="
+    intersectionService.onIntersection(
+      $event,
+      'blockAppearFadeSm',
+      'hidden',
+      50
+    )
+  "
+  class="lets-work hidden"
+>
   <div class="title"><p>Давайте же работать!</p></div>
   <div class="lets-work-description">
     <p>

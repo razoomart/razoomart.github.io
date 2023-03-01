@@ -1,4 +1,10 @@
-<div class="short-about">
+<div
+  waIntersectionObserver
+  (waIntersectionObservee)="
+    intersectionService.onIntersection($event, 'blockAppearFade', 'hidden')
+  "
+  class="short-about hidden"
+>
   <div class="text">
     Работаем сообща и <span class="cursive">с душой </span>
     <img
