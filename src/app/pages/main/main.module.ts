@@ -1,4 +1,3 @@
-import { NgClass } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { RouterLink } from '@angular/router';
@@ -20,7 +19,7 @@ import { ShortAboutComponent } from './short-about/short-about.component';
     DesignTeamComponent,
     ShortAboutComponent,
   ],
-  imports: [SharedModule, RouterLink, NgClass, IntersectionObserverModule],
+  imports: [SharedModule, RouterLink, IntersectionObserverModule],
   exports: [
     AboutTeamComponent,
     CasesListComponent,
