@@ -1,6 +1,12 @@
 <div class="about-team">
   <div class="left">
-    <div class="block-left green-bg">
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection($event, 'blockAppear', 'hidden', 200)
+      "
+      class="block-left green-bg hidden"
+    >
       <div class="text">
         <p>
           Мы — команда <br />
@@ -13,22 +19,52 @@
       <div class="memoji-list">
         <div class="memoji ilana-memoji">
           <img
+            waIntersectionObserver
+            (waIntersectionObservee)="
+              intersectionService.onIntersection(
+                $event,
+                'blockAppear',
+                'hidden',
+                200
+              )
+            "
             [src]="images.ilana.link"
             [alt]="images.ilana.description"
+            class="hidden"
             draggable="false"
           />
         </div>
         <div class="memoji ilyaK-memoji">
           <img
+            waIntersectionObserver
+            (waIntersectionObservee)="
+              intersectionService.onIntersection(
+                $event,
+                'blockAppear',
+                'hidden',
+                300
+              )
+            "
             [src]="images.ilyaK.link"
             [alt]="images.ilyaK.description"
+            class="hidden"
             draggable="false"
           />
         </div>
         <div class="memoji danya-memoji">
           <img
+            waIntersectionObserver
+            (waIntersectionObservee)="
+              intersectionService.onIntersection(
+                $event,
+                'blockAppear',
+                'hidden',
+                400
+              )
+            "
             [src]="images.danya.link"
             [alt]="images.danya.description"
+            class="hidden"
             draggable="false"
           />
         </div>
@@ -36,7 +72,13 @@
     </div>
   </div>
   <div class="right">
-    <div class="block-right green-bg">
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection($event, 'blockAppear', 'hidden', 500)
+      "
+      class="block-right green-bg hidden"
+    >
       <div class="text">
         <p>
           дизайним веб, интерфейсы, <br />
@@ -49,7 +91,19 @@
         </p>
       </div>
     </div>
-    <a class="about-button" [routerLink]="links.PAGE_TEAM">
+    <a
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFade',
+          'hidden',
+          200
+        )
+      "
+      class="about-button hidden"
+      [routerLink]="links.PAGE_TEAM"
+    >
       <p class="text">
         О команде
         <span>

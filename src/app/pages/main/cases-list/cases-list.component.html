@@ -1,9 +1,31 @@
 <div class="some-projects">
-  <div class="title">
+  <div
+    waIntersectionObserver
+    (waIntersectionObservee)="
+      intersectionService.onIntersection(
+        $event,
+        'blockAppearFade',
+        'hidden',
+        100
+      )
+    "
+    class="title hidden"
+  >
     <p>Вот некоторые наши <span>проекты</span></p>
   </div>
   <div class="project-list">
-    <div class="item project hotline">
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          100
+        )
+      "
+      class="item project hotline hidden"
+    >
       <div class="project-title">
         <p>
           HOTLINE
@@ -28,7 +50,18 @@
       </div>
       <div class="project-preview"></div>
     </div>
-    <div class="item project pn development-stage">
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          300
+        )
+      "
+      class="item project pn development-stage hidden"
+    >
       <div class="project-title">
         <p>
           Петербургская
@@ -57,7 +90,18 @@
         />
       </div>
     </div>
-    <div class="item project bequick">
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          500
+        )
+      "
+      class="item project bequick hidden"
+    >
       <div class="project-title">
         <p>
           Bequick
@@ -79,7 +123,19 @@
       </div>
       <div class="project-preview"></div>
     </div>
-    <a [routerLink]="links.PAGE_CASES" class="item all-cases-btn mtdef">
+    <a
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          200
+        )
+      "
+      [routerLink]="links.PAGE_CASES"
+      class="item all-cases-btn hidden mtdef"
+    >
       <p>
         Все кейсы
         <span>

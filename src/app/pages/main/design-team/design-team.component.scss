@@ -1,11 +1,9 @@
 .first-block {
   width: 100%;
   height: 100%;
-
   display: flex;
   background-color: #5e6eff;
   background-image: url(/assets/images/noise.png);
-
   border-bottom-left-radius: 3.125vw;
   border-bottom-right-radius: 3.125vw;
 
@@ -122,7 +120,7 @@
       top: 14.583333333333334vw;
       transition: 0.2s;
 
-      transform: rotate(-4deg);
+      transform: scale(1) rotate(-4deg);
 
       img {
         animation: memojiAnim2 10s infinite;
@@ -137,6 +135,38 @@
         }
       }
     }
+  }
+}
+
+.memojiAppear {
+  animation: memojiAppear 1s;
+}
+
+.memojiAppear2 {
+  animation: memojiAppear2 1s;
+}
+
+@keyframes memojiAppear {
+  0% {
+    transform: scale(1) rotate(-4deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(-4deg);
+  }
+  100% {
+    transform: scale(1) rotate(-4deg);
+  }
+}
+
+@keyframes memojiAppear2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 

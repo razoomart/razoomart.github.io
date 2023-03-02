@@ -4,6 +4,7 @@ import { IconList } from '@constants/icons.constants';
 import { ImageList } from '@constants/images.constants';
 import { AnchorPath } from '@enums/anchor.enums';
 
+import { IntersectionService } from '@services/intersection.service';
 import { ScrollToElementService } from '@services/scroll-to-element.service';
 
 @Component({
@@ -16,7 +17,10 @@ export class DesignTeamComponent {
   public images = ImageList;
   public anchorPath = AnchorPath;
 
-  constructor(private scrollToEl: ScrollToElementService) {}
+  constructor(
+    private scrollToEl: ScrollToElementService,
+    protected intersectionService: IntersectionService
+  ) {}
 
   public scroll(el: string): void {
     this.scrollToEl.scrollToElement(el);

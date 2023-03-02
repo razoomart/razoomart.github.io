@@ -24,20 +24,42 @@
           <p>от 860 ₽/час</p>
         </a>
       </div>
-    </div>
-    <div class="memoji albina-memoji">
-      <img
-        [src]="images.albina.link"
-        [alt]="images.albina.description"
-        draggable="false"
-      />
-    </div>
-    <div class="memoji ilyaU-memoji">
-      <img
-        [src]="images.ilyaU.link"
-        [alt]="images.ilyaU.description"
-        draggable="false"
-      />
+      <div
+        waIntersectionObserver
+        (waIntersectionObservee)="
+          intersectionService.onIntersection(
+            $event,
+            'memojiAppear2',
+            'hidden',
+            850
+          )
+        "
+        class="memoji albina-memoji hidden"
+      >
+        <img
+          [src]="images.albina.link"
+          [alt]="images.albina.description"
+          draggable="false"
+        />
+      </div>
+      <div
+        waIntersectionObserver
+        (waIntersectionObservee)="
+          intersectionService.onIntersection(
+            $event,
+            'memojiAppear',
+            'hidden',
+            300
+          )
+        "
+        class="memoji ilyaU-memoji hidden"
+      >
+        <img
+          [src]="images.ilyaU.link"
+          [alt]="images.ilyaU.description"
+          draggable="false"
+        />
+      </div>
     </div>
   </div>
 </div>
