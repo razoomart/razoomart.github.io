@@ -1,5 +1,16 @@
 <div class="advantages">
-  <div class="item advantages-item">
+  <div
+    waIntersectionObserver
+    (waIntersectionObservee)="
+      intersectionService.onIntersection(
+        $event,
+        'blockAppearFadeSm',
+        'hidden',
+        400
+      )
+    "
+    class="item advantages-item hidden"
+  >
     <div class="title">
       <p>
         Продуктовый <br />
@@ -17,7 +28,18 @@
       <img src="assets/images/cat.png" alt="image here" />
     </div>
   </div>
-  <div class="item advantages-item">
+  <div
+    waIntersectionObserver
+    (waIntersectionObservee)="
+      intersectionService.onIntersection(
+        $event,
+        'blockAppearFadeSm',
+        'hidden',
+        600
+      )
+    "
+    class="item advantages-item hidden"
+  >
     <div class="title">
       <p>
         Разработка <br />
@@ -35,7 +57,18 @@
       <img src="assets/images/cat.png" alt="image here" />
     </div>
   </div>
-  <div class="item advantages-item advantages-item-3">
+  <div
+    waIntersectionObserver
+    (waIntersectionObservee)="
+      intersectionService.onIntersection(
+        $event,
+        'blockAppearFadeSm',
+        'hidden',
+        800
+      )
+    "
+    class="item advantages-item advantages-item-3 hidden"
+  >
     <div class="title">
       <p>Исследования</p>
     </div>
@@ -50,7 +83,19 @@
       <img src="assets/images/cat.png" alt="image here" />
     </div>
   </div>
-  <div class="item advantages-item">
+  <div
+    waIntersectionObserver
+    waIntersectionThreshold="0.4"
+    (waIntersectionObservee)="
+      intersectionService.onIntersection(
+        $event,
+        'blockAppearFadeSm',
+        'hidden',
+        200
+      )
+    "
+    class="item advantages-item hidden"
+  >
     <div class="title">
       <p>Контент</p>
     </div>
@@ -65,7 +110,19 @@
       <img src="assets/images/cat.png" alt="image here" />
     </div>
   </div>
-  <div class="item advantages-item advantages-item-5">
+  <div
+    waIntersectionObserver
+    waIntersectionThreshold="0.4"
+    (waIntersectionObservee)="
+      intersectionService.onIntersection(
+        $event,
+        'blockAppearFadeSm',
+        'hidden',
+        400
+      )
+    "
+    class="item advantages-item advantages-item-5 hidden"
+  >
     <div class="title">
       <p>
         Брендинг и <br />
@@ -82,7 +139,19 @@
       <img src="assets/images/cat.png" alt="image here" />
     </div>
   </div>
-  <div class="item advantages-item">
+  <div
+    waIntersectionObserver
+    waIntersectionThreshold="0.4"
+    (waIntersectionObservee)="
+      intersectionService.onIntersection(
+        $event,
+        'blockAppearFadeSm',
+        'hidden',
+        600
+      )
+    "
+    class="item advantages-item hidden"
+  >
     <div class="title">
       <p>
         Дизайн- <br />

@@ -1,7 +1,27 @@
 <div class="stack">
-  <div class="title"><p>Используемые инструменты</p></div>
+  <div
+    waIntersectionObserver
+    waIntersectionThreshold="0.5"
+    (waIntersectionObservee)="
+      intersectionService.onIntersection($event, 'blockAppearFade', 'hidden')
+    "
+    class="title hidden"
+  >
+    <p>Используемые инструменты</p>
+  </div>
   <div class="content">
-    <div class="tech-list">
+    <div
+      waIntersectionObserver
+      waIntersectionThreshold="0.3"
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden'
+        )
+      "
+      class="tech-list hidden"
+    >
       <div class="list-title">
         <p>Дизайн</p>
       </div>

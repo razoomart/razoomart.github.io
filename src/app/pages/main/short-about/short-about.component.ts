@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { IconList } from '@constants/icons.constants';
 
 @Component({

@@ -5,16 +5,16 @@
 
   .left {
     width: 56.13095238095238vw;
-    height: 100%;
+    height: 36.458333333333336vw;
     margin-right: 0.5208333333333334vw;
 
     .block-left {
       width: 100%;
       height: 100%;
 
+      padding: 1.5625vw 2.0833333333333335vw;
 
       .text {
-        padding: 1.5625vw 2.0833333333333335vw;
         color: #201f1e;
 
         p {
@@ -97,10 +97,9 @@
     .block-right {
       width: 100%;
       height: 26.041666666666668vw;
-
+      padding: 1.5625vw 2.0833333333333335vw;
 
       .text {
-        padding: 1.5625vw 2.0833333333333335vw;
         color: #201f1e;
 
         p {
@@ -119,12 +118,9 @@
       justify-content: center;
       align-items: center;
       border-radius: 59.464285714285715vw;
-
       background-color: #201f1e;
-
       text-decoration: none;
-      color: #fff;
-
+      color: #ffffff;
       border: 0.2604166666666667vw solid #ffffff;
       transition: 0.2s;
 

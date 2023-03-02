@@ -1,4 +1,10 @@
-<div class="block first-block">
+<div
+  waIntersectionObserver
+  (waIntersectionObservee)="
+    intersectionService.onIntersection($event, 'blockAppearFadeSm', 'hidden')
+  "
+  class="block first-block hidden"
+>
   <div class="title">
     <p>
       Мы собрались в 2022 году, чтобы открыть <br />
