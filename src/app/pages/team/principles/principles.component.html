@@ -1,4 +1,11 @@
-<div class="block our-principles">
+<div
+  waIntersectionObserver
+  waIntersectionThreshold="0.4"
+  (waIntersectionObservee)="
+    intersectionService.onIntersection($event, 'blockAppearFadeSm', 'hidden')
+  "
+  class="block our-principles hidden"
+>
   <div class="title">
     <p>Наши принципы</p>
   </div>
