@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
+
 import { IconList } from '@constants/icons.constants';
+
+import { IntersectionService } from '@services/intersection.service';
 
 @Component({
   selector: 'app-first-block',
@@ -8,4 +11,6 @@ import { IconList } from '@constants/icons.constants';
 })
 export class FirstBlockComponent {
   public icons = IconList;
+
+  constructor(protected intersectionService: IntersectionService) {}
 }
