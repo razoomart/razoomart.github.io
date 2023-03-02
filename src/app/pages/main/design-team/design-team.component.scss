@@ -10,10 +10,12 @@
   border-bottom-right-radius: 3.125vw;
 
   .content {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-top: 6.190476190476191vw;
-    padding: 0 3.125vw;
-    color: #fff;
+    padding: 0 3.125vw 2.3vw;
+    color: #ffffff;
 
     .title {
       p {
@@ -22,63 +24,66 @@
       }
     }
 
-    .description {
+    .bottom {
+      margin-top: auto;
       width: 100%;
-      padding-top: 12.5vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
 
-      .text {
-        width: 85.77380952380952vw;
-        font-size: 2.3vw;
+      .description {
+        width: auto;
 
-        p {
+        .text {
           font-size: 2.3vw;
-          line-height: 1.1;
 
-          span {
-            img {
-              width: 1.8vw;
-              height: 1.8vw;
+          p {
+            font-size: 2.3vw;
+            line-height: 1.1;
+
+            span {
+              img {
+                width: 1.8vw;
+                height: 1.8vw;
+              }
             }
           }
         }
       }
-    }
 
-    .price-button {
-      position: absolute;
-      width: 27.03125vw;
-      height: 5.989583333333333vw;
-      left: 69.5vw;
-      top: 32.75vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      background-color: #fff;
-      border-radius: 59.464285714285715vw;
-      transition: 0.2s;
-
-      a {
+      .price-button {
+        margin-top: auto;
+        width: 27.03125vw;
+        height: 5.989583333333333vw;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 100%;
-        color: #201f1e;
-        font-size: 3.3854166666666665vw;
-        text-decoration: none;
-
-        p {
-          color: #000;
-        }
-      }
-
-      &:hover {
-        background-color: #fef747;
-        box-shadow: 0 0 2.9761904761904763vw #fef747;
-        transform: rotate(-3deg) scale(1.2);
+        background-color: #ffffff;
+        border-radius: 59.464285714285715vw;
         transition: 0.2s;
-        cursor: pointer;
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          color: #201f1e;
+          font-size: 3.3854166666666665vw;
+          text-decoration: none;
+
+          p {
+            color: #000000;
+          }
+        }
+
+        &:hover {
+          background-color: #fef747;
+          box-shadow: 0 0 2.9761904761904763vw #fef747;
+          transform: rotate(-3deg) scale(1.2);
+          transition: 0.2s;
+          cursor: pointer;
+        }
       }
     }
 
@@ -94,7 +99,7 @@
     }
 
     .albina-memoji {
-      left: 82.5vw;
+      right: 2.2vw;
       top: 7.619047619047619vw;
       transition: 0.2s;
 
@@ -113,7 +118,7 @@
     }
 
     .ilyaU-memoji {
-      left: 69.8vw;
+      right: 15vw;
       top: 14.583333333333334vw;
       transition: 0.2s;
 
