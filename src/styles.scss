@@ -23,7 +23,7 @@
 
 html,
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -45,6 +45,14 @@ img::selection {
   color: #ffffff;
 }
 
+.mtdef {
+  margin-top: 0.5208333333333334vw;
+}
+
+.mtt {
+  margin-top: 5.208333333333333vw;
+}
+
 #header {
   position: fixed;
   width: 100%;
@@ -53,7 +61,7 @@ img::selection {
 }
 
 #footer {
-  margin-top: 38.5vw;
+  margin-top: 39vw;
   padding-bottom: 0.5208333333333334vw;
 }
 

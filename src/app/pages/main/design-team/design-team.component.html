@@ -3,6 +3,28 @@
     <div class="title">
       <p>Разумная продуктовая <br />дизайн-команда</p>
     </div>
+    <div class="bottom">
+      <div class="description">
+        <div class="text">
+          <p>
+            Создаём цифровые продукты <br />
+            и запускаем сервисы для <br />
+            стартапов и корпораций
+            <span>
+              <img
+                [src]="icons.sparkles.link"
+                [alt]="icons.sparkles.description"
+                draggable="false"
+            /></span>
+          </p>
+        </div>
+      </div>
+      <div class="price-button">
+        <a (click)="scroll(anchorPath.PRICE)">
+          <p>от 860 ₽/час</p>
+        </a>
+      </div>
+    </div>
     <div class="memoji albina-memoji">
       <img
         [src]="images.albina.link"
@@ -16,26 +38,6 @@
         [alt]="images.ilyaU.description"
         draggable="false"
       />
-    </div>
-    <div class="description">
-      <div class="text">
-        <p>
-          Создаём цифровые продукты <br />
-          и запускаем сервисы для <br />
-          стартапов и корпораций
-          <span>
-            <img
-              [src]="icons.sparkles.link"
-              [alt]="icons.sparkles.description"
-              draggable="false"
-          /></span>
-        </p>
-      </div>
-    </div>
-    <div class="price-button">
-      <a (click)="scroll(anchorPath.PRICE)">
-        <p>от 860 ₽/час</p>
-      </a>
     </div>
   </div>
 </div>
