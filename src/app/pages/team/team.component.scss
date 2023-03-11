@@ -6,6 +6,15 @@
     background-color: transparent;
   }
 
+  .both {
+    display: flex;
+    gap: 0.5208333333333334vw;
+
+    .our-principles {
+      width: 50%;
+    }
+  }
+
   .item {
     border-radius: 2.0833333333333335vw;
     background-color: #201f1e;

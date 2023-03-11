@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
+
 import { IconList } from '@constants/icons.constants';
 import { ImageList } from '@constants/images.constants';
+
+import { IntersectionService } from '@services/intersection.service';
 
 @Component({
   selector: 'app-team-members',
@@ -10,4 +13,6 @@ import { ImageList } from '@constants/images.constants';
 export class TeamMembersComponent {
   public images = ImageList;
   public icons = IconList;
+
+  constructor(protected intersectionService: IntersectionService) {}
 }

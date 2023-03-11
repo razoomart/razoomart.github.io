@@ -6,167 +6,38 @@
         $event,
         'blockAppearFadeSm',
         'hidden',
-        400
+        300
       )
     "
-    class="item advantages-item hidden"
+    class="block block-1 hidden"
   >
-    <div class="title">
-      <p>
-        Продуктовый <br />
-        дизайн
-      </p>
+    <div class="block-title">
+      <p>Погрузимся в ваш проект с головой</p>
     </div>
-    <div class="description">
+    <div class="block-description">
       <p>
-        Задизайним сайт, сервис, мобильное <br />
-        приложение, напишем тексты, соберём <br />
-        прототипы, разработаем дизайн-систему
+        Перед стартом работы мы изучим сферу, <br />
+        проведём анализ рынка и исследования, чтобы <br />
+        получить наиболее актуальный результат
       </p>
-    </div>
-    <div class="preview">
-      <img src="assets/images/cat.png" alt="image here" />
     </div>
   </div>
   <div
     waIntersectionObserver
+    waIntersectionThreshold="0.8"
     (waIntersectionObservee)="
-      intersectionService.onIntersection(
-        $event,
-        'blockAppearFadeSm',
-        'hidden',
-        600
-      )
+      intersectionService.onIntersection($event, 'blockAppearFadeSm', 'hidden')
     "
-    class="item advantages-item hidden"
+    class="block block-2 hidden"
   >
-    <div class="title">
+    <div class="block-title">
+      <p>А работать можем даже без ТЗ!</p>
+    </div>
+    <div class="block-description">
       <p>
-        Разработка <br />
-        и no-code
+        Ведь мы составим его во время <br />
+        обсуждения и погружения в проект
       </p>
-    </div>
-    <div class="description">
-      <p>
-        Соберём сайт на no-code платформе или <br />
-        сверстаем кодом, разработаем мобильное <br />
-        приложение, сервис, интерфейс
-      </p>
-    </div>
-    <div class="preview">
-      <img src="assets/images/cat.png" alt="image here" />
-    </div>
-  </div>
-  <div
-    waIntersectionObserver
-    (waIntersectionObservee)="
-      intersectionService.onIntersection(
-        $event,
-        'blockAppearFadeSm',
-        'hidden',
-        800
-      )
-    "
-    class="item advantages-item advantages-item-3 hidden"
-  >
-    <div class="title">
-      <p>Исследования</p>
-    </div>
-    <div class="description">
-      <p>
-        Исследуем рынок, построим карту <br />
-        пути пользователя, дадим <br />
-        рекомендации по юзабилити
-      </p>
-    </div>
-    <div class="preview">
-      <img src="assets/images/cat.png" alt="image here" />
-    </div>
-  </div>
-  <div
-    waIntersectionObserver
-    waIntersectionThreshold="0.4"
-    (waIntersectionObservee)="
-      intersectionService.onIntersection(
-        $event,
-        'blockAppearFadeSm',
-        'hidden',
-        200
-      )
-    "
-    class="item advantages-item hidden"
-  >
-    <div class="title">
-      <p>Контент</p>
-    </div>
-    <div class="description">
-      <p>
-        Напишем тексты, понятные для людей, <br />
-        нарисуем иллюстрации, всё, что нужно <br />
-        анимируем, можем даже в 3D
-      </p>
-    </div>
-    <div class="preview">
-      <img src="assets/images/cat.png" alt="image here" />
-    </div>
-  </div>
-  <div
-    waIntersectionObserver
-    waIntersectionThreshold="0.4"
-    (waIntersectionObservee)="
-      intersectionService.onIntersection(
-        $event,
-        'blockAppearFadeSm',
-        'hidden',
-        400
-      )
-    "
-    class="item advantages-item advantages-item-5 hidden"
-  >
-    <div class="title">
-      <p>
-        Брендинг и <br />
-        коммуникации
-      </p>
-    </div>
-    <div class="description">
-      <p>
-        Разработаем визуальную концепцию, <br />
-        айдентику, создадим или обновим бренд
-      </p>
-    </div>
-    <div class="preview">
-      <img src="assets/images/cat.png" alt="image here" />
-    </div>
-  </div>
-  <div
-    waIntersectionObserver
-    waIntersectionThreshold="0.4"
-    (waIntersectionObservee)="
-      intersectionService.onIntersection(
-        $event,
-        'blockAppearFadeSm',
-        'hidden',
-        600
-      )
-    "
-    class="item advantages-item hidden"
-  >
-    <div class="title">
-      <p>
-        Дизайн- <br />
-        поддержка
-      </p>
-    </div>
-    <div class="description">
-      <p>
-        Встроимся в вашу команду и будем <br />
-        помогать дорабатывать продукт или <br />
-        создавать контент для него
-      </p>
-    </div>
-    <div class="preview">
-      <img src="assets/images/cat.png" alt="image here" />
     </div>
   </div>
 </div>

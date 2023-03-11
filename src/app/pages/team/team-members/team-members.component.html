@@ -1,4 +1,10 @@
-<div class="team">
+<div
+  waIntersectionObserver
+  (waIntersectionObservee)="
+    intersectionService.onIntersection($event, 'blockAppearFadeSm', 'hidden')
+  "
+  class="team hidden"
+>
   <div class="title">
     <p>Команда</p>
   </div>
