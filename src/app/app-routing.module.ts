@@ -1,18 +1,31 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { CasesComponent } from '@pages/cases/cases.component';
 import { MainComponent } from '@pages/main/main.component';
-import { NotFoundComponent } from '@pages/not-found/not-found.component';
-import { TeamComponent } from '@pages/team/team.component';
-import { VwComponent } from '@pages/vw/vw.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
-  { path: 'team', component: TeamComponent },
-  { path: 'cases', component: CasesComponent },
-  { path: 'vw', component: VwComponent },
-  { path: '404', component: NotFoundComponent },
+  {
+    path: 'team',
+    loadChildren: () =>
+      import('./pages/team/team.module').then((m) => m.TeamModule),
+  },
+  {
+    path: 'cases',
+    loadChildren: () =>
+      import('./pages/cases/cases.module').then((m) => m.CasesModule),
+  },
+  {
+    path: 'vw',
+    loadChildren: () => import('./pages/vw/vw.module').then((m) => m.VwModule),
+  },
+  {
+    path: '404',
+    loadChildren: () =>
+      import('./pages/not-found/not-found.module').then(
+        (m) => m.NotFoundModule
+      ),
+  },
   { path: '**', pathMatch: 'full', redirectTo: '404' },
 ];
 

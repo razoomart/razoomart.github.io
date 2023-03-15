@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
-
 import { RouterLink } from '@angular/router';
-
 import { IntersectionObserverModule } from '@ng-web-apis/intersection-observer';
 import { SharedModule } from '@shared/shared.module';
 

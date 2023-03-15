@@ -2,22 +2,19 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-
   margin-top: 1.0416666666666667vw;
 
   &-info {
     display: flex;
     flex-wrap: wrap;
-
     width: 54.0625vw;
-    padding: 1.5625vw 1.0416666666666667vw 1.0416666666666667vw 1.0416666666666667vw;
-
+    padding: 1.5625vw 1.0416666666666667vw 1.0416666666666667vw
+      1.0416666666666667vw;
     background-color: #201f1e;
 
     .icon {
       width: 3.90625vw;
       height: 3.90625vw;
-
       border-radius: 0.9114583333333334vw;
 
       img {
@@ -101,9 +98,7 @@
     display: flex;
     align-items: center;
     width: 94.8vw;
-
     padding: 1.0416666666666667vw;
-
     border-radius: 1.5625vw;
     margin-top: 0.10416666666666667vw;
     background-color: #201f1e;
@@ -115,7 +110,6 @@
     .description-text {
       align-self: flex-start;
       width: 17.1875vw;
-
       margin-left: 1.0416666666666667vw;
 
       .title p {
