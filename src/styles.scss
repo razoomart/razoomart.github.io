@@ -40,6 +40,10 @@ body {
   cursor: url("/assets/images/cursor.svg"), auto;
 }
 
+a {
+  cursor: url("/assets/images/cursor-link.svg"), auto;
+}
+
 ::selection {
   background: #8de808;
   color: #201f1e;
