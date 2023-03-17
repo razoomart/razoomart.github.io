@@ -1,14 +1,19 @@
 .item {
   border-radius: 2.0833333333333335vw;
-  background-color: #201f1e;
+  background-color: #ffffff;
 }
 
 .stack {
+  background-color: #e1e9f8;
+  border-radius: 3.125vw;
+  padding: 2.6041666666666665vw;
+
   .title {
-    padding: 0 0 0 3.6458333333333335vw;
+    margin-left: 0.5208333333333334vw;
+    // padding: 0 0 0 3.6458333333333335vw;
 
     p {
-      color: #ffffff60;
+      color: #201f1e99;
       font-size: 5.208333333333333vw;
     }
   }
@@ -18,7 +23,6 @@
 
     .tech-list {
       display: flex;
-
       width: 100%;
       margin-top: 1.5625vw;
 
@@ -26,11 +30,10 @@
         display: flex;
         align-items: center;
         width: 31.875vw;
-        padding-left: 2.6041666666666665vw;
 
         p {
+          color: #201f1e;
           font-size: 2.6041666666666665vw;
-          color: #ffffff;
         }
       }
 
@@ -38,14 +41,12 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        width: 65.83333333333333vw;
         gap: 0.5208333333333334vw;
       }
 
       .technologies-many {
         flex-wrap: wrap;
         justify-content: flex-end;
-        gap: 0.4599vw;
 
         .item-11 {
           margin-top: 0.5208333333333334vw;
@@ -57,14 +58,12 @@
         flex-direction: column;
         width: 32.65625vw;
         height: 12.5vw;
-
-        padding: 0.78125vw 1.5625vw 1.5625vw 1.5625vw;
+        padding: 1.5625vw;
 
         .tech-logo {
           position: absolute;
           width: 9.375vw;
           height: 9.375vw;
-          margin-top: 0.78125vw;
 
           img {
             width: 100%;
@@ -76,15 +75,14 @@
         .tech-description {
           p {
             text-align: end;
-            color: #ffffff;
           }
         }
 
         .tech-title {
           height: 2.34375vw;
-          margin-top: 1vw;
 
           p {
+            color: #201f1e;
             font-size: 2.34375vw;
           }
         }
@@ -92,14 +90,12 @@
         .tech-description {
           display: flex;
           justify-content: flex-end;
-          align-items: flex-end;
-          height: 4.6875vw;
-          margin-top: 4vw;
+          margin-top: auto;
 
           p {
             font-size: 1.3020833333333333vw;
             text-align: end;
-            color: #ffffff60;
+            color: #201f1e99;
             line-height: 1.25;
           }
         }

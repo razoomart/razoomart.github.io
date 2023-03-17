@@ -1,5 +1,26 @@
-<div class="advantages">
-  <div
+<div
+  waIntersectionObserver
+  (waIntersectionObservee)="
+    intersectionService.onIntersection(
+      $event,
+      'blockAppearFadeSm',
+      'hidden',
+      200
+    )
+  "
+  class="advantages hidden"
+>
+  <div class="right">
+    <div class="title"><p>А работать мы можем даже без ТЗ!</p></div>
+    <div class="description">
+      <p>
+        Отсутствие ТЗ — не проблема, ведь мы составим <br />
+        его вместе с вами во время обсуждения проекта
+      </p>
+    </div>
+  </div>
+  <div class="left"><div class="preview"></div></div>
+  <!-- <div
     waIntersectionObserver
     (waIntersectionObservee)="
       intersectionService.onIntersection(
@@ -21,8 +42,9 @@
         получить наиболее актуальный результат
       </p>
     </div>
-  </div>
-  <div
+    <div class="preview"></div>
+  </div> -->
+  <!-- <div
     waIntersectionObserver
     waIntersectionThreshold="0.8"
     (waIntersectionObservee)="
@@ -39,5 +61,5 @@
         обсуждения и погружения в проект
       </p>
     </div>
-  </div>
+  </div> -->
 </div>
