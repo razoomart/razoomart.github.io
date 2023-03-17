@@ -9,19 +9,14 @@
   >
     <p>Используемые инструменты</p>
   </div>
-  <div class="content">
-    <div
-      waIntersectionObserver
-      waIntersectionThreshold="0.3"
-      (waIntersectionObservee)="
-        intersectionService.onIntersection(
-          $event,
-          'blockAppearFadeSm',
-          'hidden'
-        )
-      "
-      class="tech-list hidden"
-    >
+  <div
+    waIntersectionObserver
+    (waIntersectionObservee)="
+      intersectionService.onIntersection($event, 'blockAppearFadeSm', 'hidden')
+    "
+    class="content hidden"
+  >
+    <div class="tech-list">
       <div class="list-title">
         <p>Дизайн</p>
       </div>
