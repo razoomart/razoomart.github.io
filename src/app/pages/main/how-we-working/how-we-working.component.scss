@@ -15,7 +15,6 @@
 
     .block {
       border-radius: 2.34375vw;
-
       padding: 1.5625vw 2.0833333333333335vw;
 
       &-description {
@@ -58,7 +57,7 @@
             height: 3.5vw;
             left: 55.523809523809526vw;
             filter: drop-shadow(
-                0 0.23809523809523808vw 0.23809523809523808vw rgba(0, 0, 0, 0.1)
+              0 0.23809523809523808vw 0.23809523809523808vw rgba(0, 0, 0, 0.1)
             );
           }
 
@@ -93,13 +92,17 @@
     .special-conditions {
       display: flex;
       flex-direction: column;
-      background-color: #56aeff;
+      background: linear-gradient(
+        92.23deg,
+        #44c7ff 14.6%,
+        #98b5ff 59.23%,
+        #817ffd 99.01%
+      );
       padding: 2.0833333333333335vw 3.125vw 2vw 2.0833333333333335vw;
 
       .block-wrapper {
         display: flex;
         justify-content: space-between;
-
         margin-top: 1.25vw;
 
         .block-description p {
@@ -115,75 +118,88 @@
     }
 
     .speedrun {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
       width: 100%;
       height: 30.208333333333332vw;
       background-color: #ffffff;
-      padding: 2.0833333333333335vw;
+      padding: 1.0416666666666667vw;
 
-      .block-title {
+      .wrapper {
+        width: 100%;
+        height: 100%;
         display: flex;
+        align-items: flex-end;
+        border-radius: 1.8vw;
+        padding: 2.0833333333333335vw;
+        background-color: #8de808;
+        justify-content: space-between;
 
-        p {
-          font-size: 4.166666666666667vw;
-          color: #201f1e;
+        .block-title {
+          display: flex;
 
-          span img {
-            width: 17.4vw;
-            height: 2.3203125vw;
-          }
-        }
-      }
-
-      .block-info {
-        width: 13.4375vw;
-        height: 3.75vw;
-        display: flex;
-
-        &-wrapper {
-          width: 100%;
-          height: 100%;
-          transition: 0.2s;
-          border: 0.10416666666666667vw solid rgba(32, 31, 30, 0.6);
-          border-radius: 52.03125vw;
-
-          a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-
-            font-size: 1.3541666666666667vw;
-            text-decoration: none;
+          p {
+            font-size: 4.166666666666667vw;
+            line-height: 4vw;
             color: #201f1e;
 
-            img {
-              margin-left: 0.5vw;
-              width: 1.5vw;
-              height: 1.5vw;
+            span img {
+              margin-left: 0.8vw;
+              width: 17.4vw;
+              height: 2.3203125vw;
+            }
+
+            .first-word {
+              margin-bottom: 10px;
             }
           }
+        }
 
-          &:hover {
-            background-color: #201f1e;
+        .block-info {
+          width: 13.4375vw;
+          height: 3.75vw;
+          display: flex;
+
+          &-wrapper {
+            width: 100%;
+            height: 100%;
             transition: 0.2s;
-            transform: scale(1.05);
+            border: 0.10416666666666667vw solid rgba(32, 31, 30, 0.6);
+            border-radius: 52.03125vw;
 
             a {
-              color: #ffffff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              height: 100%;
+              font-size: 1.3541666666666667vw;
+              text-decoration: none;
+              color: #201f1e;
 
               img {
-                filter: invert(1);
+                margin-left: 0.5vw;
+                width: 1.5vw;
+                height: 1.5vw;
               }
             }
-          }
 
-          &:active {
-            transform: scale(0.95);
-            transition: 0.2s;
+            &:hover {
+              background-color: #201f1e;
+              transition: 0.2s;
+              transform: scale(1.05);
+
+              a {
+                color: #ffffff;
+
+                img {
+                  filter: invert(1);
+                }
+              }
+            }
+
+            &:active {
+              transform: scale(0.95);
+              transition: 0.2s;
+            }
           }
         }
       }
