@@ -98,6 +98,10 @@ img::selection {
   animation: fadeSm 0.5s;
 }
 
+.blockSlide {
+  animation: slide 0.5s;
+}
+
 @keyframes show {
   from {
     opacity: 0.1;
@@ -126,5 +130,16 @@ img::selection {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes slide {
+  from {
+    opacity: 0.1;
+    transform: translateX(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

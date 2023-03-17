@@ -75,7 +75,19 @@
               draggable="false"
             />
           </span>
-          <span class="new-price">860₽/час</span>
+          <span
+            waIntersectionObserver
+            (waIntersectionObservee)="
+              intersectionService.onIntersection(
+                $event,
+                'blockSlide',
+                'hidden',
+                1000
+              )
+            "
+            class="new-price hidden"
+            >860₽/час</span
+          >
         </p>
       </div>
     </div>
@@ -110,32 +122,34 @@
     </div>
     <div class="block speedrun">
       <div class="wrapper">
-        <div class="block-title">
-          <p>
-            Сайт
-            <span>
-              <img
-                [src]="icons.arrowRightLong.link"
-                [alt]="icons.arrowRightLong.description"
-                draggable="false"
-              />
-            </span>
-            <br />
-            за две недели <br />
-            и 50 000 рублей
-          </p>
-        </div>
-        <div class="block-info">
-          <div class="block-info-wrapper">
-            <a [routerLink]="links.PAGE_SPEEDRUN">
-              подробнее
-              <img
-                [src]="icons.arrowRightDark.link"
-                [alt]="icons.arrowRightDark.description"
-                draggable="false"
-            /></a>
+        <a [routerLink]="links.PAGE_SPEEDRUN">
+          <div class="block-title">
+            <p>
+              Сайт
+              <span>
+                <img
+                  [src]="icons.arrowRightLong.link"
+                  [alt]="icons.arrowRightLong.description"
+                  draggable="false"
+                />
+              </span>
+              <br />
+              за две недели <br />
+              и 50 000 рублей
+            </p>
           </div>
-        </div>
+          <div class="block-info">
+            <div class="block-info-wrapper">
+              <a [routerLink]="links.PAGE_SPEEDRUN">
+                подробнее
+                <img
+                  [src]="icons.arrowRightDark.link"
+                  [alt]="icons.arrowRightDark.description"
+                  draggable="false"
+              /></a>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
   </div>
