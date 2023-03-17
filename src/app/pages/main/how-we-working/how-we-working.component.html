@@ -26,7 +26,7 @@
       "
       class="block dedicated-team hidden"
     >
-      <div class="block-title"><p>Выделенная команда</p></div>
+      <div class="block-title"><p>Спринтами</p></div>
       <div class="block-description">
         <p>
           Выделенная команда на ваш проект, <br />
@@ -47,9 +47,12 @@
       "
       class="block designers-outstaffing hidden"
     >
-      <div class="block-title"><p>Аутстаффинг дизайнеров</p></div>
+      <div class="block-title"><p>По часам</p></div>
       <div class="block-description">
-        <p>Работа отдельных дизайнеров <br />вместе с вашей командой</p>
+        <p>
+          Работа отдельных дизайнеров по часам, <br />
+          подходит для небольших разовых задач
+        </p>
       </div>
       <div class="block-price">
         <p>
@@ -72,7 +75,19 @@
               draggable="false"
             />
           </span>
-          <span class="new-price">860₽/час</span>
+          <span
+            waIntersectionObserver
+            (waIntersectionObservee)="
+              intersectionService.onIntersection(
+                $event,
+                'blockSlide',
+                'hidden',
+                1000
+              )
+            "
+            class="new-price hidden"
+            >860₽/час</span
+          >
         </p>
       </div>
     </div>
@@ -90,33 +105,51 @@
     >
       <div class="block-title">
         <p>
-          Специальные условия для <br />
-          некоммерческих организаций <br />
-          и социальных проектов
+          А для некоммерческих организаций <br />
+          и социальных проектов у нас <br />
+          специальные условия
         </p>
       </div>
       <div class="block-wrapper">
         <div class="block-description">
           <p>
-            Мы хотим сделать этот мир лучше, поэтому с социальными <br />
-            некоммерческими проектами работаем на специальных условиях. <br />
-            Дизайн должен приносить пользу обществу!
+            Все работы мы выполняем по себестоимости, но вкладываем всю душу.
+            <br />
+            Ведь дизайн нужен не только для прибыли, но и для великих дел.
           </p>
         </div>
-        <div class="block-info">
-          <div class="block-info-content">
-            <a [routerLink]="links.PAGE_NONPROFIT">
-              <p>
-                подробнее
+      </div>
+    </div>
+    <div class="block speedrun">
+      <div class="wrapper">
+        <a [routerLink]="links.PAGE_SPEEDRUN">
+          <div class="block-title">
+            <p>
+              Сайт
+              <span>
                 <img
-                  [src]="icons.arrowRight.link"
-                  [alt]="icons.arrowRight.description"
+                  [src]="icons.arrowRightLong.link"
+                  [alt]="icons.arrowRightLong.description"
                   draggable="false"
                 />
-              </p>
-            </a>
+              </span>
+              <br />
+              за две недели <br />
+              и 50 000 рублей
+            </p>
           </div>
-        </div>
+          <div class="block-info">
+            <div class="block-info-wrapper">
+              <a [routerLink]="links.PAGE_SPEEDRUN">
+                подробнее
+                <img
+                  [src]="icons.arrowRightDark.link"
+                  [alt]="icons.arrowRightDark.description"
+                  draggable="false"
+              /></a>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
   </div>

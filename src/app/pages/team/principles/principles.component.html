@@ -1,48 +1,104 @@
 <div
   waIntersectionObserver
-  waIntersectionThreshold="0.4"
   (waIntersectionObservee)="
-    intersectionService.onIntersection($event, 'blockAppearFadeSm', 'hidden')
+    intersectionService.onIntersection(
+      $event,
+      'blockAppearFadeSm',
+      'hidden',
+      650
+    )
   "
   class="block our-principles hidden"
 >
   <div class="title">
-    <p>Наши принципы</p>
+    <p>Наши принципы:</p>
   </div>
   <div class="content">
-    <div class="item principle item-1">
-      <div class="title">
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          800
+        )
+      "
+      class="item item-1 hidden"
+    >
+      <div class="item-title">
         <p>Человечность</p>
       </div>
-      <div class="description">
+      <div class="item-description">
         <p>
-          Общаемся с заказчиком <br />
-          по-человечески, без лишней <br />
-          корпоративной духоты
+          Общаемся с заказчиком по-человечески, <br />
+          без лишней корпоративной духоты
         </p>
       </div>
     </div>
-    <div class="item principle item-2">
-      <div class="title">
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          900
+        )
+      "
+      class="item item-2 hidden"
+    >
+      <div class="item-title">
         <p>Открытость</p>
       </div>
-      <div class="description">
+      <div class="item-description">
         <p>
-          Мы работаем бок о бок с <br />
-          клиентом и всё ему показываем, <br />
-          даже если не всё идёт гладко
+          Работаем бок о бок с клиентом и всё ему <br />
+          показываем, даже если не всё идёт гладко
         </p>
       </div>
     </div>
-    <div class="item principle item-3">
-      <div class="title">
+    <div
+      waIntersectionObserver
+      waIntersectionThreshold="0.4"
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden'
+        )
+      "
+      class="item item-3 hidden"
+    >
+      <div class="item-title">
+        <p>Погружение</p>
+      </div>
+      <div class="item-description">
+        <p>
+          Погружаемся в проекты с головой, <br />
+          чтобы получить наилучший результат
+        </p>
+      </div>
+    </div>
+    <div
+      waIntersectionObserver
+      waIntersectionThreshold="0.4"
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden'
+        )
+      "
+      class="item item-4 hidden"
+    >
+      <div class="item-title">
         <p>Вовлечённость</p>
       </div>
-      <div class="description">
+      <div class="item-description">
         <p>
-          Для нас главное — результат, <br />
-          поэтому над каждым проектом <br />
-          мы стараемся по максимуму
+          Результат для нас — главное, поэтому над <br />
+          каждым проектом мы стараемся по максимуму
         </p>
       </div>
     </div>
