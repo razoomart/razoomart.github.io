@@ -30,7 +30,7 @@
       background-color: #ffffff;
       padding: 1.5625vw 1vw 1vw 1.5625vw;
       border-radius: 2.34375vw;
-
+      cursor: url("/assets/images/cursor-link.svg"), auto;
       transition: 0.2s;
 
       &-title {
@@ -124,7 +124,6 @@
       &:hover {
         transform: scale(1.01);
         transition: 0.1s;
-        cursor: pointer;
       }
     }
 
@@ -192,6 +191,7 @@
     }
 
     .pn {
+      cursor: url("/assets/images/cursor.svg"), auto !important;
       background-color: #fcfcfc;
 
       .project-title p {
