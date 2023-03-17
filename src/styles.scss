@@ -1,3 +1,5 @@
+@import "variables";
+
 @font-face {
   font-family: Intl-Book;
   src: url("/assets/fonts/Intl-Book.woff2") format("woff2");
@@ -9,16 +11,9 @@
 }
 
 @font-face {
-  font-family: Helvetica Neue;
-  src: url("/assets/fonts/Helvetica Neue.woff2") format("woff2");
-}
-
-@font-face {
   font-family: "SuisseIntl-Regular";
   src: url("assets/fonts/SuisseIntl-Regular.woff2") format("woff2");
 }
-
-@import "variables";
 
 * {
   margin: 0;
@@ -40,12 +35,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  line-height: 1.2;
   color: #ffffff;
 }
 
 ::selection {
-  background: #000000;
-  color: #ffffff;
+  background: #8de808;
+  color: #201f1e;
 }
 
 img::selection {
