@@ -78,10 +78,12 @@
             }
 
             &:hover {
+              opacity: 0.6;
+              transition: 0.2s;
+              
               .image img {
-                opacity: 1;
                 transform: rotate(45deg);
-                transition: 0.2s;
+                transition: 0.3s;
               }
             }
           }
