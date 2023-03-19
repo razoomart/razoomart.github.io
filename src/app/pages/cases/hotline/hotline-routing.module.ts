@@ -3,7 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HotlineComponent } from './hotline.component';
 
-const routes: Routes = [{ path: '', component: HotlineComponent }];
+const routes: Routes = [
+  {
+    path: '',
+    component: HotlineComponent,
+    title: 'Кейс Hotline — айдентика и сайт',
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
