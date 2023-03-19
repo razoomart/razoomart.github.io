@@ -5,6 +5,7 @@ enum IconType {
   arrowRightDark = 'arrowRightDark',
   arrowRightLong = 'arrowRightLong',
   arrowTop = 'arrowTop',
+  arrowTopRight = 'arrowTopRight',
   logo = 'logo',
   logoAntiHype = 'logoAntiHype',
   logoDobro = 'logoDobro',
@@ -58,6 +59,10 @@ const IconList: { [key in IconType]: IconInfo } = {
   [IconType.arrowTop]: {
     link: 'assets/icons/arrow-top.svg',
     description: 'arrow to top icon',
+  },
+  [IconType.arrowTopRight]: {
+    link: 'assets/icons/arrow-top-right.svg',
+    description: 'arrow to top right icon',
   },
   [IconType.logo]: {
     link: 'assets/icons/headers/logo.svg',

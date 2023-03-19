@@ -1,0 +1,79 @@
+.project-info {
+  .section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6.770833333333333vw 0 3.6458333333333335vw;
+
+    &-title {
+      width: 40%;
+
+      p {
+        font-size: 2.0833333333333335vw;
+      }
+    }
+
+    &-description {
+      width: 60%;
+
+      p {
+        font-size: 1.875vw;
+      }
+    }
+  }
+
+  .section-2 {
+    margin-top: 5.833333333333333vw;
+  }
+
+  .images {
+    width: 100%;
+    height: 23.5vw;
+    margin: 7.8125vw 0 10.416666666666666vw 0;
+
+    .content {
+      width: 100%;
+      height: 100%;
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .image {
+          position: absolute;
+          left: 27.1875vw;
+          margin-top: auto;
+        }
+
+        .image-1 {
+          width: 45.625vw;
+          height: 9.53125vw;
+        }
+
+        .image-2 {
+          width: 36.614583333333336vw;
+          height: 5.989583333333333vw;
+          margin-top: 10.5vw;
+        }
+
+        .image-3 {
+          width: 18.90625vw;
+          height: 5.989583333333333vw;
+          margin-top: 17.5vw;
+        }
+      }
+    }
+  }
+
+  .section-3 {
+    padding: 0;
+    padding-right: 5.7291666667vw;
+
+    .section-description {
+      width: 58%;
+      justify-content: flex-end;
+      margin-left: auto;
+    }
+  }
+}
