@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { ImageList } from '@constants/images.constants';
 
 @Component({
-  selector: 'app-hotline',
-  templateUrl: './hotline.component.html',
-  styleUrls: ['./hotline.component.scss'],
+  selector: 'app-part-two',
+  templateUrl: './part-two.component.html',
+  styleUrls: ['./part-two.component.scss'],
 })
-export class HotlineComponent {
+export class PartTwoComponent {
   public images = ImageList;
 }

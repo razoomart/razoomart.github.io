@@ -2,16 +2,22 @@ import { ImageInfo } from '@interfaces/imageInfo.interfaces';
 
 enum ImageType {
   albina = 'albina',
+  smallAlbina = 'smallAlbina',
   artem = 'artem',
+  smallArtem = 'smallArtem',
   danya = 'danya',
   danya2 = 'danya2',
   ilana = 'ilana',
+  smallIlana = 'smallIlana',
   ilana2 = 'ilana2',
   ilyaK = 'ilyaK',
   ilyaU = 'ilyaU',
+  smallIlyaU = 'smallIlyaU',
   maksim = 'maksim',
+  smallMaksim = 'smallMaksim',
   ivan = 'ivan',
   bogdan = 'bogdan',
+  smallBogdan = 'smallBogdan',
   vova = 'vova',
   strikethroughText = 'strikethroughText',
   casePreviewEither = 'casePreviewEither',
@@ -20,6 +26,24 @@ enum ImageType {
   casePreviewPn2 = 'casePreviewPn2',
   casePreviewSilent = 'casePreviewSilent',
   casePreviewSpbedu = 'casePreviewSpbedu',
+  bubble1 = 'bubble1',
+  bubble2 = 'bubble2',
+  bubble3 = 'bubble3',
+  hotlineColors = 'hotlineColors',
+  hotlineDatacenter = 'hotlineDatacenter',
+  hotlineServers = 'hotlineServers',
+  hotlineFloppyDisk = 'hotlineFloppyDisk',
+  hotlinePhoneCase = 'hotlinePhoneCase',
+  hotlineCoins = 'hotlineCoins',
+  hotlineHelp = 'hotlineHelp',
+  hotlineScreen = 'hotlineScreen',
+  hotlineHosting = 'hotlineHosting',
+  hotlineVirtualServers = 'hotlineVirtualServers',
+  hotlinePhone1 = 'hotlinePhone1',
+  hotlinePhone2 = 'hotlinePhone2',
+  hotlinePhone3 = 'hotlinePhone3',
+  hotlineClouds = 'hotlineClouds',
+  hotlineLogo = 'hotlineLogo',
 }
 
 const ImageList: { [key in ImageType]: ImageInfo } = {
@@ -27,8 +51,16 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
     link: 'assets/images/memojis/albina.webp',
     description: 'memoji image',
   },
+  [ImageType.smallAlbina]: {
+    link: 'assets/images/memojis/small/small-albina.webp',
+    description: 'memoji image',
+  },
   [ImageType.artem]: {
     link: 'assets/images/memojis/artem.webp',
+    description: 'memoji image',
+  },
+  [ImageType.smallArtem]: {
+    link: 'assets/images/memojis/small/small-artem.webp',
     description: 'memoji image',
   },
   [ImageType.danya]: {
@@ -43,6 +75,10 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
     link: 'assets/images/memojis/ilana.webp',
     description: 'memoji image',
   },
+  [ImageType.smallIlana]: {
+    link: 'assets/images/memojis/small/small-ilana.webp',
+    description: 'memoji image',
+  },
   [ImageType.ilana2]: {
     link: 'assets/images/Ilana2.webp',
     description: 'memoji image',
@@ -55,8 +91,16 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
     link: 'assets/images/memojis/ilyaU.webp',
     description: 'memoji image',
   },
+  [ImageType.smallIlyaU]: {
+    link: 'assets/images/memojis/small/small-ilyaU.webp',
+    description: 'memoji image',
+  },
   [ImageType.maksim]: {
     link: 'assets/images/memojis/maksim.webp',
+    description: 'memoji image',
+  },
+  [ImageType.smallMaksim]: {
+    link: 'assets/images/memojis/small/small-maksim.webp',
     description: 'memoji image',
   },
   [ImageType.ivan]: {
@@ -65,6 +109,10 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
   },
   [ImageType.bogdan]: {
     link: 'assets/images/memojis/bogdan.webp',
+    description: 'memoji image',
+  },
+  [ImageType.smallBogdan]: {
+    link: 'assets/images/memojis/small/small-bogdan.webp',
     description: 'memoji image',
   },
   [ImageType.vova]: {
@@ -98,6 +146,78 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
   [ImageType.casePreviewSpbedu]: {
     link: 'assets/images/projects/case-preview-spbedu.webp',
     description: 'spbedu project preview image',
+  },
+  [ImageType.bubble1]: {
+    link: 'assets/images/projects/hotline/bubble1.svg',
+    description: 'bubble message image',
+  },
+  [ImageType.bubble2]: {
+    link: 'assets/images/projects/hotline/bubble2.svg',
+    description: 'bubble message image',
+  },
+  [ImageType.bubble3]: {
+    link: 'assets/images/projects/hotline/bubble3.svg',
+    description: 'bubble message image',
+  },
+  [ImageType.hotlineColors]: {
+    link: 'assets/images/projects/hotline/hotline-colors.svg',
+    description: 'cards with colors image',
+  },
+  [ImageType.hotlineDatacenter]: {
+    link: 'assets/images/projects/hotline/hotline-datacenter.webp',
+    description: 'dataserver image',
+  },
+  [ImageType.hotlineServers]: {
+    link: 'assets/images/projects/hotline/hotline-servers.webp',
+    description: 'servers image',
+  },
+  [ImageType.hotlineFloppyDisk]: {
+    link: 'assets/images/projects/hotline/hotline-floppy-disk.webp',
+    description: 'hotline floppy disk image',
+  },
+  [ImageType.hotlinePhoneCase]: {
+    link: 'assets/images/projects/hotline/hotline-phone-case.webp',
+    description: 'hotline phone case image',
+  },
+  [ImageType.hotlineCoins]: {
+    link: 'assets/images/projects/hotline/hotline-coins.svg',
+    description: 'coins image',
+  },
+  [ImageType.hotlineHelp]: {
+    link: 'assets/images/projects/hotline/hotline-help.svg',
+    description: 'help text cards image',
+  },
+  [ImageType.hotlineScreen]: {
+    link: 'assets/images/projects/hotline/hotline-screen.svg',
+    description: 'screen border image',
+  },
+  [ImageType.hotlineHosting]: {
+    link: 'assets/images/projects/hotline/hotline-hosting.webp',
+    description: 'hotline hosting site screenshot image',
+  },
+  [ImageType.hotlineVirtualServers]: {
+    link: 'assets/images/projects/hotline/hotline-virtual-servers.webp',
+    description: 'hotline hosting site screenshot image',
+  },
+  [ImageType.hotlinePhone1]: {
+    link: 'assets/images/projects/hotline/hotline-phone-1.webp',
+    description: 'hotline hosting site screenshot image',
+  },
+  [ImageType.hotlinePhone2]: {
+    link: 'assets/images/projects/hotline/hotline-phone-2.webp',
+    description: 'hotline hosting site screenshot image',
+  },
+  [ImageType.hotlinePhone3]: {
+    link: 'assets/images/projects/hotline/hotline-phone-3.webp',
+    description: 'hotline hosting site screenshot image',
+  },
+  [ImageType.hotlineClouds]: {
+    link: 'assets/images/projects/hotline/hotline-clouds.webp',
+    description: 'clouds image',
+  },
+  [ImageType.hotlineLogo]: {
+    link: 'assets/images/projects/hotline/hotline-logo.svg',
+    description: 'hotline logo image',
   },
 };
 
