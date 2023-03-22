@@ -12,7 +12,6 @@
     .element {
       width: 8.541666666666666vw;
       height: 2.3958333333333335vw;
-
       user-select: none;
       -webkit-user-select: none;
 
@@ -38,7 +37,6 @@
         &:hover {
           transform: scale(1.1);
           transition: 0.2s;
-
           filter: drop-shadow(0 0 1.1904761904761905vw #92ff00);
         }
 
@@ -52,7 +50,6 @@
     .write-to-us {
       background-color: #201f1e;
       border-radius: 52.03125vw;
-
       transition: 0.2s;
 
       &:hover {
