@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-
 import { IconList } from '@constants/icons.constants';
 import { AnchorPath } from '@enums/anchor.enums';
 import { MediaLink } from '@enums/link.enums';
-
 import { ScrollToElementService } from '@services/scroll-to-element.service';
 
 import { headerSrcList } from './header.constants';
@@ -30,7 +28,6 @@ export class HeaderComponent implements OnInit {
   public isMenuOpened = false;
   public currentUrl = '/';
   public icons = IconList;
-
   public headerSrc = IconList.logo.link;
   public headerList = headerSrcList;
   public links = MediaLink;
@@ -55,6 +52,12 @@ export class HeaderComponent implements OnInit {
       this.isMenuOpened = true;
       document.body.classList.add('scroll-disabled');
     }
+  }
+
+  mobileBtnAction(): void {
+    this.isMenuOpened = false;
+    document.body.classList.remove('scroll-disabled');
+    this.scroll(this.anchorPath.LETS_WORK);
   }
 
   scrollTop(): void {
