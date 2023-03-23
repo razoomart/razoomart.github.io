@@ -80,11 +80,19 @@ img::selection {
 #footer {
   margin-top: 39vw;
   padding-bottom: 0.5208333333333334vw;
+
+  @media screen and (max-width: 414px) {
+    margin-top: 150vw;
+  }
 }
 
 #top-space {
   height: 4.5vw;
   background-color: transparent;
+
+  @media screen and (max-width: 414px) {
+    height: 20vw;
+  }
 }
 
 .scroll-disabled {

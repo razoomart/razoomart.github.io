@@ -91,6 +91,10 @@
           justify-content: flex-end;
           margin-top: auto;
 
+          .hide-mobile {
+            display: none;
+          }
+
           p {
             font-size: 1.3020833333333333vw;
             text-align: end;
@@ -101,6 +105,16 @@
       }
 
       .item-1 {
+        .tech-description p {
+          br {
+            display: none;
+          }
+
+          .hide-mobile {
+            display: block;
+          }
+        }
+
         .tech-logo img {
           filter: drop-shadow(
             0 0.20833333333333334vw 3.125vw rgba(151, 165, 228, 0.2)
@@ -193,6 +207,85 @@
       .item-11 {
         .tech-description {
           margin-top: 2.5vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .stack {
+    border-radius: 6.410256410256411vw;
+    padding: 2.5641025641025643vw;
+
+    .title {
+      margin-left: 2.5641025641025643vw;
+      margin-top: 2.5641025641025643vw;
+
+      p {
+        font-size: 9.23076923076923vw;
+        line-height: 9.23076923076923vw;
+      }
+    }
+
+    .content {
+      .tech-list {
+        flex-direction: column;
+        margin-top: 7.6923076923076925vw;
+
+        .list-title {
+          margin-left: 2.5641025641025643vw;
+          width: 100%;
+
+          p {
+            font-size: 7.17948717948718vw;
+          }
+        }
+
+        .technologies {
+          flex-direction: column;
+          margin-top: 5.128205128205129vw;
+
+          .item {
+            width: 100%;
+            height: 35.8974358974359vw;
+            padding: 4.615384615384615vw;
+            border-radius: 5.897435897435898vw;
+
+            .tech-logo {
+              width: 26.666666666666668vw;
+              height: 26.666666666666668vw;
+            }
+
+            .tech-title {
+              height: auto;
+
+              p {
+                font-size: 7.17948717948718vw;
+                line-height: 4.615384615384615vw;
+              }
+            }
+
+            .tech-description {
+              margin-top: auto;
+
+              .hide-mobile {
+                display: none;
+              }
+
+              p {
+                font-size: 3.8461538461538463vw;
+
+                .hide-mobile {
+                  display: none;
+                }
+
+                br {
+                  display: block;
+                }
+              }
+            }
+          }
         }
       }
     }

@@ -1,12 +1,17 @@
 .content {
   padding: 0 0.5952380952380952vw;
 
-  #top-space {
-    height: 4.5vw;
-    background-color: transparent;
-  }
-
   #footer {
     margin-top: 34.5vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .content {
+    padding: 0 2.5641025641025643vw;
+
+    #footer {
+      margin-top: 150vw;
+    }
   }
 }
