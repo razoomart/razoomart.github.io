@@ -121,7 +121,18 @@
         </div>
       </div>
     </div>
-    <div class="block speedrun">
+    <div
+      waIntersectionObserver
+      waIntersectionThreshold="0.2"
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden'
+        )
+      "
+      class="block speedrun hidden"
+    >
       <div class="wrapper">
         <a [routerLink]="links.PAGE_SPEEDRUN">
           <div class="block-title">

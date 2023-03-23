@@ -456,7 +456,7 @@
       padding: 3.58974358974359vw;
 
       .description-text {
-        margin: 0;
+        margin: 0 !important;
       }
     }
   }
@@ -473,6 +473,10 @@
     .project-description {
       .designers {
         height: 9vw;
+      }
+
+      .management {
+        margin-left: 1.0256410256410255vw;
       }
     }
   }
