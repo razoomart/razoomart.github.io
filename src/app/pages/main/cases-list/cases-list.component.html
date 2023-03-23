@@ -129,6 +129,112 @@
         <div class="project-preview"></div>
       </a>
     </div>
+    <div
+      waIntersectionObserver
+      waIntersectionThreshold="0.2"
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          200
+        )
+      "
+      class="mobile-project mobile-hotline hidden"
+    >
+      <a [routerLink]="links.CASE_HOTLINE">
+        <div class="project-title">
+          <p>
+            Hotline
+            <span class="line">—</span>
+            <br />
+            <span>облачный хостинг</span>
+          </p>
+        </div>
+        <div class="project-preview"></div>
+        <div class="bottom">
+          <div class="project-description">
+            <p>Полностью задизайнили стартап: брендинг, сайт и коммуникации</p>
+          </div>
+          <div class="project-case-btn">
+            <div class="wrapper">
+              <a [routerLink]="links.CASE_HOTLINE">смотреть кейс</a>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      waIntersectionObserver
+      waIntersectionThreshold="0.2"
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          200
+        )
+      "
+      class="mobile-project mobile-bequick hidden"
+    >
+      <a [routerLink]="links.CASE_BEQUICK">
+        <div class="project-title">
+          <p>
+            Bequick
+            <span class="line">—</span>
+            <br />
+            <span>курьерская служба</span>
+          </p>
+        </div>
+        <div class="project-preview"></div>
+        <div class="bottom">
+          <div class="project-description">
+            <p>
+              Брендинг и <br />
+              айдентика для курьерской службы
+            </p>
+          </div>
+          <div class="project-case-btn">
+            <div class="wrapper">
+              <a [routerLink]="links.CASE_BEQUICK">смотреть кейс</a>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      waIntersectionObserver
+      waIntersectionThreshold="0.2"
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          200
+        )
+      "
+      class="mobile-project mobile-pn hidden"
+    >
+      <div class="wrapper">
+        <div class="project-title">
+          <p>
+            Петербургская <br />
+            Недвижимость
+          </p>
+        </div>
+        <div class="project-preview">
+          <img [src]="images.casePreviewPn.link" [alt]="" draggable="false" />
+        </div>
+        <div class="bottom">
+          <div class="project-description">
+            <p>
+              Прямо сейчас переделываем сайт и разрабатываем новую
+              дизайн-систему для крупнейшего застройщика Санкт-Петербурга
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <a
       waIntersectionObserver
       (waIntersectionObservee)="
