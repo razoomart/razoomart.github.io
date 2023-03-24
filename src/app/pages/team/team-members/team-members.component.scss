@@ -8,7 +8,7 @@
   height: 100%;
   background-color: #b2dd57;
   border-radius: 3.1578947368421053vw;
-  padding: 2.6041666666666665vw 2vw 3.125vw 2.6vw;
+  padding: 2.6041666666666665vw 2vw 4vw 2vw;
 
   .title {
     p {
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1.0416666666666667vw;
+    gap: 0.95vw;
     margin-top: 2.6041666666666665vw;
 
     a {
@@ -31,7 +31,7 @@
     }
 
     .card {
-      width: 17.708333333333332vw;
+      width: 17.4vw;
       height: 24.739583333333332vw;
       display: flex;
       flex-direction: column;
@@ -111,8 +111,8 @@
           margin-bottom: 0.5vw;
 
           img {
-            width: 1.5625vw;
-            height: 1.5625vw;
+            width: 100%;
+            height: 100%;
             transition: 0.2s;
           }
         }
@@ -130,6 +130,101 @@
 
       &:active {
         transform: scale(0.98);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .team {
+    .content {
+      gap: 1.04vw;
+
+      .card {
+        width: 17.6vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .team {
+    height: 81vw;
+    padding: 0;
+    padding-top: 5.128205128205129vw;
+    border-radius: 6.410256410256411vw;
+
+    .title {
+      margin-left: 5.128205128205129vw;
+
+      p {
+        font-size: 9.23076923076923vw;
+      }
+    }
+
+    .content {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 1.2820512820512822vw;
+      margin-top: 5.128205128205129vw;
+      overflow-x: auto;
+      overflow-y: hidden;
+
+      .card {
+        width: 38.46153846153846vw;
+        height: 53.58974358974359vw;
+        border-radius: 3.3333333333333335vw;
+        padding: 2.051282051282051vw 2.5641025641025643vw 2.5641025641025643vw
+          2.5641025641025643vw;
+
+        .avatar {
+          width: 30.76923076923077vw;
+          height: 30.76923076923077vw;
+        }
+
+        .name {
+          margin-top: auto;
+          height: auto;
+
+          p {
+            font-size: 4.615384615384615vw;
+            line-height: 4.615384615384615vw;
+          }
+        }
+
+        .role {
+          margin-top: auto;
+          height: auto;
+
+          p {
+            font-size: 3.3333333333333335vw;
+            line-height: 3.6666666666666665vw;
+          }
+        }
+      }
+
+      .artem-card {
+        margin-left: 5.128205128205129vw;
+      }
+
+      .bogdan-card,
+      .vova-card {
+        .description {
+          margin-top: auto;
+
+          .arrow {
+            width: 2.5vw;
+            height: 2.5vw;
+          }
+        }
+
+        &:hover {
+          transform: scale(1);
+        }
+      }
+
+      .vova-card {
+        margin-right: 5.128205128205129vw;
       }
     }
   }

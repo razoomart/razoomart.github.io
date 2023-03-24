@@ -12,7 +12,8 @@
           </div>
           <div class="link-text">
             <p>
-              <span>Telegram-канал</span>
+              <span>Telegram</span>
+              <span class="hide-mobile">-канал</span>
               <br />
               @razoomart
             </p>
@@ -21,16 +22,20 @@
       </div>
       <div class="link behance">
         <a [href]="mediaLink.BEHANCE" target="_blank">
-          <img
-            [src]="icons.behanceLogo.link"
-            [alt]="icons.behanceLogo.description"
-            draggable="false"
-          />
-          <p>
-            <span>Беханс</span>
-            <br />
-            @razoomart
-          </p>
+          <div class="link-image">
+            <img
+              [src]="icons.behanceLogo.link"
+              [alt]="icons.behanceLogo.description"
+              draggable="false"
+            />
+          </div>
+          <div class="link-text">
+            <p>
+              <span>Беханс</span>
+              <br />
+              @razoomart
+            </p>
+          </div>
         </a>
       </div>
     </div>

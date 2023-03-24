@@ -64,3 +64,66 @@
     </div>
   </div>
 </div>
+<div class="mobile-block">
+  <div class="content">
+    <div class="title">
+      <p>Разумная продуктовая <br />дизайн-команда</p>
+    </div>
+    <div class="price-button">
+      <a (click)="scroll(anchorPath.PRICE)">
+        <p>от 860 ₽/час</p>
+      </a>
+    </div>
+    <div class="description">
+      <div class="text">
+        <p>
+          Создаём цифровые <br />
+          продукты и запускаем <br />сервисы для стартапов и корпораций
+          <span>
+            <img
+              [src]="icons.sparkles.link"
+              [alt]="icons.sparkles.description"
+              draggable="false"
+            />
+          </span>
+        </p>
+      </div>
+      <div
+        waIntersectionObserver
+        (waIntersectionObservee)="
+          intersectionService.onIntersection(
+            $event,
+            'memojiAppear2',
+            'hidden',
+            850
+          )
+        "
+        class="memoji albina-memoji hidden"
+      >
+        <img
+          [src]="images.albina.link"
+          [alt]="images.albina.description"
+          draggable="false"
+        />
+      </div>
+      <div
+        waIntersectionObserver
+        (waIntersectionObservee)="
+          intersectionService.onIntersection(
+            $event,
+            'memojiAppear',
+            'hidden',
+            300
+          )
+        "
+        class="memoji ilyaU-memoji hidden"
+      >
+        <img
+          [src]="images.ilyaU.link"
+          [alt]="images.ilyaU.description"
+          draggable="false"
+        />
+      </div>
+    </div>
+  </div>
+</div>
