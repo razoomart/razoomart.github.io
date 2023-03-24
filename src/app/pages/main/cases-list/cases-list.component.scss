@@ -261,6 +261,10 @@
       }
     }
 
+    .mobile-project {
+      display: none;
+    }
+
     .all-cases-btn {
       flex-grow: 1;
       display: flex;
@@ -313,6 +317,191 @@
 
       &:active {
         transform: scale(0.99);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .some-projects {
+    .title {
+      padding: 0 0 0 5.128205128205129vw;
+
+      p {
+        font-size: 9.23076923076923vw;
+        line-height: 9.23076923076923vw;
+      }
+    }
+
+    .project-list {
+      flex-direction: column;
+      gap: 1.2820512820512822vw;
+      margin-top: 5.128205128205129vw;
+
+      .project {
+        display: none;
+      }
+
+      .mobile-project {
+        display: block;
+        width: 100%;
+        height: 128.2051282051282vw;
+        padding: 5.128205128205129vw;
+        border-radius: 6.410256410256411vw;
+
+        a,
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+
+          .project-title {
+            p {
+              font-size: 7.6923076923076925vw;
+              line-height: 8.461538461538462vw;
+              color: #201f1e;
+
+              span {
+                color: #201f1e99;
+              }
+            }
+          }
+
+          .project-preview {
+            height: 100%;
+            margin: 4.615384615384615vw 2.5641025641025643vw;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .bottom {
+            display: flex;
+            margin-top: auto;
+            gap: 3.58974358974359vw;
+
+            .project-description,
+            .project-case-btn {
+              width: 50%;
+            }
+
+            .project-description {
+              p {
+                font-size: 3.58974358974359vw;
+                line-height: 4.923076923076923vw;
+                color: #201f1ecc;
+              }
+            }
+
+            .project-case-btn {
+              display: flex;
+              align-items: flex-end;
+
+              .wrapper {
+                text-decoration: none;
+                width: 100%;
+                height: 11.794871794871796vw;
+                border: 0.2564102564102564vw solid #201f1e99;
+                border-radius: 59.464285714285715vw;
+
+                a {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  color: #201f1e;
+                  font-size: 3.58974358974359vw;
+                }
+
+                &:hover {
+                  background-color: #201f1e;
+
+                  a {
+                    color: #ffffff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .mobile-hotline {
+        background-color: #ddff20;
+      }
+
+      .mobile-bequick {
+        background-color: #201f1e;
+
+        a {
+          .project-title {
+            p {
+              color: #ffffff;
+
+              span {
+                color: #ffffff99;
+              }
+            }
+          }
+
+          .bottom {
+            .project-description {
+              p {
+                color: #ffffffcc;
+              }
+            }
+
+            .project-case-btn {
+              .wrapper {
+                border: 0.2564102564102564vw solid rgba(255, 255, 255, 0.6);
+
+                a {
+                  color: #ffffff;
+                }
+
+                &:hover {
+                  background-color: #fff;
+
+                  a {
+                    color: #201f1e;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .mobile-pn {
+        background-color: #ffffff;
+
+        .bottom {
+          .project-description {
+            width: 100% !important;
+          }
+        }
+      }
+
+      .all-cases-btn {
+        width: 100%;
+        height: 20.512820512820515vw;
+        border-radius: 6.410256410256411vw;
+
+        p {
+          font-size: 7.6923076923076925vw;
+
+          span {
+            margin-left: 3.8461538461538463vw;
+
+            img {
+              width: 8.461538461538462vw;
+              height: 4.871794871794871vw;
+            }
+          }
+        }
       }
     }
   }

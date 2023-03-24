@@ -2,6 +2,10 @@
   border-radius: 3.1578947368421053vw;
 
   .title {
+    .text-mobile {
+      display: none;
+    }
+
     p {
       color: #201f1e;
       font-size: 5.208333333333333vw;
@@ -26,6 +30,28 @@
       img {
         width: 3.5vw;
         height: 3.5vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .first-block {
+    border-radius: 6.410256410256411vw;
+    padding: 5.128205128205129vw;
+
+    .title p {
+      display: none;
+    }
+
+    .title .text-mobile {
+      display: block;
+      font-size: 7.948717948717949vw;
+      line-height: 9.128205128205128vw;
+
+      img {
+        width: 6.5vw;
+        height: 6.5vw;
       }
     }
   }

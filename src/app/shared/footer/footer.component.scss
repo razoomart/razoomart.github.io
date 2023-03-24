@@ -2,7 +2,6 @@
   display: flex;
   width: 100%;
   height: 7.604166666666667vw;
-
   background-color: #201f1e;
   border-radius: 2.0833333333333335vw;
 
@@ -29,10 +28,8 @@
         height: 4.791666666666667vw;
         display: flex;
         align-items: center;
-
         border-radius: 1vw;
         padding: 0.8vw;
-
         transition: 0.3s;
 
         a {
@@ -101,6 +98,71 @@
 
       span {
         padding-right: 1.3020833333vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .footer {
+    border-radius: 5.128205128205129vw;
+    height: 33.58974358974359vw;
+
+    .content {
+      flex-direction: column;
+      padding: 5.128205128205129vw;
+
+      .links {
+        .link {
+          padding: 0;
+          width: auto;
+          height: auto;
+
+          a {
+            .link-image img {
+              width: 11.538461538461538vw;
+              height: 11.538461538461538vw;
+            }
+
+            .link-text {
+              .hide-mobile {
+                display: none;
+              }
+
+              p,
+              span {
+                font-size: 4.615384615384615vw;
+              }
+
+              p {
+                margin-left: 1.2820512820512822vw;
+              }
+            }
+          }
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+
+        .behance {
+          margin-left: 7.17948717948718vw;
+        }
+      }
+
+      .text {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0;
+        text-align: start;
+        margin-top: auto;
+
+        a p,
+        span {
+          padding: 0;
+          line-height: 1.2;
+          font-size: 4.102564102564102vw;
+        }
       }
     }
   }

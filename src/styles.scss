@@ -56,27 +56,43 @@ img::selection {
 
 .mtdef {
   margin-top: 0.5208333333333334vw;
+
+  @media screen and (max-width: 414px) {
+    margin-top: 1.2820512820512822vw;
+  }
 }
 
 .mtt {
   margin-top: 5.208333333333333vw;
+
+  @media screen and (max-width: 414px) {
+    margin-top: 17.94871794871795vw;
+  }
 }
 
 #header {
   position: fixed;
   width: 100%;
   background: linear-gradient(0deg, transparent 0, transparent 30%, #00000030);
-  z-index: 1;
+  z-index: 100;
 }
 
 #footer {
   margin-top: 39vw;
   padding-bottom: 0.5208333333333334vw;
+
+  @media screen and (max-width: 414px) {
+    margin-top: 150vw;
+  }
 }
 
 #top-space {
   height: 4.5vw;
   background-color: transparent;
+
+  @media screen and (max-width: 414px) {
+    height: 20vw;
+  }
 }
 
 .scroll-disabled {

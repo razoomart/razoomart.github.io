@@ -69,10 +69,6 @@
           color: #201f1e;
           font-size: 3.3854166666666665vw;
           text-decoration: none;
-
-          p {
-            color: #000000;
-          }
         }
 
         &:hover {
@@ -88,57 +84,61 @@
         }
       }
     }
+  }
+}
 
-    .memoji {
-      position: absolute;
-      width: 15.261904761904763vw;
-      height: 15.261904761904763vw;
+.memoji {
+  position: absolute;
+  width: 15.261904761904763vw;
+  height: 15.261904761904763vw;
 
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
 
-    .albina-memoji {
-      right: 2.2vw;
-      top: 7.619047619047619vw;
-      transition: 0.2s;
+.albina-memoji {
+  right: 2.2vw;
+  top: 7.619047619047619vw;
+  transition: 0.2s;
 
-      img {
-        animation: memojiAnim1 10s infinite;
-      }
+  img {
+    animation: memojiAnim1 10s infinite;
+  }
 
-      &:hover {
-        transform: rotate(-2deg) scale(1.1);
-        transition: 0.5s;
+  &:hover {
+    transform: rotate(-2deg) scale(1.1);
+    transition: 0.5s;
 
-        a {
-          cursor: default;
-        }
-      }
-    }
-
-    .ilyaU-memoji {
-      right: 15vw;
-      top: 14.583333333333334vw;
-      transition: 0.2s;
-      transform: scale(1) rotate(-4deg);
-
-      img {
-        animation: memojiAnim2 10s infinite;
-      }
-
-      &:hover {
-        transform: rotate(-2deg) scale(1.1);
-        transition: 0.5s;
-
-        a {
-          cursor: default;
-        }
-      }
+    a {
+      cursor: default;
     }
   }
+}
+
+.ilyaU-memoji {
+  right: 15vw;
+  top: 14.583333333333334vw;
+  transition: 0.2s;
+  transform: scale(1) rotate(-4deg);
+
+  img {
+    animation: memojiAnim2 10s infinite;
+  }
+
+  &:hover {
+    transform: rotate(-2deg) scale(1.1);
+    transition: 0.5s;
+
+    a {
+      cursor: default;
+    }
+  }
+}
+
+.mobile-block {
+  display: none;
 }
 
 .memojiAppear {
@@ -196,5 +196,107 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .first-block {
+    display: none;
+  }
+
+  .mobile-block {
+    width: 100%;
+    height: 100%;
+    background-color: #5e6eff;
+    border-bottom-left-radius: 6.410256410256411vw;
+    border-bottom-right-radius: 6.410256410256411vw;
+    display: block;
+
+    .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 32vw 2.5641025641025643vw 5.128205128205129vw
+        2.5641025641025643vw;
+
+      .title {
+        z-index: 1;
+
+        p {
+          font-weight: 400;
+          font-size: 9.743589743589743vw;
+          line-height: 10.76923076923077vw;
+        }
+      }
+
+      .price-button {
+        width: 64.1025641025641vw;
+        height: 20.512820512820515vw;
+        margin-top: 10.256410256410257vw;
+        align-self: flex-end;
+        border-radius: 117.17948717948718vw;
+        background-color: #ffffff;
+        transition: 0.2s;
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+
+          p {
+            font-size: 7.17948717948718vw;
+            color: #222222;
+          }
+        }
+
+        &:hover {
+          background-color: #fef747;
+          box-shadow: 0 0 2.9761904761904763vw #fef747;
+          transform: rotate(-3deg) scale(1.1);
+          transition: 0.2s;
+        }
+      }
+
+      .description {
+        display: flex;
+        margin-top: auto;
+        margin-left: 2.5641025641025643vw;
+
+        .text {
+          p {
+            font-size: 6.666666666666667vw;
+            line-height: 8vw;
+          }
+
+          span img {
+            width: 6.5vw;
+            height: 6.5vw;
+          }
+        }
+
+        .memoji {
+          width: 35vw;
+          height: 35vw;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .albina-memoji {
+          top: 27vw;
+          right: 2vw;
+        }
+
+        .ilyaU-memoji {
+          top: 67vw;
+          left: -2vw;
+        }
+      }
+    }
   }
 }
