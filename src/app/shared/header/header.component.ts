@@ -55,9 +55,18 @@ export class HeaderComponent implements OnInit {
   }
 
   mobileBtnAction(): void {
-    this.isMenuOpened = false;
-    document.body.classList.remove('scroll-disabled');
-    this.scroll(this.anchorPath.LETS_WORK);
+    if (this.router.url === this.links.PAGE_NOT_FOUND) {
+      this.router.navigate(['/']);
+      this.isMenuOpened = false;
+      document.body.classList.remove('scroll-disabled');
+      setTimeout(() => {
+        this.scroll(this.anchorPath.LETS_WORK);
+      }, 100);
+    } else {
+      this.isMenuOpened = false;
+      document.body.classList.remove('scroll-disabled');
+      this.scroll(this.anchorPath.LETS_WORK);
+    }
   }
 
   scrollTop(): void {

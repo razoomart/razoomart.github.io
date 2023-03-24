@@ -6,7 +6,7 @@
   flex-direction: column;
 
   .title {
-    h1 {
+    p {
       font-weight: 400;
       font-size: 4.166666666666667vw;
     }
@@ -14,6 +14,7 @@
 
   .description {
     margin-top: 1.0416666666666667vw;
+    z-index: 1;
 
     p {
       font-size: 1.5625vw;
@@ -61,6 +62,51 @@
 
       &:active {
         transform: scale(0.99);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .content {
+    padding: 0 7.6923076923076925vw;
+
+    .title p {
+      font-size: 10.256410256410257vw;
+    }
+
+    .description {
+      margin-top: 5.128205128205129vw;
+
+      p {
+        font-size: 5.128205128205129vw;
+
+        br {
+          display: none;
+        }
+      }
+    }
+
+    .model {
+      margin-top: 5vw;
+      height: 140vw;
+    }
+
+    .home-button {
+      position: absolute;
+      left: 5%;
+      bottom: 30px;
+      width: auto;
+      margin: 0;
+
+      .btn {
+        width: 89.74358974358974vw;
+        height: 18.46153846153846vw;
+        border: 0.6674589743589743vw solid rgba(255, 255, 255, 0.6);
+
+        a {
+          font-size: 6.666666666666667vw;
+        }
       }
     }
   }

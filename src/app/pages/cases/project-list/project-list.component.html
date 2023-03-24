@@ -469,7 +469,13 @@
   </div>
 </div>
 
-<div class="mobile-project mobile-pn">
+<div
+  waIntersectionObserver
+  (waIntersectionObservee)="
+    intersectionService.onIntersection($event, 'blockAppearFade', 'hidden')
+  "
+  class="mobile-project mobile-pn hidden"
+>
   <div class="project-info">
     <div class="top">
       <div class="icon">
@@ -503,7 +509,19 @@
     </div>
   </div>
 </div>
-<div class="mobile-project mobile-hotline">
+<div
+  waIntersectionObserver
+  waIntersectionThreshold="0.1"
+  (waIntersectionObservee)="
+    intersectionService.onIntersection(
+      $event,
+      'blockAppearFadeSm',
+      'hidden',
+      150
+    )
+  "
+  class="mobile-project mobile-hotline hidden"
+>
   <div class="project-info">
     <div class="top">
       <div class="icon">
@@ -582,7 +600,14 @@
     </div>
   </div>
 </div>
-<div class="mobile-project mobile-either">
+<div
+  waIntersectionObserver
+  waIntersectionThreshold="0.1"
+  (waIntersectionObservee)="
+    intersectionService.onIntersection($event, 'blockAppearFadeSm', 'hidden')
+  "
+  class="mobile-project mobile-either hidden"
+>
   <div class="project-info">
     <div class="top">
       <div class="icon">
@@ -649,7 +674,14 @@
     </div>
   </div>
 </div>
-<div class="mobile-project mobile-silent">
+<div
+  waIntersectionObserver
+  waIntersectionThreshold="0.1"
+  (waIntersectionObservee)="
+    intersectionService.onIntersection($event, 'blockAppearFadeSm', 'hidden')
+  "
+  class="mobile-project mobile-silent hidden"
+>
   <div class="project-info">
     <div class="top">
       <div class="icon">
@@ -714,7 +746,14 @@
     </div>
   </div>
 </div>
-<div class="mobile-project mobile-bequick">
+<div
+  waIntersectionObserver
+  waIntersectionThreshold="0.1"
+  (waIntersectionObservee)="
+    intersectionService.onIntersection($event, 'blockAppearFadeSm', 'hidden')
+  "
+  class="mobile-project mobile-bequick hidden"
+>
   <div class="project-info">
     <div class="top">
       <div class="icon">
@@ -782,7 +821,14 @@
     </div>
   </div>
 </div>
-<div class="mobile-project mobile-spbedu">
+<div
+  waIntersectionObserver
+  waIntersectionThreshold="0.1"
+  (waIntersectionObservee)="
+    intersectionService.onIntersection($event, 'blockAppearFadeSm', 'hidden')
+  "
+  class="mobile-project mobile-spbedu hidden"
+>
   <div class="project-info">
     <div class="top">
       <div class="icon">
@@ -844,7 +890,13 @@
     </div>
   </div>
 </div>
-<div class="mobile-project mobile-monocrypto">
+<div
+  waIntersectionObserver
+  (waIntersectionObservee)="
+    intersectionService.onIntersection($event, 'blockAppearFadeSm', 'hidden')
+  "
+  class="mobile-project mobile-monocrypto hidden"
+>
   <div class="project-info">
     <div class="top">
       <div class="icon">
@@ -876,7 +928,13 @@
     </div>
   </div>
 </div>
-<div class="mobile-project mobile-pn2">
+<div
+  waIntersectionObserver
+  (waIntersectionObservee)="
+    intersectionService.onIntersection($event, 'blockAppearFadeSm', 'hidden')
+  "
+  class="mobile-project mobile-pn2 hidden"
+>
   <div class="project-info">
     <div class="top">
       <div class="icon">
