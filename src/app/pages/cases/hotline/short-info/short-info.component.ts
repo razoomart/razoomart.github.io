@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IconList } from '@constants/icons.constants';
+import { ImageList } from '@constants/images.constants';
 
 @Component({
   selector: 'app-short-info',
@@ -8,4 +9,5 @@ import { IconList } from '@constants/icons.constants';
 })
 export class ShortInfoComponent {
   public icons = IconList;
+  public images = ImageList;
 }

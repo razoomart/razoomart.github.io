@@ -1,12 +1,17 @@
 .short-info {
   .block-image {
     width: 100%;
-    height: 34.375vw;
+    height: 34vw;
 
     .wrapper {
       width: 100%;
       height: 100%;
       background-color: #ddff20;
+      background-image: url(/assets/images/projects/hotline/hotline-preview.webp);
+      background-position: center;
+      background-size: 100%;
+      background-clip: padding-box;
+      background-repeat: no-repeat;
       font-size: 5vw;
       color: #000;
     }
@@ -80,7 +85,7 @@
             &:hover {
               opacity: 0.6;
               transition: 0.2s;
-              
+
               .image img {
                 transform: rotate(45deg);
                 transition: 0.3s;
