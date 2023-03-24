@@ -22,6 +22,8 @@ enum ImageType {
   strikethroughText = 'strikethroughText',
   casePreviewEither = 'casePreviewEither',
   casePreviewHotline = 'casePreviewHotline',
+  casePreviewHotline2 = 'casePreviewHotline2',
+  casePreviewHotlineMobile = 'casePreviewHotlineMobile',
   casePreviewPn = 'casePreviewPn',
   casePreviewPn2 = 'casePreviewPn2',
   casePreviewSilent = 'casePreviewSilent',
@@ -29,6 +31,7 @@ enum ImageType {
   bubble1 = 'bubble1',
   bubble2 = 'bubble2',
   bubble3 = 'bubble3',
+  hotlinePreview = 'hotlinePreview',
   hotlineColors = 'hotlineColors',
   hotlineDatacenter = 'hotlineDatacenter',
   hotlineServers = 'hotlineServers',
@@ -131,6 +134,14 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
     link: 'assets/images/projects/case-preview-hotline.webp',
     description: 'hotline project preview image',
   },
+  [ImageType.casePreviewHotline2]: {
+    link: 'assets/images/projects/case-preview-hotline-2.webp',
+    description: 'hotline project preview image',
+  },
+  [ImageType.casePreviewHotlineMobile]: {
+    link: 'assets/images/projects/case-preview-hotline-mobile.webp',
+    description: 'hotline project preview image',
+  },
   [ImageType.casePreviewPn]: {
     link: 'assets/images/projects/case-preview-pn.webp',
     description: 'pn project preview image',
@@ -158,6 +169,10 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
   [ImageType.bubble3]: {
     link: 'assets/images/projects/hotline/bubble3.svg',
     description: 'bubble message image',
+  },
+  [ImageType.hotlinePreview]: {
+    link: 'assets/images/projects/hotline/hotline-preview.webp',
+    description: 'hotline site preview image',
   },
   [ImageType.hotlineColors]: {
     link: 'assets/images/projects/hotline/hotline-colors.svg',
