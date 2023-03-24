@@ -8,7 +8,7 @@
   height: 100%;
   background-color: #b2dd57;
   border-radius: 3.1578947368421053vw;
-  padding: 2.6041666666666665vw 2vw 3.125vw 2.6vw;
+  padding: 2.6041666666666665vw 2vw 4vw 2vw;
 
   .title {
     p {
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1.0416666666666667vw;
+    gap: 0.95vw;
     margin-top: 2.6041666666666665vw;
 
     a {
@@ -31,7 +31,7 @@
     }
 
     .card {
-      width: 17.708333333333332vw;
+      width: 17.4vw;
       height: 24.739583333333332vw;
       display: flex;
       flex-direction: column;
@@ -130,6 +130,18 @@
 
       &:active {
         transform: scale(0.98);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .team {
+    .content {
+      gap: 1.04vw;
+
+      .card {
+        width: 17.6vw;
       }
     }
   }
