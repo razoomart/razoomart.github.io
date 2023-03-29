@@ -19,6 +19,7 @@ enum ImageType {
   bogdan = 'bogdan',
   smallBogdan = 'smallBogdan',
   vova = 'vova',
+  hearts = 'hearts',
   strikethroughText = 'strikethroughText',
   casePreviewEither = 'casePreviewEither',
   casePreviewHotline = 'casePreviewHotline',
@@ -121,6 +122,10 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
   [ImageType.vova]: {
     link: 'assets/images/memojis/vova.webp',
     description: 'memoji image',
+  },
+  [ImageType.hearts]: {
+    link: 'assets/images/team/hearts.webp',
+    description: 'hearts image',
   },
   [ImageType.strikethroughText]: {
     link: 'assets/images/strikethrough-text.svg',
