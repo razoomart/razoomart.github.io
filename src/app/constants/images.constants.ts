@@ -19,6 +19,7 @@ enum ImageType {
   bogdan = 'bogdan',
   smallBogdan = 'smallBogdan',
   vova = 'vova',
+  hearts = 'hearts',
   strikethroughText = 'strikethroughText',
   casePreviewEither = 'casePreviewEither',
   casePreviewHotline = 'casePreviewHotline',
@@ -27,6 +28,7 @@ enum ImageType {
   casePreviewPn = 'casePreviewPn',
   casePreviewPn2 = 'casePreviewPn2',
   casePreviewSilent = 'casePreviewSilent',
+  casePreviewBequick = 'casePreviewBequick',
   casePreviewSpbedu = 'casePreviewSpbedu',
   bubble1 = 'bubble1',
   bubble2 = 'bubble2',
@@ -122,6 +124,10 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
     link: 'assets/images/memojis/vova.webp',
     description: 'memoji image',
   },
+  [ImageType.hearts]: {
+    link: 'assets/images/team/hearts.webp',
+    description: 'hearts image',
+  },
   [ImageType.strikethroughText]: {
     link: 'assets/images/strikethrough-text.svg',
     description: 'strikethrough text effect',
@@ -153,6 +159,10 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
   [ImageType.casePreviewSilent]: {
     link: 'assets/images/projects/case-preview-silent.webp',
     description: 'silent project preview image',
+  },
+  [ImageType.casePreviewBequick]: {
+    link: 'assets/images/projects/case-preview-bequick.webp',
+    description: 'bequick project preview image',
   },
   [ImageType.casePreviewSpbedu]: {
     link: 'assets/images/projects/case-preview-spbedu.webp',
