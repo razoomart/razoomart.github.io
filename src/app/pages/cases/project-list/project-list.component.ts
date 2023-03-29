@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IconList } from '@constants/icons.constants';
 import { ImageList } from '@constants/images.constants';
+import { VideoList } from '@constants/videos.constants';
 import { MediaLink } from '@enums/link.enums';
 import { IntersectionService } from '@services/intersection.service';
 
@@ -13,6 +14,7 @@ export class ProjectListComponent {
   public icons = IconList;
   public images = ImageList;
   public links = MediaLink;
+  public videos = VideoList;
 
   constructor(protected intersectionService: IntersectionService) {}
 }
