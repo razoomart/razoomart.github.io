@@ -43,6 +43,7 @@ enum ImageType {
   hotlineCoins = 'hotlineCoins',
   hotlineHelp = 'hotlineHelp',
   hotlineScreen = 'hotlineScreen',
+  hotlineMainPage = 'hotlineMainPage',
   hotlineHosting = 'hotlineHosting',
   hotlineVirtualServers = 'hotlineVirtualServers',
   hotlinePhone1 = 'hotlinePhone1',
@@ -220,6 +221,10 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
   [ImageType.hotlineScreen]: {
     link: 'assets/images/projects/hotline/hotline-screen.svg',
     description: 'screen border image',
+  },
+  [ImageType.hotlineMainPage]: {
+    link: 'assets/images/projects/hotline/hotline-main-page.webp',
+    description: 'hotline hosting site screenshot image',
   },
   [ImageType.hotlineHosting]: {
     link: 'assets/images/projects/hotline/hotline-hosting.webp',

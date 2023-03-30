@@ -9,7 +9,7 @@ enum VideoType {
 
 const VideoList: { [key in VideoType]: VideoInfo } = {
   [VideoType.hotlineDatacenter]: {
-    link: 'assets/videos/hotline-datacenter.webm',
+    link: 'assets/videos/cases/hotline-datacenter.webm',
     description: 'hotline servers video',
   },
   [VideoType.hotlineCasePreview]: {
