@@ -40,4 +40,12 @@ export class ProjectListComponent implements AfterViewInit {
       observer.observe(element);
     });
   }
+
+  stopVideo(target: any): void {
+    target?.target?.pause();
+  }
+
+  playVideo(target: any): void {
+    target?.target?.play();
+  }
 }
