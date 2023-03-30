@@ -104,65 +104,31 @@
       "
       class="block special-conditions hidden"
     >
-      <div class="block-title">
-        <p>
-          А для некоммерческих организаций <br />
-          и социальных проектов у нас <br />
-          специальные условия
-        </p>
-      </div>
-      <div class="block-wrapper">
-        <div class="block-description">
+      <div class="right">
+        <div class="block-title">
           <p>
-            Все работы мы выполняем по себестоимости, но вкладываем всю душу.
-            <br />
-            Ведь дизайн нужен не только для прибыли, но и для великих дел.
+            А для некоммерческих организаций <br />
+            и социальных проектов у нас <br />
+            специальные условия
           </p>
         </div>
-      </div>
-    </div>
-    <div
-      waIntersectionObserver
-      waIntersectionThreshold="0.2"
-      (waIntersectionObservee)="
-        intersectionService.onIntersection(
-          $event,
-          'blockAppearFadeSm',
-          'hidden'
-        )
-      "
-      class="block speedrun hidden"
-    >
-      <div class="wrapper">
-        <a [routerLink]="links.PAGE_SPEEDRUN">
-          <div class="block-title">
+        <div class="block-wrapper">
+          <div class="block-description">
             <p>
-              Сайт
-              <span>
-                <img
-                  [src]="icons.arrowRightLong.link"
-                  [alt]="icons.arrowRightLong.description"
-                  draggable="false"
-                />
-              </span>
+              Все работы мы выполняем по себестоимости, но вкладываем всю душу.
               <br />
-              за две недели <br />
-              и 50 000 рублей
+              Ведь дизайн нужен не только для прибыли, но и для великих дел.
             </p>
           </div>
-          <div class="block-info">
-            <div class="block-info-wrapper">
-              <a [routerLink]="links.PAGE_SPEEDRUN">
-                подробнее
-                <img
-                  [src]="icons.arrowRightDark.link"
-                  [alt]="icons.arrowRightDark.description"
-                  draggable="false"
-                />
-              </a>
-            </div>
-          </div>
-        </a>
+        </div>
+      </div>
+      <div class="left">
+        <img
+          class="image"
+          [src]="images.stars.link"
+          [alt]="images.stars.description"
+          draggable="false"
+        />
       </div>
     </div>
   </div>

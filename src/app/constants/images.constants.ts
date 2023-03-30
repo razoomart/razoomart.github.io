@@ -20,6 +20,7 @@ enum ImageType {
   smallBogdan = 'smallBogdan',
   vova = 'vova',
   hearts = 'hearts',
+  stars = 'stars',
   strikethroughText = 'strikethroughText',
   casePreviewEither = 'casePreviewEither',
   casePreviewHotline = 'casePreviewHotline',
@@ -127,6 +128,10 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
   [ImageType.hearts]: {
     link: 'assets/images/team/hearts.webp',
     description: 'hearts image',
+  },
+  [ImageType.stars]: {
+    link: 'assets/images/stars.webp',
+    description: 'stars image',
   },
   [ImageType.strikethroughText]: {
     link: 'assets/images/strikethrough-text.svg',
