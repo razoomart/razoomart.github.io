@@ -10,11 +10,6 @@ const routes: Routes = [
     loadChildren: () =>
       import('./hotline/hotline.module').then((m) => m.HotlineModule),
   },
-  {
-    path: 'bequick',
-    loadChildren: () =>
-      import('./bequick/bequick.module').then((m) => m.BequickModule),
-  },
 ];
 
 @NgModule({
