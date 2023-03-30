@@ -1,5 +1,12 @@
 <div class="part-two">
-  <div class="section section-1">
+  <div
+    waIntersectionObserver
+    waIntersectionThreshold="0.1"
+    (waIntersectionObservee)="
+      intersectionService.onIntersection($event, 'blockAppearFade', 'hidden')
+    "
+    class="section section-1 hidden"
+  >
     <div class="section-title">
       <p>ЧАСТЬ 2: ДИЗАЙН САЙТА</p>
     </div>
@@ -27,8 +34,8 @@
       />
       <img
         class="image image-3"
-        [src]="images.hotlineScreen.link"
-        [alt]="images.hotlineScreen.description"
+        [src]="images.hotlineMainPage.link"
+        [alt]="images.hotlineMainPage.description"
         draggable="false"
       />
     </div>
@@ -57,7 +64,7 @@
         можно было максимально удобно сравнить и выбрать подходящий.
       </p>
     </div>
-    <div class="images">
+    <div class="images images-1">
       <img
         class="image image-1 mtt"
         [src]="images.hotlineHosting.link"

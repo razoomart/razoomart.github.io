@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
-
 import { IconList } from '@constants/icons.constants';
 import { ImageList } from '@constants/images.constants';
 import { AnchorPath } from '@enums/anchor.enums';
-
 import { IntersectionService } from '@services/intersection.service';
 import { ScrollToElementService } from '@services/scroll-to-element.service';
 
