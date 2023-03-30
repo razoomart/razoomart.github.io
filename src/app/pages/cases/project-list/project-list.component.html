@@ -32,6 +32,8 @@
   </div>
   <div class="project-preview">
     <video
+      (mouseover)="stopVideo($event)"
+      (mouseleave)="playVideo($event)"
       [src]="videos.pnCasePreview.link"
       autoplay
       [muted]="'muted'"
@@ -83,6 +85,8 @@
   <div class="project-preview">
     <a [routerLink]="links.CASE_HOTLINE">
       <video
+        (mouseover)="stopVideo($event)"
+        (mouseleave)="playVideo($event)"
         [src]="videos.hotlineCasePreview.link"
         autoplay
         [muted]="'muted'"
@@ -175,6 +179,8 @@
   <div class="project-preview">
     <a href="https://either.digital" target="_blank">
       <video
+        (mouseover)="stopVideo($event)"
+        (mouseleave)="playVideo($event)"
         [src]="videos.eitherCasePreview.link"
         autoplay
         [muted]="'muted'"
