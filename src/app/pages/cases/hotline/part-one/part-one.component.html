@@ -28,8 +28,11 @@
     </div>
   </div>
   <div class="video">
-    <video autoplay loop [muted]="'muted'">
+    <video class="desktop" autoplay loop [muted]="'muted'">
       <source [src]="videos.hotlineDatacenter.link" type="video/webm" />
+    </video>
+    <video class="mobile" [playsInline]="true" autoplay loop [muted]="'muted'">
+      <source [src]="videos.hotlineDatacenterMobile.link" type="video/mp4" />
     </video>
   </div>
   <div class="section section-3">
@@ -56,6 +59,22 @@
             [alt]="images.hotlineServers.description"
             draggable="false"
           />
+        </div>
+        <div class="reverse">
+          <div class="image image-3">
+            <img
+              [src]="images.hotlineFloppyDisk.link"
+              [alt]="images.hotlineFloppyDisk.description"
+              draggable="false"
+            />
+          </div>
+          <div class="image image-4">
+            <img
+              [src]="images.hotlinePhoneCase.link"
+              [alt]="images.hotlinePhoneCase.description"
+              draggable="false"
+            />
+          </div>
         </div>
         <div class="image image-3">
           <img

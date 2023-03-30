@@ -20,3 +20,21 @@
 .rounded-45 {
   border-radius: 2.34375vw;
 }
+
+@media screen and (max-width: 414px) {
+  .content {
+    .part-one,
+    .part-three {
+      margin-top: 25.641025641025642vw;
+    }
+
+    .lets-work {
+      padding: 0 2.5641025641025643vw;
+      top: 2540vw;
+    }
+
+    #footer {
+      margin-top: 145vw;
+    }
+  }
+}

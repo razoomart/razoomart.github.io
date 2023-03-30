@@ -50,6 +50,7 @@ enum ImageType {
   hotlinePhone2 = 'hotlinePhone2',
   hotlinePhone3 = 'hotlinePhone3',
   hotlineClouds = 'hotlineClouds',
+  hotlineCloudsMobile = 'hotlineCloudsMobile',
   hotlineLogo = 'hotlineLogo',
 }
 
@@ -248,6 +249,10 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
   },
   [ImageType.hotlineClouds]: {
     link: 'assets/images/projects/hotline/hotline-clouds.webp',
+    description: 'clouds image',
+  },
+  [ImageType.hotlineCloudsMobile]: {
+    link: 'assets/images/projects/hotline/hotline-clouds-mobile.webp',
     description: 'clouds image',
   },
   [ImageType.hotlineLogo]: {
