@@ -103,9 +103,9 @@
           500
         )
       "
-      class="item project bequick hidden"
+      class="item project bequick development-stage hidden"
     >
-      <a [routerLink]="links.CASE_BEQUICK">
+      <a>
         <div class="project-title">
           <p>
             Bequick
@@ -115,9 +115,7 @@
           </p>
         </div>
         <div class="project-case-btn">
-          <div class="wrapper">
-            <a [routerLink]="links.CASE_BEQUICK"><p>смотреть кейс</p></a>
-          </div>
+          <div class="wrapper"></div>
         </div>
         <div class="project-description">
           <p>
@@ -173,44 +171,6 @@
           200
         )
       "
-      class="mobile-project mobile-bequick hidden"
-    >
-      <a [routerLink]="links.CASE_BEQUICK">
-        <div class="project-title">
-          <p>
-            Bequick
-            <span class="line">—</span>
-            <br />
-            <span>курьерская служба</span>
-          </p>
-        </div>
-        <div class="project-preview"></div>
-        <div class="bottom">
-          <div class="project-description">
-            <p>
-              Брендинг и <br />
-              айдентика для курьерской службы
-            </p>
-          </div>
-          <div class="project-case-btn">
-            <div class="wrapper">
-              <a [routerLink]="links.CASE_BEQUICK">смотреть кейс</a>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div
-      waIntersectionObserver
-      waIntersectionThreshold="0.2"
-      (waIntersectionObservee)="
-        intersectionService.onIntersection(
-          $event,
-          'blockAppearFadeSm',
-          'hidden',
-          200
-        )
-      "
       class="mobile-project mobile-pn hidden"
     >
       <div class="wrapper">
@@ -232,6 +192,40 @@
           </div>
         </div>
       </div>
+    </div>
+    <div
+      waIntersectionObserver
+      waIntersectionThreshold="0.2"
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          200
+        )
+      "
+      class="mobile-project mobile-bequick hidden"
+    >
+      <a>
+        <div class="project-title">
+          <p>
+            Bequick
+            <span class="line">—</span>
+            <br />
+            <span>курьерская служба</span>
+          </p>
+        </div>
+        <div class="project-preview"></div>
+        <div class="bottom">
+          <div class="project-description">
+            <p>
+              Брендинг и <br />
+              айдентика для курьерской службы
+            </p>
+          </div>
+          <div class="project-case-btn"></div>
+        </div>
+      </a>
     </div>
     <a
       waIntersectionObserver
