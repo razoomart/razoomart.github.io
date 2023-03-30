@@ -137,8 +137,8 @@
             width: 100%;
 
             .image {
-              width: 14.102564102564102vw;
-              height: 14.102564102564102vw;
+              min-width: 14.102564102564102vw;
+              min-height: 14.102564102564102vw;
             }
 
             .description {

@@ -35,25 +35,27 @@
       display: flex;
       justify-content: center;
 
-      .image {
-        position: absolute;
-      }
-
       .image-1 {
+        position: absolute;
         left: 8.802083333333334vw;
         width: 27.447916666666668vw;
         height: 20.15625vw;
       }
 
       .image-2 {
-        right: 9.53125vw;
+        right: 0;
         width: 35vw;
+        bottom: auto;
         height: 18.072916666666668vw;
         margin-top: 25vw;
       }
 
+      .image {
+        position: absolute;
+      }
+
       .image-3 {
-        position: unset;
+        position: static;
         width: 68.33333333333333vw;
         height: 42.708333333333336vw;
         margin-top: 70vw;

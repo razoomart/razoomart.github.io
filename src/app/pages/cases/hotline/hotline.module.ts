@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { IntersectionObserverModule } from '@ng-web-apis/intersection-observer';
 import { SharedModule } from '@shared/shared.module';
 
 import { HotlineRoutingModule } from './hotline-routing.module';
@@ -19,6 +20,11 @@ import { ShortInfoComponent } from './short-info/short-info.component';
     PartTwoComponent,
     PartThreeComponent,
   ],
-  imports: [CommonModule, HotlineRoutingModule, SharedModule],
+  imports: [
+    CommonModule,
+    HotlineRoutingModule,
+    SharedModule,
+    IntersectionObserverModule,
+  ],
 })
 export class HotlineModule {}

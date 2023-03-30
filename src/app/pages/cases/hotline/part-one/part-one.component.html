@@ -1,5 +1,12 @@
 <div class="part-one">
-  <div class="section section-1">
+  <div
+    waIntersectionObserver
+    waIntersectionThreshold="0.1"
+    (waIntersectionObservee)="
+      intersectionService.onIntersection($event, 'blockAppearFade', 'hidden')
+    "
+    class="section section-1 hidden"
+  >
     <div class="section-title">
       <p>ЧАСТЬ 1: АЙДЕНТИКА</p>
     </div>
@@ -20,6 +27,16 @@
     <div class="content">
       <div class="images">
         <img
+          waIntersectionObserver
+          waIntersectionThreshold="0.2"
+          (waIntersectionObservee)="
+            intersectionService.onIntersection(
+              $event,
+              'blockAppearFade',
+              'hidden'
+            )
+          "
+          class="hidden"
           [src]="images.hotlineColors.link"
           [alt]="images.hotlineColors.description"
           draggable="false"
