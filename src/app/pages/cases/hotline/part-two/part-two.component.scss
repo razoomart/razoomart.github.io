@@ -35,25 +35,27 @@
       display: flex;
       justify-content: center;
 
-      .image {
-        position: absolute;
-      }
-
       .image-1 {
+        position: absolute;
         left: 8.802083333333334vw;
         width: 27.447916666666668vw;
         height: 20.15625vw;
       }
 
       .image-2 {
-        right: 9.53125vw;
+        right: 0;
         width: 35vw;
+        bottom: auto;
         height: 18.072916666666668vw;
         margin-top: 25vw;
       }
 
+      .image {
+        position: absolute;
+      }
+
       .image-3 {
-        position: unset;
+        position: static;
         width: 68.33333333333333vw;
         height: 42.708333333333336vw;
         margin-top: 70vw;
@@ -109,6 +111,95 @@
 
       .image-4 {
         margin: 0 4.6875vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .part-two {
+    margin-top: 20.512820512820515vw;
+
+    .section {
+      flex-direction: column;
+      gap: 5.128205128205129vw;
+      padding: 0 5.128205128205129vw;
+
+      &-title,
+      &-description {
+        width: 100% !important;
+
+        p {
+          font-size: 4.615384615384615vw;
+          line-height: 6vw;
+        }
+      }
+    }
+
+    .section-2 {
+      padding: 0;
+
+      .images {
+        .image-1 {
+          left: 0;
+          width: 64.1025641025641vw;
+          height: 46.92307692307692vw;
+        }
+
+        .image-2 {
+          right: 4.5vw;
+          margin-top: 46vw;
+          width: 81.53846153846153vw;
+          height: 42.30769230769231vw;
+        }
+
+        .image-3 {
+          margin-top: 95vw;
+          width: 92.3076923076923vw;
+          height: 57.69230769230769vw;
+        }
+      }
+    }
+
+    .section-3 {
+      margin-top: 25.641025641025642vw;
+    }
+
+    .section-4 {
+      padding: 0;
+
+      .section-description {
+        padding: 0;
+        padding-left: 5.128205128205129vw;
+        padding-right: 5.128205128205129vw;
+      }
+
+      .images-1,
+      .images-2 {
+        margin: 0;
+
+        .image {
+          width: 92.3076923076923vw;
+          height: 57.69230769230769vw;
+          margin-top: 8.461538461538462vw;
+        }
+      }
+
+      .images-3 {
+        margin-top: 12.820512820512821vw;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        justify-content: flex-start;
+        gap: 5.128205128205129vw;
+        padding: 0 5.128205128205129vw;
+
+        .image {
+          margin: 0;
+          width: 56.92307692307692vw;
+          height: 115.38461538461539vw;
+        }
       }
     }
   }

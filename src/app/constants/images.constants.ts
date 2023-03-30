@@ -43,12 +43,14 @@ enum ImageType {
   hotlineCoins = 'hotlineCoins',
   hotlineHelp = 'hotlineHelp',
   hotlineScreen = 'hotlineScreen',
+  hotlineMainPage = 'hotlineMainPage',
   hotlineHosting = 'hotlineHosting',
   hotlineVirtualServers = 'hotlineVirtualServers',
   hotlinePhone1 = 'hotlinePhone1',
   hotlinePhone2 = 'hotlinePhone2',
   hotlinePhone3 = 'hotlinePhone3',
   hotlineClouds = 'hotlineClouds',
+  hotlineCloudsMobile = 'hotlineCloudsMobile',
   hotlineLogo = 'hotlineLogo',
 }
 
@@ -221,6 +223,10 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
     link: 'assets/images/projects/hotline/hotline-screen.svg',
     description: 'screen border image',
   },
+  [ImageType.hotlineMainPage]: {
+    link: 'assets/images/projects/hotline/hotline-main-page.webp',
+    description: 'hotline hosting site screenshot image',
+  },
   [ImageType.hotlineHosting]: {
     link: 'assets/images/projects/hotline/hotline-hosting.webp',
     description: 'hotline hosting site screenshot image',
@@ -243,6 +249,10 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
   },
   [ImageType.hotlineClouds]: {
     link: 'assets/images/projects/hotline/hotline-clouds.webp',
+    description: 'clouds image',
+  },
+  [ImageType.hotlineCloudsMobile]: {
+    link: 'assets/images/projects/hotline/hotline-clouds-mobile.webp',
     description: 'clouds image',
   },
   [ImageType.hotlineLogo]: {

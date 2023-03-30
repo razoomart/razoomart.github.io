@@ -77,3 +77,67 @@
     }
   }
 }
+
+@media screen and (max-width: 414px) {
+  .project-info {
+    margin-top: 21.53846153846154vw;
+
+    .section {
+      padding: 0 5.128205128205129vw;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 8.461538461538462vw;
+
+      &-title,
+      &-description {
+        width: 100%;
+
+        p {
+          font-size: 4.615384615384615vw;
+        }
+      }
+
+      &-title {
+        margin-left: 0.7692307692307693vw;
+      }
+    }
+
+    .section-3 {
+      .section-description {
+        width: 100%;
+      }
+    }
+
+    .images {
+      height: 46.15384615384615vw;
+      margin: 15.384615384615385vw 0 25.641025641025642vw 0;
+
+      .content {
+        .wrapper {
+          justify-content: flex-start;
+
+          .image {
+            left: 5.128205128205129vw;
+          }
+
+          .image-1 {
+            width: 87.6923076923077vw;
+            height: 18.348717948717947vw;
+          }
+
+          .image-2 {
+            width: 70.7128205128205vw;
+            height: 11.538461538461538vw;
+            margin-top: 20.9vw;
+          }
+
+          .image-3 {
+            width: 36.41025641025641vw;
+            height: 11.538461538461538vw;
+            margin-top: 35vw;
+          }
+        }
+      }
+    }
+  }
+}

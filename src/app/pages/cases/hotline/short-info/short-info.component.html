@@ -1,8 +1,25 @@
 <div class="short-info">
-  <div class="block-image padding010">
+  <div
+    waIntersectionObserver
+    (waIntersectionObservee)="
+      intersectionService.onIntersection($event, 'blockAppearFadeSm', 'hidden')
+    "
+    class="block-image padding010 hidden"
+  >
     <div class="wrapper rounded45"></div>
   </div>
-  <div class="block-info mtdef padding010">
+  <div
+    waIntersectionObserver
+    (waIntersectionObservee)="
+      intersectionService.onIntersection(
+        $event,
+        'blockAppearFadeSm',
+        'hidden',
+        450
+      )
+    "
+    class="block-info mtdef padding010 hidden"
+  >
     <div class="wrapper rounded45">
       <div class="content padding30">
         <div class="section section-1">

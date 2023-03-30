@@ -30,19 +30,48 @@
     <div class="content">
       <div class="wrapper">
         <img
-          class="image image-1"
+          waIntersectionObserver
+          waIntersectionThreshold="0.8"
+          (waIntersectionObservee)="
+            intersectionService.onIntersection(
+              $event,
+              'blockAppearFade',
+              'hidden'
+            )
+          "
+          class="image image-1 hidden"
           [src]="images.bubble1.link"
           [alt]="images.bubble1.description"
           draggable="false"
         />
         <img
-          class="image image-2"
+          waIntersectionObserver
+          waIntersectionThreshold="0.8"
+          (waIntersectionObservee)="
+            intersectionService.onIntersection(
+              $event,
+              'blockAppearFade',
+              'hidden',
+              250
+            )
+          "
+          class="image image-2 hidden"
           [src]="images.bubble2.link"
           [alt]="images.bubble2.description"
           draggable="false"
         />
         <img
-          class="image image-3"
+          waIntersectionObserver
+          waIntersectionThreshold="0.8"
+          (waIntersectionObservee)="
+            intersectionService.onIntersection(
+              $event,
+              'blockAppearFade',
+              'hidden',
+              200
+            )
+          "
+          class="image image-3 hidden"
           [src]="images.bubble3.link"
           [alt]="images.bubble3.description"
           draggable="false"

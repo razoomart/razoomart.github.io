@@ -2,6 +2,7 @@ import { VideoInfo } from '@interfaces/videoInfo.interfaces';
 
 enum VideoType {
   hotlineDatacenter = 'hotlineDatacenter',
+  hotlineDatacenterMobile = 'hotlineDatacenterMobile',
   hotlineCasePreview = 'hotlineCasePreview',
   pnCasePreview = 'pnCasePreview',
   eitherCasePreview = 'eitherCasePreview',
@@ -9,7 +10,11 @@ enum VideoType {
 
 const VideoList: { [key in VideoType]: VideoInfo } = {
   [VideoType.hotlineDatacenter]: {
-    link: 'assets/videos/hotline-datacenter.webm',
+    link: 'assets/videos/cases/hotline-datacenter.webm',
+    description: 'hotline servers video',
+  },
+  [VideoType.hotlineDatacenterMobile]: {
+    link: 'assets/videos/cases/hotline-datacenter-mobile.mp4',
     description: 'hotline servers video',
   },
   [VideoType.hotlineCasePreview]: {

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IconList } from '@constants/icons.constants';
 import { ImageList } from '@constants/images.constants';
+import { IntersectionService } from '@services/intersection.service';
 
 @Component({
   selector: 'app-short-info',
@@ -10,4 +11,6 @@ import { ImageList } from '@constants/images.constants';
 export class ShortInfoComponent {
   public icons = IconList;
   public images = ImageList;
+
+  constructor(protected intersectionService: IntersectionService) {}
 }
