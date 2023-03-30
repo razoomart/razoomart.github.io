@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
-
 import { IconList } from '@constants/icons.constants';
 import { ImageList } from '@constants/images.constants';
 import { MediaLink } from '@enums/link.enums';
-
 import { IntersectionService } from '@services/intersection.service';
 
 @Component({
