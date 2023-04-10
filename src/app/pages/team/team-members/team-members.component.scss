@@ -83,7 +83,8 @@
     }
 
     .ilyaU-card,
-    .maksim-card {
+    .maksim-card,
+    .ilana-card {
       .name {
         margin-top: 1.4vw;
       }
@@ -130,6 +131,40 @@
 
       &:active {
         transform: scale(0.98);
+      }
+    }
+
+    .talents {
+      transition: 0.2s;
+
+      .avatar {
+        transition: 0.2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #b2dd57;
+        border-radius: 50%;
+        width: 10.5vw;
+        height: 10.5vw;
+
+        img {
+          width: 5.395833333333333vw;
+          height: 5.395833333333333vw;
+        }
+      }
+
+      .name {
+        margin-top: 5vw;
+      }
+
+      &:hover {
+        transform: scale(1.04);
+        transition: 0.2s;
+
+        .avatar {
+          transform: rotate(90deg);
+          transition: 0.2s;
+        }
       }
     }
   }
@@ -208,7 +243,8 @@
       }
 
       .bogdan-card,
-      .vova-card {
+      .vova-card,
+      .talents {
         .description {
           margin-top: auto;
 
@@ -223,8 +259,23 @@
         }
       }
 
-      .vova-card {
+      .talents {
         margin-right: 5.128205128205129vw;
+
+        .avatar {
+          margin-top: 5vw;
+          width: 21vw;
+          height: 21vw;
+
+          img {
+            width: 13vw;
+            height: 13vw;
+          }
+        }
+
+        .name {
+          margin-top: 7.5vw;
+        }
       }
     }
   }
