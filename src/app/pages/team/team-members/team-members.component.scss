@@ -144,11 +144,17 @@
         align-items: center;
         background-color: #b2dd57;
         border-radius: 50%;
+        width: 10.5vw;
+        height: 10.5vw;
 
         img {
-          width: 7.395833333333333vw;
-          height: 7.395833333333333vw;
+          width: 5.395833333333333vw;
+          height: 5.395833333333333vw;
         }
+      }
+
+      .name {
+        margin-top: 5vw;
       }
 
       &:hover {
@@ -256,9 +262,19 @@
       .talents {
         margin-right: 5.128205128205129vw;
 
-        .avatar img {
-          width: 18vw;
-          height: 18vw;
+        .avatar {
+          margin-top: 5vw;
+          width: 21vw;
+          height: 21vw;
+
+          img {
+            width: 13vw;
+            height: 13vw;
+          }
+        }
+
+        .name {
+          margin-top: 7.5vw;
         }
       }
     }

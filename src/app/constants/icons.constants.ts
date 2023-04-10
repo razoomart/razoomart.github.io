@@ -66,7 +66,7 @@ const IconList: { [key in IconType]: IconInfo } = {
     description: 'arrow to top right icon',
   },
   [IconType.plus]: {
-    link: 'assets/icons/plus.webp',
+    link: 'assets/icons/plus.svg',
     description: 'plus icon',
   },
   [IconType.logo]: {
