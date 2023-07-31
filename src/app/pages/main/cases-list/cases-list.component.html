@@ -1,0 +1,246 @@
+<div class="some-projects">
+  <div
+    waIntersectionObserver
+    (waIntersectionObservee)="
+      intersectionService.onIntersection(
+        $event,
+        'blockAppearFade',
+        'hidden',
+        100
+      )
+    "
+    class="title hidden"
+  >
+    <p>Вот некоторые наши <span>проекты</span></p>
+  </div>
+  <div class="project-list">
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          100
+        )
+      "
+      class="item project hotline hidden"
+    >
+      <a [routerLink]="links.CASE_HOTLINE">
+        <div class="project-title">
+          <p>
+            HOTLINE
+            <span class="line">—</span>
+            <br />
+            <span>облачный хостинг</span>
+          </p>
+        </div>
+        <div class="project-case-btn">
+          <div class="wrapper">
+            <a [routerLink]="links.CASE_HOTLINE"><p>смотреть кейс</p></a>
+          </div>
+        </div>
+        <div class="project-description">
+          <p>
+            С нуля задизайнили стартап: <br />
+            разработали айдентику и <br />
+            коммуникации, нарисовали и <br />
+            собрали сайт. <br />
+            И всё это за 12 недель!
+          </p>
+        </div>
+        <div class="project-preview"></div>
+      </a>
+    </div>
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          300
+        )
+      "
+      class="item project pn development-stage hidden"
+    >
+      <a>
+        <div class="project-title">
+          <p>
+            Петербургская
+            <br />
+            Недвижимость
+          </p>
+        </div>
+        <div class="project-case-btn">
+          <div class="wrapper">
+            <a><p>скоро</p></a>
+          </div>
+        </div>
+        <div class="project-description">
+          <p>
+            Прямо сейчас переделываем <br />
+            сайт и разрабатываем новую <br />
+            дизайн-систему для <br />
+            крупнейшего застройщика <br />Санкт-Петербурга
+          </p>
+        </div>
+        <div class="project-preview"></div>
+      </a>
+    </div>
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          500
+        )
+      "
+      class="item project bequick development-stage hidden"
+    >
+      <a>
+        <div class="project-title">
+          <p>
+            Bequick
+            <span class="line">—</span>
+            <br />
+            <span>курьерская служба</span>
+          </p>
+        </div>
+        <div class="project-case-btn">
+          <div class="wrapper"></div>
+        </div>
+        <div class="project-description">
+          <p>
+            Брендинг и айдентика для <br />
+            курьерской службы
+          </p>
+        </div>
+        <div class="project-preview"></div>
+      </a>
+    </div>
+    <div
+      waIntersectionObserver
+      waIntersectionThreshold="0.2"
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          200
+        )
+      "
+      class="mobile-project mobile-hotline hidden"
+    >
+      <a [routerLink]="links.CASE_HOTLINE">
+        <div class="project-title">
+          <p>
+            Hotline
+            <span class="line">—</span>
+            <br />
+            <span>облачный хостинг</span>
+          </p>
+        </div>
+        <div class="bottom">
+          <div class="project-description">
+            <p>Полностью задизайнили стартап: брендинг, сайт и коммуникации</p>
+          </div>
+          <div class="project-case-btn">
+            <div class="wrapper">
+              <a [routerLink]="links.CASE_HOTLINE">смотреть кейс</a>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      waIntersectionObserver
+      waIntersectionThreshold="0.2"
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          200
+        )
+      "
+      class="mobile-project mobile-pn hidden"
+    >
+      <div class="wrapper">
+        <div class="project-title">
+          <p>
+            Петербургская <br />
+            Недвижимость
+          </p>
+        </div>
+        <div class="bottom">
+          <div class="project-description">
+            <p>
+              Прямо сейчас переделываем сайт и разрабатываем новую
+              дизайн-систему для крупнейшего застройщика Санкт-Петербурга
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      waIntersectionObserver
+      waIntersectionThreshold="0.2"
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          200
+        )
+      "
+      class="mobile-project mobile-bequick hidden"
+    >
+      <a>
+        <div class="project-title">
+          <p>
+            Bequick
+            <span class="line">—</span>
+            <br />
+            <span>курьерская служба</span>
+          </p>
+        </div>
+        <div class="bottom">
+          <div class="project-description">
+            <p>
+              Брендинг и <br />
+              айдентика для курьерской службы
+            </p>
+          </div>
+          <div class="project-case-btn"></div>
+        </div>
+      </a>
+    </div>
+    <a
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          200
+        )
+      "
+      [routerLink]="links.PAGE_CASES"
+      class="item all-cases-btn hidden mtdef"
+    >
+      <p>
+        Все кейсы
+        <span>
+          <img
+            [src]="icons.arrowRight.link"
+            [alt]="icons.arrowRight.description"
+            draggable="false"
+          />
+        </span>
+      </p>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,151 @@
+.short-info {
+  .block-image {
+    width: 100%;
+    height: 33vw;
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      background-color: #ddff20;
+      background-image: url(/assets/images/projects/hotline/hotline-preview.webp);
+      background-position: center;
+      background-size: 100%;
+      background-clip: padding-box;
+      background-repeat: no-repeat;
+      font-size: 5vw;
+      color: #000;
+    }
+  }
+
+  .block-info {
+    width: 100%;
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      background-color: #201f1e;
+
+      .content {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .section {
+          display: flex;
+          flex-direction: column;
+
+          p,
+          a {
+            color: #ffffff;
+            text-decoration: none;
+          }
+
+          &-title {
+            p {
+              font-size: 1.0416666666666667vw;
+            }
+          }
+
+          &-description {
+            p {
+              font-size: 1.6666666666666667vw;
+            }
+          }
+        }
+
+        .section-1 {
+          .section-description {
+            margin-top: 0.78125vw;
+          }
+        }
+
+        .section-3 {
+          .section-description p a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .image {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 1.0416666666666667vw;
+              height: 1.0416666666666667vw;
+              margin-left: 0.625vw;
+
+              img {
+                width: 100%;
+                height: 100%;
+                opacity: 0.9;
+                transition: 0.2s;
+              }
+            }
+
+            &:hover {
+              opacity: 0.6;
+              transition: 0.2s;
+
+              .image img {
+                transform: rotate(45deg);
+                transition: 0.3s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .short-info {
+    .block-image {
+      height: 128.2051282051282vw;
+
+      .wrapper {
+        background-image: url(/assets/images/projects/case-preview-hotline-mobile.webp);
+        border-radius: 6.410256410256411vw;
+      }
+    }
+
+    .block-info {
+      margin-top: 2.5641025641025643vw;
+      padding: 0 2.5641025641025643vw;
+
+      .wrapper {
+        border-radius: 6.410256410256411vw;
+
+        .content {
+          padding: 4.102564102564102vw;
+          flex-direction: column;
+          gap: 5.128205128205129vw;
+
+          .section {
+            &-title p {
+              font-size: 3.076923076923077vw;
+              line-height: 4vw;
+            }
+
+            &-description p {
+              font-size: 4.102564102564102vw;
+              line-height: 5.333333333333333vw;
+            }
+          }
+
+          .section-3 {
+            .section-description p a {
+              justify-content: flex-start;
+
+              .image {
+                width: 2.5641025641025643vw;
+                height: 2.5641025641025643vw;
+                margin-left: 1.0256410256410255vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+<div class="about-team">
+  <div class="left">
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection($event, 'blockAppear', 'hidden', 200)
+      "
+      class="block-left green-bg hidden"
+    >
+      <div class="text">
+        <p>
+          Мы — небольшая <br/>
+          креативная <br/> команда <br/> из Москвы
+        </p>
+      </div>
+      <div class="memoji-list">
+        <div class="memoji ilana-memoji">
+          <img
+            waIntersectionObserver
+            (waIntersectionObservee)="
+              intersectionService.onIntersection(
+                $event,
+                'blockAppear',
+                'hidden',
+                200
+              )
+            "
+            [src]="images.ilana.link"
+            [alt]="images.ilana.description"
+            class="hidden"
+            draggable="false"
+          />
+        </div>
+        <div class="memoji ilyaK-memoji">
+          <img
+            waIntersectionObserver
+            (waIntersectionObservee)="
+              intersectionService.onIntersection(
+                $event,
+                'blockAppear',
+                'hidden',
+                300
+              )
+            "
+            [src]="images.ilyaK.link"
+            [alt]="images.ilyaK.description"
+            class="hidden"
+            draggable="false"
+          />
+        </div>
+        <div class="memoji amir-memoji">
+          <img
+            waIntersectionObserver
+            (waIntersectionObservee)="
+              intersectionService.onIntersection(
+                $event,
+                'blockAppear',
+                'hidden',
+                400
+              )
+            "
+            [src]="images.amir.link"
+            [alt]="images.amir.description"
+            class="hidden"
+            draggable="false"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection($event, 'blockAppear', 'hidden', 500)
+      "
+      class="block-right green-bg hidden"
+    >
+      <div class="text">
+        <p>
+          дизайним веб, интерфейсы, <br class="break" />
+          коммуникации, айдентику, <br class="break" />
+          проводим исследования, <br class="break" />
+          собираем сайты, <br class="break" />
+          разрабатываем <br class="break" />
+          веб-сервисы и <br class="break" />
+          приложения
+        </p>
+      </div>
+    </div>
+    <a
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFade',
+          'hidden',
+          200
+        )
+      "
+      class="about-button hidden"
+      [routerLink]="links.PAGE_TEAM"
+    >
+      <p class="text">
+        О команде
+        <span>
+          <img
+            [src]="icons.arrowRight.link"
+            [alt]="icons.arrowRight.description"
+            draggable="false"
+          />
+        </span>
+      </p>
+    </a>
+  </div>
+</div>

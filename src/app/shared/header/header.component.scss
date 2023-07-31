@@ -1,0 +1,248 @@
+.content {
+  width: 100%;
+  height: 100%;
+
+  .always-show {
+    padding: 0 3.5vw 2vw 3.5vw;
+    height: 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .element {
+      width: 8.541666666666666vw;
+      height: 2.3958333333333335vw;
+      user-select: none;
+      -webkit-user-select: none;
+
+      a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.0416666666666667vw;
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      img {
+        width: 8.541666666666666vw;
+        height: 2.3958333333333335vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s;
+
+        &:hover {
+          transform: scale(1.1);
+          transition: 0.2s;
+          filter: drop-shadow(0 0 1.1904761904761905vw #92ff00);
+        }
+
+        &:active {
+          transform: scale(0.99);
+        }
+      }
+    }
+
+    .main,
+    .write-to-us {
+      background-color: #201f1e;
+      border-radius: 52.03125vw;
+      transition: 0.2s;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: 0.2s;
+        cursor: pointer;
+      }
+
+      &:active {
+        transform: scale(0.99);
+      }
+    }
+
+    .logo {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .fullscreen-menu {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    padding: 2vw 3.5vw 0 3.5vw;
+
+    .element {
+      margin-top: 1.0416666666666667vw;
+
+      a {
+        display: flex;
+        text-decoration: none;
+
+        p {
+          font-weight: 500;
+          color: #ffffff;
+          font-size: 6.25vw;
+          transition: 0.2s;
+        }
+
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 6.25vw;
+          align-self: center;
+          margin-left: auto;
+          transition: 0.2s;
+
+          p {
+            color: #ffffff60;
+            font-family: NewYorkItalic;
+            font-size: 3.125vw;
+          }
+
+          img {
+            width: 5.989583333333333vw;
+            height: 3.4375vw;
+          }
+        }
+      }
+    }
+
+    .main {
+      margin-top: 0;
+    }
+
+    .mobile-btn {
+      display: none;
+    }
+  }
+
+  .fullscreen-menu:has(.element:hover) .element {
+    a {
+      p {
+        color: #ffffff40;
+        transition: 0.2s;
+      }
+
+      span {
+        opacity: 0.4;
+        transition: 0.2s;
+      }
+    }
+  }
+
+  .fullscreen-menu:has(.element:hover) .element:hover {
+    a {
+      p {
+        margin-left: 1.0416666666666667vw;
+        color: #ffffff;
+      }
+
+      span {
+        margin-right: -1.0416666666666667vw;
+        opacity: 1;
+
+        p {
+          color: #ffffff60;
+        }
+      }
+    }
+  }
+}
+
+.images-preload {
+  display: none;
+}
+
+@media screen and (max-width: 414px) {
+  .content {
+    .always-show {
+      padding: 10vw 5.128205128205129vw 10vw 5.128205128205129vw;
+      flex-direction: row-reverse;
+
+      .element {
+        width: 35.8974358974359vw;
+        height: 9.743589743589743vw;
+
+        a {
+          font-size: 4.102564102564102vw;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      .write-to-us {
+        display: none;
+      }
+    }
+
+    .fullscreen-menu {
+      padding: 12vw 5.128205128205129vw;
+
+      .element {
+        margin-top: 7vw;
+
+        a {
+          p {
+            font-weight: 400;
+            font-size: 10vw;
+          }
+
+          span {
+            p {
+              font-size: 6.5vw;
+            }
+
+            img {
+              width: 11vw;
+              height: 6.5vw;
+            }
+          }
+        }
+      }
+
+      .main {
+        margin-top: 0;
+      }
+
+      .mobile-btn {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 7.6923076923076925vw;
+        padding: 0 5.128205128205129vw;
+        height: 17.94871794871795vw;
+        display: block;
+
+        .wrapper {
+          width: 100%;
+          height: 100%;
+          background-color: #019ff8;
+          border-radius: 6.153846153846154vw;
+          box-shadow: 0 1.0256410256410255vw 5.128205128205129vw
+            rgba(1, 159, 248, 0.6);
+
+          a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+              font-size: 5.128205128205129vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}

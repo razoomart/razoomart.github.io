@@ -1,0 +1,127 @@
+.lets-work {
+  position: absolute;
+  width: 98.8%;
+  height: 33.125vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 2.6041666666666665vw 0 2.0833333333333335vw 2.0833333333333335vw;
+  border-radius: 3.5vw;
+
+  .title {
+    p {
+      color: #000000;
+      font-size: 5.729166666666667vw;
+    }
+  }
+
+  &-description {
+    margin-top: 1.5625vw;
+
+    p {
+      font-size: 2.34375vw;
+      color: rgba(32, 31, 30, 0.6);
+    }
+  }
+
+  &-button {
+    width: 52.083333333333336vw;
+    height: 9.375vw;
+    background-color: #019ff8;
+    border-radius: 2.6041666666666665vw;
+    margin-top: auto;
+    transition: 0.2s;
+    z-index: 1;
+
+    a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+
+      p {
+        color: #ffffff;
+        font-size: 2.6041666666666665vw;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 0 2vw rgba(1, 159, 248, 0.7);
+      transform: scale(1.05);
+      transition: 0.2s;
+    }
+
+    &:active {
+      transform: scale(0.99);
+    }
+  }
+
+  &-memoji {
+    position: absolute;
+    right: 3.6458333333333335vw;
+    bottom: 0;
+    width: 26.666666666666668vw;
+    height: 31.041666666666668vw;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .lets-work {
+    width: 94.875%;
+    height: 146.66666666666666vw;
+    padding: 2.5641025641025643vw;
+    border-radius: 6.410256410256411vw;
+
+    .title p {
+      font-size: 7.6923076923076925vw;
+    }
+
+    &-description,
+    .title {
+      margin: 2.5641025641025643vw;
+    }
+
+    &-description {
+      margin-top: 0;
+
+      p {
+        font-size: 6.410256410256411vw;
+        line-height: 7.6923076923076925vw;
+
+        br {
+          display: none;
+        }
+      }
+    }
+
+    &-button {
+      width: 100%;
+      height: 17.94871794871795vw;
+      border-radius: 5.128205128205129vw;
+      box-shadow: 0 1.0256410256410255vw 5.128205128205129vw
+        rgba(1, 159, 248, 0.6);
+
+      a p {
+        font-size: 5.128205128205129vw;
+      }
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+
+    &-memoji {
+      width: 70.76923076923077vw;
+      height: 82.3076923076923vw;
+      bottom: 20.412820512820515vw;
+      right: 10%;
+    }
+  }
+}

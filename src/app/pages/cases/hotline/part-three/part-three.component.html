@@ -1,0 +1,160 @@
+<div class="part-three">
+  <div
+    waIntersectionObserver
+    waIntersectionThreshold="0.1"
+    (waIntersectionObservee)="
+      intersectionService.onIntersection($event, 'blockAppearFade', 'hidden')
+    "
+    class="section section-1 hidden"
+  >
+    <div class="section-title"><p>ЧАСТЬ 3: СБОРКА САЙТА</p></div>
+    <div class="section-description">
+      <p>
+        Изначально мы планировали собирать сайт на Webflow, однако впоследствие
+        отказались от этого, и вот, почему:
+        <br />
+        <br />
+        Как уже было сказано, это MVP, то есть, со временем будет добавляться
+        новый функционал. Например, сейчас у сервиса нет собственной
+        биллинг-панели (что распространённая практика у хостингов), вместо неё
+        используется сторонняя. Однако, когда в будущем она появится, её будет
+        намного проще интегрировать вместе с основным сайтом.
+        <br />
+        <br />
+        При разработке сайта мы использовали фреймворк Angular, который позволил
+        сильно оптимизировать сайт, благодаря чему он загружается за ~1,5
+        секунды и не тормозит даже на слабых устройствах. А удобная структура
+        компонентов упрощает последующую поддержку сайта.
+      </p>
+    </div>
+  </div>
+  <div class="section section-2">
+    <div class="section-title"><p>ЭПИЛОГ</p></div>
+    <div class="section-description">
+      <p>
+        В мае 2022 сервис наконец-то запустился. Мы еле успели сдать работу в
+        срок, так как для такого огромного проекта времени было дано очень мало.
+        <br />
+        <br />
+        Кроме всего вышеперечисленного мы также написали гайды по использованию
+        айдентики, оформили соцсети и написали приблизительный план развития
+        продукта
+        <br />
+        <br />
+        Клиент остался полностью доволен результатом и сообщил, что продолжит
+        сотрудничество в будущем.
+      </p>
+    </div>
+  </div>
+  <div class="section section-3">
+    <div class="section-title"><p>В ГЛАВНЫХ РОЛЯХ</p></div>
+    <div class="section-description">
+      <div class="list">
+        <div class="item item-1">
+          <div class="image">
+            <img
+              class="memoji"
+              [src]="images.smallArtem.link"
+              [alt]="images.smallArtem.description"
+              draggable="false"
+            />
+          </div>
+          <div class="description">
+            <div class="name"><p>Артём Бергевич</p></div>
+            <div class="role"><p>Арт-директор и дизайнер</p></div>
+          </div>
+        </div>
+        <div class="item item-2">
+          <div class="image">
+            <img
+              class="memoji"
+              [src]="images.smallMaksim.link"
+              [alt]="images.smallMaksim.description"
+              draggable="false"
+            />
+          </div>
+          <div class="description">
+            <div class="name"><p>Максим Худяков</p></div>
+            <div class="role"><p>Моушн-дизайнер</p></div>
+          </div>
+        </div>
+        <div class="item item-3">
+          <div class="image">
+            <img
+              class="memoji"
+              [src]="images.smallIlana.link"
+              [alt]="images.smallIlana.description"
+              draggable="false"
+            />
+          </div>
+          <div class="description">
+            <div class="name"><p>Илана Мизиева</p></div>
+            <div class="role"><p>Менеджерка</p></div>
+          </div>
+        </div>
+        <div class="item item-4">
+          <div class="image">
+            <img
+              class="memoji"
+              [src]="images.smallIlyaU.link"
+              [alt]="images.smallIlyaU.description"
+              draggable="false"
+            />
+          </div>
+          <div class="description">
+            <div class="name"><p>Илья Устинов</p></div>
+            <div class="role"><p>Концептуальный дизайнер</p></div>
+          </div>
+        </div>
+        <div class="item item-5">
+          <div class="image">
+            <img
+              class="memoji"
+              [src]="images.smallAlbina.link"
+              [alt]="images.smallAlbina.description"
+              draggable="false"
+            />
+          </div>
+          <div class="description">
+            <div class="name"><p>Альбина Разумовская</p></div>
+            <div class="role"><p>Веб-дизайнерка</p></div>
+          </div>
+        </div>
+        <div class="item item-6">
+          <div class="image">
+            <img
+              class="memoji"
+              [src]="images.smallBogdan.link"
+              [alt]="images.smallBogdan.description"
+              draggable="false"
+            />
+          </div>
+          <div class="description">
+            <div class="name"><p>Богдан Володин</p></div>
+            <div class="role"><p>Фронтенд-разработчик</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clouds">
+    <img
+      class="image"
+      [src]="images.hotlineClouds.link"
+      [alt]="images.hotlineClouds.description"
+      draggable="false"
+    />
+    <img
+      class="mobile"
+      [src]="images.hotlineCloudsMobile.link"
+      [alt]="images.hotlineCloudsMobile.description"
+      draggable="false"
+    />
+    <img
+      class="image-2"
+      [src]="images.hotlineLogo.link"
+      [alt]="images.hotlineLogo.description"
+      draggable="false"
+    />
+  </div>
+</div>

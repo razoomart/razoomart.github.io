@@ -1,0 +1,280 @@
+.item {
+  border-radius: 2.0833333333333335vw;
+  background-color: #201f1e;
+}
+
+.team {
+  width: 100%;
+  height: 100%;
+  background-color: #b2dd57;
+  border-radius: 3.1578947368421053vw;
+  padding: 2.6041666666666665vw 2vw 4vw 2vw;
+
+  .title {
+    p {
+      color: #201f1e;
+      font-size: 5.208333333333333vw;
+    }
+  }
+
+  .content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.95vw;
+    margin-top: 2.6041666666666665vw;
+
+    a {
+      text-decoration: none;
+    }
+
+    .card {
+      width: 17.4vw;
+      height: 24.739583333333332vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 1.5625vw;
+      background-color: #ffffff;
+      padding: 1.0416666666666667vw 1.0416666666666667vw 0.78125vw
+        1.0416666666666667vw;
+
+      .avatar {
+        align-self: center;
+        width: 12.239583333333334vw;
+        height: 12.239583333333334vw;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .name {
+        margin-top: 3.5vw;
+        height: 4.166666666666667vw;
+
+        p {
+          font-size: 2.0833333333333335vw;
+          line-height: 1;
+          color: #201f1e;
+        }
+      }
+
+      .role {
+        display: flex;
+        height: 1.71875vw;
+        align-items: flex-end;
+        margin-top: 0.78125vw;
+
+        p {
+          font-size: 1.5625vw;
+          color: rgba(32, 31, 30, 0.6);
+        }
+      }
+    }
+
+
+    .liza-card {
+      .avatar {
+        margin-left: 2.406802721088434vw;
+      }
+
+      .avatar img {
+        transform: scale(1.1);
+      }
+    }
+
+    .amir-card {
+      .avatar img {
+        transform: scale(1.16);
+      }
+    }
+
+    .bogdan-card,
+    .vova-card {
+      transition: 0.2s;
+
+      .description {
+        display: flex;
+
+        .arrow {
+          width: 1.5625vw;
+          height: 1.5625vw;
+          display: flex;
+          align-self: flex-end;
+          margin-left: auto;
+          margin-right: 0.5vw;
+          margin-bottom: 0.5vw;
+
+          img {
+            width: 100%;
+            height: 100%;
+            transition: 0.2s;
+          }
+        }
+      }
+
+      &:hover {
+        transform: scale(1.04);
+        transition: 0.2s;
+
+        .arrow img {
+          transform: rotate(45deg);
+          transition: 0.2s;
+        }
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+
+    .talents {
+      transition: 0.2s;
+
+      .avatar {
+        transition: 0.2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #b2dd57;
+        border-radius: 50%;
+        width: 10.5vw;
+        height: 10.5vw;
+
+        img {
+          width: 5.395833333333333vw;
+          height: 5.395833333333333vw;
+        }
+      }
+
+      .name {
+        margin-top: 5vw;
+      }
+
+      &:hover {
+        transform: scale(1.04);
+        transition: 0.2s;
+
+        .avatar {
+          transform: rotate(90deg);
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .team {
+    .content {
+      gap: 1.04vw;
+
+      .card {
+        width: 17.6vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .team {
+    height: 81vw;
+    padding: 0;
+    padding-top: 5.128205128205129vw;
+    border-radius: 6.410256410256411vw;
+
+    .title {
+      margin-left: 5.128205128205129vw;
+
+      p {
+        font-size: 9.23076923076923vw;
+      }
+    }
+
+    .content {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 1.2820512820512822vw;
+      margin-top: 5.128205128205129vw;
+      overflow-x: auto;
+      overflow-y: hidden;
+
+      .card {
+        width: 38.46153846153846vw;
+        height: 53.58974358974359vw;
+        border-radius: 3.3333333333333335vw;
+        padding: 2.051282051282051vw 2.5641025641025643vw 2.5641025641025643vw
+          2.5641025641025643vw;
+
+        .avatar {
+          width: 30.76923076923077vw;
+          height: 30.76923076923077vw;
+        }
+
+        .name {
+          margin-top: auto;
+          height: auto;
+
+          p {
+            font-size: 4.615384615384615vw;
+            line-height: 4.615384615384615vw;
+          }
+        }
+
+        .role {
+          margin-top: auto;
+          height: auto;
+
+          p {
+            font-size: 3.3333333333333335vw;
+            line-height: 3.6666666666666665vw;
+          }
+        }
+      }
+
+      .artem-card {
+        margin-left: 5.128205128205129vw;
+      }
+
+      .bogdan-card,
+      .vova-card,
+      .talents {
+        .description {
+          margin-top: auto;
+
+          .arrow {
+            width: 2.5vw;
+            height: 2.5vw;
+          }
+        }
+
+        &:hover {
+          transform: scale(1);
+        }
+      }
+
+      .talents {
+        margin-right: 5.128205128205129vw;
+
+        .avatar {
+          margin-top: 5vw;
+          width: 21vw;
+          height: 21vw;
+
+          img {
+            width: 13vw;
+            height: 13vw;
+          }
+        }
+
+        .name {
+          margin-top: 7.5vw;
+        }
+      }
+    }
+  }
+}

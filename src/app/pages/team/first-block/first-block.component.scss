@@ -1,0 +1,58 @@
+.block {
+  border-radius: 3.1578947368421053vw;
+
+  .title {
+    .text-mobile {
+      display: none;
+    }
+
+    p {
+      color: #201f1e;
+      font-size: 5.208333333333333vw;
+    }
+  }
+}
+
+.first-block {
+  background-color: #5d6eff;
+  width: 100%;
+  padding: 2.0833333333333335vw 0 2.6041666666666665vw 3.125vw;
+
+  .title {
+    width: 100%;
+    height: 100%;
+
+    p {
+      color: #ffffff;
+      font-size: 4.166666666666667vw;
+      line-height: 1.1;
+
+      img {
+        width: 3.5vw;
+        height: 3.5vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .first-block {
+    border-radius: 6.410256410256411vw;
+    padding: 5.128205128205129vw;
+
+    .title p {
+      display: none;
+    }
+
+    .title .text-mobile {
+      display: block;
+      font-size: 7.948717948717949vw;
+      line-height: 9.128205128205128vw;
+
+      img {
+        width: 6.5vw;
+        height: 6.5vw;
+      }
+    }
+  }
+}

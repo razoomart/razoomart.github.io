@@ -1,0 +1,52 @@
+.short-about {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 3.125vw;
+  padding: 1.8229166666666667vw 1.8229166666666667vw 3.1vw 1.8229166666666667vw;
+
+  .cursive {
+    font-family: NewYorkItalic;
+    font-style: italic;
+  }
+
+  .text {
+    color: #201f1e;
+    width: 100%;
+    height: 100%;
+    font-size: 5.208333333333333vw;
+
+    img {
+      width: 5.208333333333333vw;
+      height: 5.208333333333333vw;
+    }
+
+    .break {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .short-about {
+    border-radius: 6.410256410256411vw;
+    padding: 5.128205128205129vw 3.58974358974359vw;
+
+    .text {
+      font-size: 7.435897435897436vw;
+
+      img {
+        width: 6.5vw;
+        height: 6.5vw;
+      }
+
+      .break {
+        display: block;
+      }
+
+      .break-2 {
+        display: none;
+      }
+    }
+  }
+}

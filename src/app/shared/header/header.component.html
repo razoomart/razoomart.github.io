@@ -1,0 +1,106 @@
+<div
+  class="content"
+  [ngStyle]="isMenuOpened ? { backgroundColor: '#000000' } : {}"
+>
+  <div class="always-show">
+    <div class="element main" (click)="menuToggle()">
+      <a draggable="false">{{ isMenuOpened ? "Закрыть" : "Карта сайта" }}</a>
+    </div>
+    <div
+      (mouseover)="getNewHeader()"
+      (click)="scrollTop()"
+      class="element logo"
+    >
+      <a [routerLink]="links.PAGE_MAIN">
+        <img
+          [src]="headerSrc"
+          [alt]="icons.logo.description"
+          draggable="false"
+        />
+      </a>
+    </div>
+    <div class="element write-to-us">
+      <a (click)="(clickAction)" draggable="false">{{ buttonTitle }}</a>
+    </div>
+  </div>
+  <div
+    [ngStyle]="isMenuOpened ? { display: 'block' } : { display: 'none' }"
+    class="fullscreen-menu"
+  >
+    <div class="element main">
+      <a
+        (click)="menuToggle()"
+        [routerLink]="links.PAGE_MAIN"
+        draggable="false"
+      >
+        <p>Главная</p>
+        <span>
+          <p *ngIf="currentUrl === links.PAGE_MAIN">(вы здесь)</p>
+          <img
+            *ngIf="currentUrl !== links.PAGE_MAIN"
+            [src]="icons.arrowRight.link"
+            [alt]="icons.arrowRight.description"
+            draggable="false"
+          />
+        </span>
+      </a>
+    </div>
+    <div class="element about-team">
+      <a
+        (click)="menuToggle()"
+        [routerLink]="links.PAGE_TEAM"
+        draggable="false"
+      >
+        <p>О команде</p>
+        <span>
+          <p *ngIf="currentUrl === links.PAGE_TEAM">(вы здесь)</p>
+          <img
+            *ngIf="currentUrl !== links.PAGE_TEAM"
+            [src]="icons.arrowRight.link"
+            [alt]="icons.arrowRight.description"
+            draggable="false"
+          />
+        </span>
+      </a>
+    </div>
+    <div class="element portfolio">
+      <a
+        (click)="menuToggle()"
+        [routerLink]="links.PAGE_CASES"
+        draggable="false"
+      >
+        <p>Портфолио</p>
+        <span>
+          <p *ngIf="currentUrl === links.PAGE_CASES">(вы здесь)</p>
+          <img
+            *ngIf="currentUrl !== links.PAGE_CASES"
+            [src]="icons.arrowRight.link"
+            [alt]="icons.arrowRight.description"
+            draggable="false"
+          />
+        </span>
+      </a>
+    </div>
+    <div class="mobile-btn">
+      <div class="wrapper">
+        <a (click)="mobileBtnAction()"><p>Связаться с нами</p></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="images-preload">
+  <img [src]="icons.logo.link" />
+  <img [src]="icons.logoAntiHype.link" />
+  <img [src]="icons.logoDobro.link" />
+  <img [src]="icons.logoDrzhk.link" />
+  <img [src]="icons.logoKorean.link" />
+  <img [src]="icons.logoMaxfont.link" />
+  <img [src]="icons.logoMinecraft.link" />
+  <img [src]="icons.logoRu.link" />
+  <img [src]="icons.logoUwu.link" />
+  <img [src]="icons.logoLove.link" />
+  <img [src]="icons.logoAustralian.link" />
+  <img [src]="icons.logoAmbid.link" />
+  <img [src]="icons.logoRzmrt.link" />
+</div>

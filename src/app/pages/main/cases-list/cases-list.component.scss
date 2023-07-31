@@ -1,0 +1,508 @@
+.some-projects {
+  width: 100%;
+
+  .title {
+    padding: 0 0 0 3.6458333333333335vw;
+
+    p {
+      color: #ffffff80;
+      font-size: 5.208333333333333vw;
+    }
+
+    span {
+      color: #ffffff;
+    }
+  }
+
+  .project-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.0833333333333335vw;
+    gap: 0.5208333333333334vw;
+
+    .project,
+    .mobile-project {
+      background-position: center;
+      background-size: 100%;
+      background-clip: padding-box;
+      background-repeat: no-repeat;
+    }
+
+    .project {
+      width: 98.95833333333333vw;
+      height: 31.666666666666668vw;
+      background-color: #ffffff;
+      padding: 1.5625vw 1vw 1vw 1.5625vw;
+      border-radius: 2.34375vw;
+      transition: 0.2s;
+
+      a {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+
+        .project-title {
+          width: 50%;
+
+          p {
+            color: #ffffff;
+            font-size: 2.34375vw;
+            margin: 0;
+            line-height: 1;
+
+            .line {
+              font-size: 2.34375vw;
+            }
+
+            span {
+              color: rgba(32, 31, 30, 0.6);
+              font-size: 2.5vw;
+            }
+          }
+        }
+
+        .project-case-btn {
+          .wrapper:hover {
+            background-color: white;
+            transform: scale(1.05);
+            transition: 0.3s;
+
+            a {
+              color: #000;
+            }
+
+            &:active {
+              transform: scale(0.96);
+            }
+          }
+        }
+
+        .project-description {
+          padding-top: 0.8vw;
+
+          p {
+            color: rgba(32, 31, 30, 0.8);
+            font-size: 1.3020833333333333vw;
+            line-height: 1.75vw;
+          }
+        }
+
+        .project-case-btn {
+          display: flex;
+          width: 50%;
+          align-self: baseline;
+          align-content: center;
+          justify-content: flex-end;
+
+          .wrapper {
+            width: 10.625vw;
+            height: 2.9166666666666665vw;
+            border: 0.1041vw solid rgb(255, 255, 255);
+            border-radius: 59.464285714285715vw;
+            transition: 0.3s;
+
+            a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-decoration: none;
+              color: white;
+              font-size: 1.0416666666666667vw;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+
+        .project-preview {
+          display: flex;
+          justify-content: flex-start;
+          align-self: center;
+          width: 50%;
+          height: 80%;
+          transition: 0.3s;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      &:hover {
+        transform: scale(1.01);
+        transition: 0.1s;
+      }
+
+      &:active {
+        transform: scale(0.99);
+        transition: 0.2s;
+      }
+    }
+
+    .hotline {
+      height: 31vw;
+      background-color: #ddff20;
+      background-image: url(/assets/images/projects/case-preview-hotline-2.webp);
+
+      a {
+        .project-title p {
+          color: rgba(32, 31, 30, 1);
+        }
+
+        .project-case-btn {
+          .wrapper {
+            border-color: #201f1e;
+
+            a {
+              color: #000;
+            }
+          }
+
+          .wrapper:hover {
+            background-color: #201f1e;
+
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+
+    .bequick {
+      background-color: #181818;
+      background-image: url(/assets/images/projects/case-preview-bequick.webp);
+
+      a {
+        .project-title {
+          width: 60%;
+
+          p span {
+            color: rgba(255, 255, 255, 0.6);
+          }
+        }
+
+        .project-case-btn {
+          width: 40%;
+        }
+
+        .project-description {
+          height: 80%;
+          width: 50%;
+
+          p {
+            color: rgba(255, 255, 255, 0.6);
+          }
+        }
+      }
+    }
+
+    .pn {
+      background-color: #fcfcfc;
+      background-image: url(/assets/images/projects/case-preview-pn.webp);
+
+      a {
+        .project-title p {
+          color: rgba(32, 31, 30, 1);
+        }
+      }
+    }
+
+    .pn,
+    .bequick {
+      width: 49.7%;
+
+      &:hover a {
+        transform: scale(1);
+        cursor: url("/assets/images/cursor.svg"), auto;
+      }
+
+      &:active {
+        transform: scale(1);
+      }
+    }
+
+    .development-stage {
+      a {
+        .project-case-btn {
+          .wrapper {
+            border: none;
+
+            a {
+              color: #000;
+              font-style: italic;
+              text-transform: uppercase;
+              font-size: 1.1904761904761905vw;
+            }
+
+            &:hover {
+              background-color: transparent;
+              transform: scale(1);
+            }
+          }
+        }
+      }
+
+      &:hover {
+        transform: scale(1);
+      }
+    }
+
+    .mobile-project {
+      display: none;
+    }
+
+    .all-cases-btn {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: flex-end;
+      height: 10.42vw;
+      border: none;
+      background-color: #201f1e;
+      border-radius: 2.6041666666666665vw;
+      transition: 0.2s;
+      text-decoration: none;
+
+      p {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 3.6458333333333335vw;
+
+        span {
+          display: flex;
+          width: 6.761904761904762vw;
+          height: 100%;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 4.761904761904762vw;
+            height: 2.6785714285714284vw;
+          }
+        }
+      }
+
+      &:hover {
+        background-color: #fef747;
+        box-shadow: 0 0 2.9761904761904763vw #fef747;
+        transform: scale(1.012);
+        transition: 0.2s;
+
+        p {
+          color: #000;
+
+          img {
+            filter: invert(1);
+          }
+        }
+      }
+
+      &:active {
+        transform: scale(0.99);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .some-projects {
+    .title {
+      padding: 0 0 0 5.128205128205129vw;
+
+      p {
+        font-size: 9.23076923076923vw;
+        line-height: 9.23076923076923vw;
+      }
+    }
+
+    .project-list {
+      flex-direction: column;
+      gap: 1.2820512820512822vw;
+      margin-top: 5.128205128205129vw;
+
+      .project {
+        display: none;
+      }
+
+      .mobile-project {
+        display: block;
+        width: 100%;
+        height: 128.2051282051282vw;
+        padding: 5.128205128205129vw;
+        border-radius: 6.410256410256411vw;
+
+        a,
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+
+          .project-title {
+            p {
+              font-size: 7.6923076923076925vw;
+              line-height: 8.461538461538462vw;
+              color: #201f1e;
+
+              span {
+                color: #201f1e99;
+              }
+            }
+          }
+
+          .bottom {
+            display: flex;
+            margin-top: auto;
+            gap: 3.58974358974359vw;
+
+            .project-description,
+            .project-case-btn {
+              width: 50%;
+            }
+
+            .project-description {
+              p {
+                font-size: 3.58974358974359vw;
+                line-height: 4.923076923076923vw;
+                color: #201f1ecc;
+              }
+            }
+
+            .project-case-btn {
+              display: flex;
+              align-items: flex-end;
+
+              .wrapper {
+                text-decoration: none;
+                width: 100%;
+                height: 11.794871794871796vw;
+                border: 0.2564102564102564vw solid #201f1e99;
+                border-radius: 59.464285714285715vw;
+
+                a {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  color: #201f1e;
+                  font-size: 3.58974358974359vw;
+                }
+
+                &:hover {
+                  background-color: #201f1e;
+
+                  a {
+                    color: #ffffff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .mobile-hotline {
+        background-color: #ddff20;
+        background-image: url(/assets/images/projects/case-preview-hotline-mobile.webp);
+
+        a {
+          .bottom .project-case-btn .wrapper {
+            background-color: #201f1e;
+            border: none;
+
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+
+      .mobile-bequick {
+        background-color: #201f1e;
+        background-image: url(/assets/images/projects/case-preview-bequick-mobile.webp);
+
+        a {
+          .project-title {
+            p {
+              color: #ffffff;
+
+              span {
+                color: #ffffff99;
+              }
+            }
+          }
+
+          .bottom {
+            .project-description {
+              p {
+                color: #ffffffcc;
+              }
+            }
+
+            .project-case-btn {
+              .wrapper {
+                border: 0.2564102564102564vw solid rgba(255, 255, 255, 0.6);
+
+                a {
+                  color: #ffffff;
+                }
+
+                &:hover {
+                  background-color: #fff;
+
+                  a {
+                    color: #201f1e;
+                  }
+                }
+              }
+            }
+          }
+
+          &:hover {
+            cursor: url("/assets/images/cursor.svg"), auto;
+          }
+        }
+      }
+
+      .mobile-pn {
+        background-color: #ffffff;
+        background-image: url(/assets/images/projects/case-preview-pn-mobile.webp);
+
+        .bottom {
+          .project-description {
+            width: 100% !important;
+          }
+        }
+      }
+
+      .all-cases-btn {
+        width: 100%;
+        height: 20.512820512820515vw;
+        border-radius: 6.410256410256411vw;
+
+        p {
+          font-size: 7.6923076923076925vw;
+
+          span {
+            margin-left: 3.8461538461538463vw;
+
+            img {
+              width: 8.461538461538462vw;
+              height: 4.871794871794871vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}

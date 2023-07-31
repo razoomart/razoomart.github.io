@@ -1,0 +1,27 @@
+.content {
+  width: 100%;
+  padding: 0 0.5952380952380952vw;
+
+  .first-block {
+    height: 41.666666666666664vw;
+  }
+
+  #footer {
+    margin-top: 34.5vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .content {
+    padding: 0 2.5641025641025643vw;
+
+    .first-block {
+      height: 158.97435897435898vw;
+    }
+
+    #footer {
+      margin-top: 150vw;
+      padding-bottom: 2.5641025641025643vw;
+    }
+  }
+}

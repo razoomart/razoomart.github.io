@@ -1,0 +1,297 @@
+.item {
+  border-radius: 2.0833333333333335vw;
+  background-color: #ffffff;
+}
+
+.stack {
+  background-color: #e1e9f8;
+  border-radius: 3.125vw;
+  padding: 2.6041666666666665vw;
+
+  .title {
+    margin-left: 0.5208333333333334vw;
+
+    p {
+      color: #201f1e99;
+      font-size: 5.208333333333333vw;
+    }
+  }
+
+  .content {
+    margin-top: 2.6041666666666665vw;
+
+    .tech-list {
+      display: flex;
+      width: 100%;
+      margin-top: 1.5625vw;
+
+      .list-title {
+        display: flex;
+        align-items: center;
+        width: 31.875vw;
+
+        p {
+          color: #201f1e;
+          font-size: 2.6041666666666665vw;
+        }
+      }
+
+      .technologies {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0.5208333333333334vw;
+      }
+
+      .technologies-many {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        .item-11 {
+          margin-top: 0.5208333333333334vw;
+        }
+      }
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        width: 32.65625vw;
+        height: 12.5vw;
+        padding: 1.5625vw;
+
+        .tech-logo {
+          position: absolute;
+          width: 9.375vw;
+          height: 9.375vw;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .tech-title,
+        .tech-description {
+          p {
+            text-align: end;
+          }
+        }
+
+        .tech-title {
+          height: 2.34375vw;
+
+          p {
+            color: #201f1e;
+            font-size: 2.34375vw;
+          }
+        }
+
+        .tech-description {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: auto;
+
+          .hide-mobile {
+            display: none;
+          }
+
+          p {
+            font-size: 1.3020833333333333vw;
+            text-align: end;
+            color: #201f1e99;
+            line-height: 1.25;
+          }
+        }
+      }
+
+      .item-1 {
+        .tech-description p {
+          br {
+            display: none;
+          }
+
+          .hide-mobile {
+            display: block;
+          }
+        }
+
+        .tech-logo img {
+          filter: drop-shadow(
+            0 0.20833333333333334vw 3.125vw rgba(151, 165, 228, 0.2)
+          );
+        }
+      }
+
+      .item-2 {
+        .tech-logo img {
+          filter: drop-shadow(
+            0 0.20833333333333334vw 3.125vw rgba(151, 165, 228, 0.2)
+          );
+        }
+      }
+
+      .item-3 {
+        .tech-logo img {
+          filter: drop-shadow(
+            0 0.20833333333333334vw 3.125vw rgba(255, 255, 255, 0.15)
+          );
+        }
+      }
+
+      .item-4 {
+        .tech-logo img {
+          filter: drop-shadow(
+            0 0.20833333333333334vw 3.125vw rgba(0, 163, 255, 0.2)
+          );
+        }
+      }
+
+      .item-5 {
+        .tech-logo img {
+          filter: drop-shadow(
+            0 0.20833333333333334vw 3.125vw rgba(151, 165, 228, 0.2)
+          );
+        }
+      }
+
+      .item-6 {
+        .tech-logo img {
+          filter: drop-shadow(
+            0 0.20833333333333334vw 3.125vw rgba(231, 118, 85, 0.2)
+          );
+        }
+      }
+
+      .item-7 {
+        .tech-logo img {
+          filter: drop-shadow(
+            0 0.20833333333333334vw 3.125vw rgba(231, 118, 85, 0.2)
+          );
+        }
+      }
+
+      .item-8 {
+        .tech-logo img {
+          filter: drop-shadow(
+            0 0.20833333333333334vw 3.125vw rgba(151, 165, 228, 0.2)
+          );
+        }
+      }
+
+      .item-9 {
+        .tech-logo img {
+          filter: drop-shadow(
+            0 0.20833333333333334vw 3.125vw rgba(230, 116, 83, 0.3)
+          );
+        }
+      }
+
+      .item-10 {
+        .tech-logo img {
+          filter: drop-shadow(
+            0 0.20833333333333334vw 3.125vw rgba(255, 255, 255, 0.15)
+          );
+        }
+      }
+
+      .item-11 {
+        .tech-logo img {
+          filter: drop-shadow(
+            0 0.20833333333333334vw 3.125vw rgba(255, 255, 255, 0.3)
+          );
+        }
+      }
+
+      .item-3,
+      .item-4,
+      .item-11 {
+        .tech-description {
+          margin-top: 2.5vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .stack {
+    border-radius: 6.410256410256411vw;
+    padding: 2.5641025641025643vw;
+
+    .title {
+      margin-left: 2.5641025641025643vw;
+      margin-top: 2.5641025641025643vw;
+
+      p {
+        font-size: 9.23076923076923vw;
+        line-height: 9.23076923076923vw;
+      }
+    }
+
+    .content {
+      .tech-list {
+        flex-direction: column;
+        margin-top: 7.6923076923076925vw;
+
+        .list-title {
+          margin-left: 2.5641025641025643vw;
+          width: 100%;
+
+          p {
+            font-size: 7.17948717948718vw;
+          }
+        }
+
+        .technologies {
+          flex-direction: column;
+          margin-top: 5.128205128205129vw;
+
+          .item {
+            width: 100%;
+            height: 35.8974358974359vw;
+            padding: 4.615384615384615vw;
+            border-radius: 5.897435897435898vw;
+
+            .tech-logo {
+              width: 26.666666666666668vw;
+              height: 26.666666666666668vw;
+            }
+
+            .tech-title {
+              height: auto;
+
+              p {
+                font-size: 7.17948717948718vw;
+                line-height: 4.615384615384615vw;
+              }
+            }
+
+            .tech-description {
+              margin-top: auto;
+
+              .hide-mobile {
+                display: none;
+              }
+
+              p {
+                font-size: 3.8461538461538463vw;
+
+                .hide-mobile {
+                  display: none;
+                }
+
+                br {
+                  display: block;
+                }
+              }
+            }
+          }
+
+          .item-11 {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}

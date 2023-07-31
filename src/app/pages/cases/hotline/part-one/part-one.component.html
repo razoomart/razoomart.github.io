@@ -1,0 +1,113 @@
+<div class="part-one">
+  <div
+    waIntersectionObserver
+    waIntersectionThreshold="0.1"
+    (waIntersectionObservee)="
+      intersectionService.onIntersection($event, 'blockAppearFade', 'hidden')
+    "
+    class="section section-1 hidden"
+  >
+    <div class="section-title">
+      <p>ЧАСТЬ 1: АЙДЕНТИКА</p>
+    </div>
+    <div class="section-description">
+      <p>
+        Спустя две недели переговоров, изучения рынка, составления мудбордов и
+        мозговых штурмов вместе с клиентом, мы всё-таки нашли нужную идею.
+        <br />
+        <br />
+        Чтобы показать технологичность, дерзость и неординарность компании,
+        визуальная концепция строится на ярко-жёлтом и чёрном цветах. В
+        некоторых местах этот кислотный рейв могут разбавить такие же яркие, но
+        более мягкие градиенты.
+      </p>
+    </div>
+  </div>
+  <div class="section section-2 mtt">
+    <div class="content">
+      <div class="images">
+        <img
+          waIntersectionObserver
+          waIntersectionThreshold="0.2"
+          (waIntersectionObservee)="
+            intersectionService.onIntersection(
+              $event,
+              'blockAppearFade',
+              'hidden'
+            )
+          "
+          class="hidden"
+          [src]="images.hotlineColors.link"
+          [alt]="images.hotlineColors.description"
+          draggable="false"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="video">
+    <video class="desktop" autoplay loop [muted]="'muted'">
+      <source [src]="videos.hotlineDatacenter.link" type="video/webm" />
+    </video>
+    <video class="mobile" [playsInline]="true" autoplay loop [muted]="'muted'">
+      <source [src]="videos.hotlineDatacenterMobile.link" type="video/mp4" />
+    </video>
+  </div>
+  <div class="section section-3">
+    <div class="section-description">
+      <p>
+        Логотипом прекрасно брендируется любой мерч, который только можно себе
+        представить.
+      </p>
+    </div>
+  </div>
+  <div class="section section-4">
+    <div class="content">
+      <div class="images">
+        <div class="image image-1">
+          <img
+            [src]="images.hotlineDatacenter.link"
+            [alt]="images.hotlineDatacenter.description"
+            draggable="false"
+          />
+        </div>
+        <div class="image image-2">
+          <img
+            [src]="images.hotlineServers.link"
+            [alt]="images.hotlineServers.description"
+            draggable="false"
+          />
+        </div>
+        <div class="reverse">
+          <div class="image image-3">
+            <img
+              [src]="images.hotlineFloppyDisk.link"
+              [alt]="images.hotlineFloppyDisk.description"
+              draggable="false"
+            />
+          </div>
+          <div class="image image-4">
+            <img
+              [src]="images.hotlinePhoneCase.link"
+              [alt]="images.hotlinePhoneCase.description"
+              draggable="false"
+            />
+          </div>
+        </div>
+        <div class="image image-3">
+          <img
+            [src]="images.hotlineFloppyDisk.link"
+            [alt]="images.hotlineFloppyDisk.description"
+            draggable="false"
+          />
+        </div>
+        <div class="image image-4">
+          <img
+            [src]="images.hotlinePhoneCase.link"
+            [alt]="images.hotlinePhoneCase.description"
+            draggable="false"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

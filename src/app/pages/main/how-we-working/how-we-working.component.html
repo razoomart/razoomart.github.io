@@ -1,0 +1,135 @@
+<div class="how-we-working">
+  <div
+    waIntersectionObserver
+    (waIntersectionObservee)="
+      intersectionService.onIntersection(
+        $event,
+        'blockAppearFade',
+        'hidden',
+        100
+      )
+    "
+    class="title hidden"
+  >
+    <p>Как мы работаем</p>
+  </div>
+  <div class="list">
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          200
+        )
+      "
+      class="block dedicated-team hidden"
+    >
+      <div class="block-title"><p>Спринтами</p></div>
+      <div class="block-description">
+        <p>
+          Выделенная команда на ваш проект, <br />
+          работающая недельными спринтами
+        </p>
+      </div>
+      <div class="block-price"><p>от 35 000₽/спринт</p></div>
+    </div>
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          400
+        )
+      "
+      class="block designers-outstaffing hidden"
+    >
+      <div class="block-title"><p>По часам</p></div>
+      <div class="block-description">
+        <p>
+          Работа отдельных дизайнеров по часам, <br />
+          подходит для небольших разовых задач
+        </p>
+      </div>
+      <div class="block-price">
+        <p>
+          от
+          <span class="old-price">
+            1200₽/час
+            <img
+              waIntersectionObserver
+              (waIntersectionObservee)="
+                intersectionService.onIntersection(
+                  $event,
+                  'blockAppearFadeSm',
+                  'hidden',
+                  700
+                )
+              "
+              [src]="images.strikethroughText.link"
+              [alt]="images.strikethroughText.description"
+              class="hidden"
+              draggable="false"
+            />
+          </span>
+          <span
+            waIntersectionObserver
+            (waIntersectionObservee)="
+              intersectionService.onIntersection(
+                $event,
+                'blockSlide',
+                'hidden',
+                1000
+              )
+            "
+            class="new-price hidden"
+          >
+            860₽/час
+          </span>
+        </p>
+      </div>
+    </div>
+    <div
+      waIntersectionObserver
+      (waIntersectionObservee)="
+        intersectionService.onIntersection(
+          $event,
+          'blockAppearFadeSm',
+          'hidden',
+          150
+        )
+      "
+      class="block special-conditions hidden"
+    >
+      <div class="right">
+        <div class="block-title">
+          <p>
+            А для некоммерческих организаций <br />
+            и социальных проектов у нас <br />
+            специальные условия
+          </p>
+        </div>
+        <div class="block-wrapper">
+          <div class="block-description">
+            <p>
+              Все работы мы выполняем по себестоимости, но вкладываем всю душу.
+              <br />
+              Ведь дизайн нужен не только для прибыли, но и для великих дел.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="left">
+        <img
+          class="image"
+          [src]="images.stars.link"
+          [alt]="images.stars.description"
+          draggable="false"
+        />
+      </div>
+    </div>
+  </div>
+</div>

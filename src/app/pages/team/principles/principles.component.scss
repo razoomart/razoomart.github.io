@@ -1,0 +1,95 @@
+.our-principles {
+  width: 100%;
+  height: 100%;
+  padding: 1.5625vw;
+  border-radius: 2.34375vw;
+  background-color: #7ec5ff;
+
+  .title {
+    margin-left: 1.5625vw;
+    margin-top: 1.0416666666666667vw;
+
+    p {
+      color: #201f1e;
+      font-size: 4.166666666666667vw;
+    }
+  }
+
+  .content {
+    margin-top: 2.0833333333333335vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5208333333333334vw;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      width: 49.7%;
+      height: 13.125vw;
+      background-color: #ffffff;
+      padding: 1.5625vw;
+      border-radius: 1.8229166666666667vw;
+
+      &-title {
+        p {
+          font-size: 3.125vw;
+          color: #201f1e;
+        }
+      }
+
+      &-description {
+        margin-top: auto;
+
+        p {
+          font-size: 1.5625vw;
+          line-height: 1.875vw;
+          color: #201f1e99;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .our-principles {
+    padding: 2.5641025641025643vw;
+    border-radius: 6.410256410256411vw;
+
+    .title {
+      margin-left: 2.5641025641025643vw;
+      margin-top: 2.5641025641025643vw;
+
+      p {
+        font-size: 9.23076923076923vw;
+      }
+    }
+
+    .content {
+      gap: 0.7692307692307693vw;
+
+      .item {
+        width: 100%;
+        height: 35.64102564102564vw;
+        padding: 4.615384615384615vw;
+        border-radius: 5.128205128205129vw;
+
+        &-title p {
+          font-size: 7.17948717948718vw;
+        }
+
+        &-description {
+          width: 78%;
+
+          p {
+            font-size: 4.102564102564102vw;
+            line-height: 4.923076923076923vw;
+
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
