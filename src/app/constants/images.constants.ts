@@ -5,13 +5,10 @@ enum ImageType {
   smallAlbina = 'smallAlbina',
   artem = 'artem',
   smallArtem = 'smallArtem',
-  danya = 'danya',
-  danya2 = 'danya2',
   ilana = 'ilana',
   smallIlana = 'smallIlana',
   ilana2 = 'ilana2',
   ilyaK = 'ilyaK',
-  ilyaU = 'ilyaU',
   smallIlyaU = 'smallIlyaU',
   maksim = 'maksim',
   smallMaksim = 'smallMaksim',
@@ -19,6 +16,8 @@ enum ImageType {
   bogdan = 'bogdan',
   smallBogdan = 'smallBogdan',
   vova = 'vova',
+  liza = 'liza',
+  amir = 'amir',
   hearts = 'hearts',
   stars = 'stars',
   strikethroughText = 'strikethroughText',
@@ -71,14 +70,6 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
     link: 'assets/images/memojis/small/small-artem.webp',
     description: 'memoji image',
   },
-  [ImageType.danya]: {
-    link: 'assets/images/memojis/danya.webp',
-    description: 'memoji image',
-  },
-  [ImageType.danya2]: {
-    link: 'assets/images/memojis/danya2.webp',
-    description: 'memoji image',
-  },
   [ImageType.ilana]: {
     link: 'assets/images/memojis/ilana.webp',
     description: 'memoji image',
@@ -93,10 +84,6 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
   },
   [ImageType.ilyaK]: {
     link: 'assets/images/memojis/ilyaK.webp',
-    description: 'memoji image',
-  },
-  [ImageType.ilyaU]: {
-    link: 'assets/images/memojis/ilyaU.webp',
     description: 'memoji image',
   },
   [ImageType.smallIlyaU]: {
@@ -125,6 +112,14 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
   },
   [ImageType.vova]: {
     link: 'assets/images/memojis/vova.webp',
+    description: 'memoji image',
+  },
+  [ImageType.amir]: {
+    link: 'assets/images/memojis/amir.webp',
+    description: 'memoji image',
+  },
+  [ImageType.liza]: {
+    link: 'assets/images/memojis/liza.webp',
     description: 'memoji image',
   },
   [ImageType.hearts]: {
