@@ -13,11 +13,8 @@ enum ImageType {
   maksim = 'maksim',
   smallMaksim = 'smallMaksim',
   ivan = 'ivan',
-  bogdan = 'bogdan',
-  smallBogdan = 'smallBogdan',
   vova = 'vova',
   liza = 'liza',
-  amir = 'amir',
   hearts = 'hearts',
   stars = 'stars',
   strikethroughText = 'strikethroughText',
@@ -102,20 +99,8 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
     link: 'assets/images/memojis/ivan.webp',
     description: 'memoji image',
   },
-  [ImageType.bogdan]: {
-    link: 'assets/images/memojis/bogdan.webp',
-    description: 'memoji image',
-  },
-  [ImageType.smallBogdan]: {
-    link: 'assets/images/memojis/small/small-bogdan.webp',
-    description: 'memoji image',
-  },
   [ImageType.vova]: {
     link: 'assets/images/memojis/vova.webp',
-    description: 'memoji image',
-  },
-  [ImageType.amir]: {
-    link: 'assets/images/memojis/amir.webp',
     description: 'memoji image',
   },
   [ImageType.liza]: {
