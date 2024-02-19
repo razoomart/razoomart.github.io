@@ -13,7 +13,6 @@ enum ImageType {
   maksim = 'maksim',
   smallMaksim = 'smallMaksim',
   ivan = 'ivan',
-  vova = 'vova',
   liza = 'liza',
   hearts = 'hearts',
   stars = 'stars',
@@ -97,10 +96,6 @@ const ImageList: { [key in ImageType]: ImageInfo } = {
   },
   [ImageType.ivan]: {
     link: 'assets/images/memojis/ivan.webp',
-    description: 'memoji image',
-  },
-  [ImageType.vova]: {
-    link: 'assets/images/memojis/vova.webp',
     description: 'memoji image',
   },
   [ImageType.liza]: {

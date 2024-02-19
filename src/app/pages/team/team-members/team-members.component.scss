@@ -87,44 +87,6 @@
       }
     }
 
-    .vova-card {
-      transition: 0.2s;
-
-      .description {
-        display: flex;
-
-        .arrow {
-          width: 1.5625vw;
-          height: 1.5625vw;
-          display: flex;
-          align-self: flex-end;
-          margin-left: auto;
-          margin-right: 0.5vw;
-          margin-bottom: 0.5vw;
-
-          img {
-            width: 100%;
-            height: 100%;
-            transition: 0.2s;
-          }
-        }
-      }
-
-      &:hover {
-        transform: scale(1.04);
-        transition: 0.2s;
-
-        .arrow img {
-          transform: rotate(45deg);
-          transition: 0.2s;
-        }
-      }
-
-      &:active {
-        transform: scale(0.98);
-      }
-    }
-
     .talents {
       transition: 0.2s;
 
@@ -233,7 +195,6 @@
         margin-left: 5.128205128205129vw;
       }
 
-      .vova-card,
       .talents {
         .description {
           margin-top: auto;
